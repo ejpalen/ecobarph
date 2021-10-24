@@ -1,443 +1,27 @@
 <!DOCTYPE html>
 <html lang="en" id="top">
   <head>
+    <meta charset="utf-8">
+    <link rel="icon" href="Pictures/favicon.png" type="image/x-icon">
     <title>Ecobar</title>
-    
-<style>
-
-* {
-  padding: 0;
-  margin: 0;
-}
-
-#top {
-  scroll-behavior: smooth;
-}
-
-#ftrcategory {
-  scroll-behavior: smooth;
-}
-body {
-  width: 100%;
-}
-
-h4,
-a,
-p {
-  font-family: "Poppins", sans-serif;
-}
-
-.menu {
-  margin-right: 0px;
-  margin-left: 0px;
-  height: 66px;
-  background: #212121;
-  color: #fff;
-  list-style: none;
-  text-align: center;
-}
-
-.menu ul {
-  margin-top: 5px;
-  display: inline-flex;
-  list-style: none;
-  color: white;
-}
-
-.menu ul li {
-  font-family: "Poppins", sans-serif;
-  font-size: 20px;
-  line-height: 30px;
-  width: 90px;
-  margin: 5px;
-  padding: 8px;
-}
-
-.menu ul li a {
-  text-decoration: none;
-  color: white;
-}
-
-.active,
-.menu ul li:hover {
-  background: #5e8b7e;
-  border-radius: 3px;
-}
-
-.submenu {
-  display: none;
-}
-
-.menu ul li:hover .submenu {
-  display: block;
-  position: absolute;
-
-  background-color: #6d9886;
-  margin-top: 15px;
-  margin-left: 15px;
-}
-
-.menu ul li:hover .submenu ul {
-  display: block;
-  margin: 10px;
-}
-
-.menu ul li:hover .submenu ul li {
-  width: 200px;
-  padding: 10px;
-  border-bottom: 1px solid #f6f6f6;
-
-  background: transparent;
-  border-radius: 0;
-  text-align: left;
-}
-
-.menu ul li:hover .submenu ul li:hover:not(:first-child):not(:nth-child(7)) {
-  width: 200px;
-  padding: 10px;
-  border-bottom: 1px solid #f6f6f6;
-  background-color: #327e5f;
-  border-radius: 0;
-  text-align: left;
-}
-
-.menu ul li:hover .submenu ul li:last-child {
-  border-bottom: none;
-}
-
-.menu ul li:hover .submenu ul li:first-child {
-  border-bottom: none;
-}
-
-.menu ul li:hover .submenu ul li:nth-child(7) {
-  border-bottom: none;
-}
-
-.banner {
-  width: 100%;
-  margin-left: auto;
-  margin-right: auto;
-  margin-bottom: 0px;
-  display: block;
-}
-
-.welcome {
-  width: 100%;
-  left: 0px;
-  margin: 0px;
-  background: #f6f6f6;
-}
-.welcome h1 {
-  text-align: center;
-  font-family: "Poppins", sans-serif;
-  font-weight: 1000;
-  font-size: 50px;
-  margin: 0px;
-  padding-top: 70px;
-  color: #6d9886;
-}
-
-.welcome p {
-  text-align: center;
-  font-family: "Poppins", sans-serif;
-
-  font-style: normal;
-  font-weight: normal;
-  padding: 50px 285px 70px 285px;
-  margin: 0px;
-  color: #212121;
-}
-
-#productsgrid {
-  width: 100%;
-  margin-left: auto;
-  margin-right: auto;
-  margin-bottom: 0px;
-  display: block;
-  margin-top: 0px;
-}
-
-.category {
-  width: 100%;
-  left: 0px;
-  margin: 0px;
-  background: #d9cab3;
-  padding-bottom: 70px;
-}
-
-.category > div {
-  padding-top: 50px;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-evenly;
-  text-align: center;
-}
-
-.category img {
-  max-width: 254px;
-}
-
-.category h1 {
-  text-align: center;
-  font-family: "Poppins", sans-serif;
-  font-weight: 1000;
-  font-size: 50px;
-  margin: 0px;
-  padding-top: 70px;
-  color: #212121;
-}
-
-.category h4 {
-  font-family: "Poppins", sans-serif;
-  font-style: normal;
-  font-weight: semibold;
-  color: #212121;
-}
-
-.fastfact {
-  width: 100%;
-  left: 0px;
-  margin: 0px;
-  background: #6d9886;
-  padding-bottom: 70px;
-}
-
-.fastfact h1 {
-  text-align: center;
-  font-family: "Poppins", sans-serif;
-  font-weight: 1000;
-  font-size: 90px;
-  margin: 0px;
-  padding-top: 70px;
-  color: white;
-}
-
-.fastfact p {
-  text-align: center;
-  font-family: "Poppins", sans-serif;
-  font-size: 50px;
-  font-style: normal;
-  font-weight: normal;
-  padding: 50px 285px 70px 285px;
-  margin: 0px;
-  color: #fff;
-}
-
-.tips {
-  background: #f6f6f6;
-  margin-left: auto;
-  margin-right: auto;
-  padding: 5px;
-  width: 40%;
-  border-style: solid #f6f6f6;
-  border-width: 5px;
-  border-radius: 10px;
-}
-
-#tipsbtn {
-  background-color: #f6f6f6;
-  margin: 5px;
-  padding: 5px;
-  text-align: center;
-  font-family: "Poppins", sans-serif;
-  font-size: 20px;
-  font-weight: 600;
-  color: #6d9886;
-}
-
-.featuredp {
-  width: 100%;
-  left: 0px;
-  margin: 0px;
-  background: #bdd2b6;
-  padding-bottom: 70px;
-}
-
-.featuredp h1 {
-  text-align: center;
-  font-family: "Poppins", sans-serif;
-  font-weight: 1000;
-  font-size: 50px;
-  margin: 0px;
-  padding-top: 70px;
-  color: #212121;
-}
-
-.featuredp > div {
-  padding-top: 20px;
-  padding-left: 103px;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-evenly;
-  text-align: center;
-  margin-bottom: 20px;
-}
-
-.featuredp img {
-  max-height: 230px;
-}
-
-.featuredp p {
-  font-size: 20px;
-  padding-left: 5px;
-  max-width: 250px;
-  padding-top: 10px;
-}
-
-.featuredp .price {
-  color: #327559;
-}
-
-.featuredp h4 {
-  padding-top: 50px;
-  padding-right: 90px;
-  text-align: left;
-  font-family: "Poppins", sans-serif;
-  font-style: normal;
-  font-weight: semibold;
-  color: #212121;
-}
-
-.viewall {
-  font-weight: 600;
-  width: 100%;
-  left: 0px;
-  margin: 0px;
-  background: #bdd2b6;
-  padding-bottom: 70px;
-}
-
-.viewallbtn {
-  background: #a7c4bc;
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: 0px;
-  width: 100px;
-  padding-right: 80px;
-  padding-bottom: 10px;
-  border-width: 5px;
-  border-radius: 10px;
-  background-color: #a7c4bc;
-  text-align: center;
-  font-family: "Poppins", sans-serif;
-  font-size: 20px;
-  color: #2f5d62;
-  padding-top: 10px;
-  padding-left: 80px;
-  padding-bottom: 10px;
-  box-shadow: 0px 4px 4px;
-}
-
-.reviews {
-  width: 100%;
-  left: 0px;
-  margin: 0px;
-  background: #dfeeea;
-  padding-bottom: 70px;
-}
-
-.reviews h1 {
-  text-align: center;
-  font-family: "Poppins", sans-serif;
-  font-weight: 1000;
-  font-size: 50px;
-  margin: 0px;
-  padding-top: 70px;
-  color: #212121;
-}
-
-.reviews img {
-  padding-top: 50px;
-  width: 85%;
-  margin-left: auto;
-  margin-right: auto;
-  margin-bottom: 0px;
-  display: block;
-}
-
-.footer {
-  width: 100%;
-  background: black;
-  padding: 10px 0px 5px 0px;
-}
-
-.container {
-  width: 100%;
-  margin: auto;
-}
-
-.footer .row {
-  display: flex;
-  flex-wrap: wrap;
-}
-
-.footer-col {
-  padding: 0 55px;
-}
-
-.footer-col h4 {
-  font-size: 25px;
-  color: white;
-  margin-bottom: 10px;
-  margin-top: 20px;
-  position: relative;
-}
-
-footer ul {
-  list-style: none;
-}
-
-.footer-col ul li a {
-  margin-bottom: 5px;
-  font-size: 16px;
-  font-weight: 300;
-  color: white;
-  text-decoration: none;
-  display: block;
-}
-
-.footer-col .social-links a {
-  height: 40px;
-  width: 40px;
-}
-
-.footer-col #logo {
-  max-width: 200px;
-}
-
-.footer-col .socm {
-  max-width: 45px;
-  margin-top: 5px;
-}
-.footer-col .devpics {
-  max-width: 100px;
-  margin-top: 5px;
-}
-
-.container-btm {
-  color: white;
-  text-align: center;
-  padding-top: 60px;
-}
-
-
-</style>
-
+    <link rel="stylesheet" href="style.css" />
     <link
       href="https://fonts.googleapis.com/css2?family=Poppins&display=swap"
       rel="stylesheet"
     />
   </head>
   <body>
+    <!--This part is for the Navigation bar/ Menu-->
     <div class="menu">
       <ul>
         <li class="active"><a href="home.html">Home</a></li>
         <li>
           <a href="#">Products</a>
+          <!--This part is for the dropdown menu/ Submenu for "Products" in the navbar-->
           <div class="submenu">
             <ul>
               <li class="menu-category">
-                <a href="#"><b>Browse by category</b></a>
+                <b>Browse by category</b>
               </li>
               <li><a href="#">Hair Care</a></li>
               <li><a href="#">Skin Care</a></li>
@@ -456,8 +40,11 @@ footer ul {
       </ul>
     </div>
 
-    <img id="home" class="banner" src="https://drive.google.com/uc?id=1h-CsCLhDYtjJ3DQkpqDZuq0PbDL5jZOl" />
 
+    <!--This part is for the Ecobar banner (The very front of the homepage)-->    
+    <img id="home" class="banner" src="Pictures\ecobar banner.jpg" />
+
+    <!--For the Welcome Section-->
     <div class="welcome">
       <h1>Welcome to Ecobar PH!</h1>
       <p>
@@ -470,140 +57,199 @@ footer ul {
         convenient to use for traveling and outdoor activities.
       </p>
     </div>
-    <img id="productsgrid" src="https://drive.google.com/uc?id=1LxHf8J9W9jLzxSy3pKIxZqghTjlnFPb1" />
 
+    <!--Sample Ecobar product photos-->
+    <div class="prodpics">
+        <div class="prodpicsctr">
+          <img src="Pictures\prod1.png">
+          <img src="Pictures\prod2.png">
+          <img src="Pictures\prod3.png">
+          <img src="Pictures\prod4.png">
+          <img src="Pictures\prod5.png">
+        </div>
+    </div>
+
+    <!--For the "Category" of products section-->
     <div class="category" id="ftrcategory">
       <h1>Browse products by category</h1>
       <div>
         <h4>
-          <img class="imgs" src="https://drive.google.com/uc?id=1WDz7HIeSaW4-BA7VjDSfKyiIySNDgs5Q" />
+          <div class="hcare">
+            <div class="hcarehov"></div>
+          </div>
           <p>Hair care</p>
         </h4>
         <h4>
-          <img class="imgs" src="https://drive.google.com/uc?id=1mlxFMIETWoOgU4HfwUzPJlPeWlczq_hc" />
+          <div class="scare">
+            <div class="scarehov"></div>
+          </div>
           <p>Skin care</p>
         </h4>
         <h4>
-          <img class="imgs" src="https://drive.google.com/uc?id=1fkuV67CTpWLdlTzSaeESeuzD2j3yy4_e" />
+          <a href="#0">
+            <div class="bcare">
+              <div class="bcarehov"></div>
+            </div>
+          </a>
           <p>Bath and Body Care</p>
         </h4>
         <h4>
-          <img class="imgs" src="https://drive.google.com/uc?id=1W2_AzfItOhNNXh_3feq5tDqG7rRIp2ci" />
+          <a href="#0">
+            <div class="icare">
+              <div class="icarehov"></div>
+            </div>
+          </a>
           <p>Intimate care</p>
         </h4>
         <h4>
-          <img class="imgs" src="https://drive.google.com/uc?id=1O3XGyBxM3xtzjAgVhSwvm2yOWesQc84A" />
+          <a href="#0">
+            <div class="ocare">
+              <div class="ocarehov"></div>
+            </div>
+          </a>
           <p>Oral care</p>
         </h4>
       </div>
     </div>
 
+    <!--Quick Trivia/ Fast fact section-->
     <div class="fastfact">
       <h1>FAST FACT:</h1>
       <p>
         Philippines is the third world plastic polluter of oceans after China
         and Indonesia (Philstar, 2017).
       </p>
+      <!--Connects to "tips.html"-->
       <div class="tips">
+        <a href="tips.html">
         <p id="tipsbtn">
           Read valuable tips on how to reduce plastic pollution
         </p>
+      </a>
       </div>
     </div>
 
+    <!--Featured Products section-->
     <div class="featuredp">
       <h1>Featured products</h1>
       <div>
         <h4>
-          <img src="https://drive.google.com/uc?id=1pNNnD-WvCOHWXD-PfE6-HaJyUvxiSM-_" />
+          <a href="#0">
+            <div class="acneb">
+              <div class="acnebhov"></div>
+            </div>
           <p>Ecobar PH eco+biome Acne Control Prebiotic Facebar</p>
           <p class="price">₱120.00</p>
+          </a>
         </h4>
         <h4>
-          <img src="https://drive.google.com/uc?id=1ugSi4h-ylI9RQKzmud0dAp2FdkGJqslL" />
-          <p>Ecobar PH Gentle Bath Bar</p>
-          <p class="price">₱190.00</p>
+          <a href="#0">
+            <div class="gentleb">
+              <div class="gentlebhov"></div>
+            </div>
+            <p>Ecobar PH Gentle Bath Bar</p>
+            <p class="price">₱190.00</p>
+          </a>
         </h4>
         <h4>
-          <img src="https://drive.google.com/uc?id=1uC5ggh1C9YAxOF_boQx8A2fKeI1QOo3i" />
-          <p>Ecobar PH Thickening Shampoo Bar</p>
-          <p class="price">₱105.00</p>
+          <a href="#0">
+            <div class="thickb">
+              <div class="thickbhov"></div>
+            </div>
+            <p>Ecobar PH Thickening Shampoo Bar</p>
+            <p class="price">₱105.00</p>
+          </a>
         </h4>
         <h4>
-          <img src="https://drive.google.com/uc?id=1dfFRRGvyUdBaNNZ2tJduK3kkYYtb7BQI" />
-          <p>Ecobar PH Color Preserve Shampoo Bar</p>
-          <p class="price">₱105.00</p>
+          <a href="#0">
+            <div class="colorb">
+              <div class="colorbhov"></div>
+            </div>
+            
+            <p>Ecobar PH Color Preserve Shampoo Bar</p>
+            <p class="price">₱105.00</p>
+          </a>
         </h4>
         <h4>
-          <img src="https://drive.google.com/uc?id=15luTmwylQDqAtypjrNGaMf8ygY3MWuT_" />
-          <p>Ecobar PH eco+biome Prebiotic Feminine Bar 40g</p>
-          <p class="price">₱140.00</p>
+          <a href="#0">
+            <div class="femb">
+              <div class="fembhov"></div>
+            </div>
+            <p>Ecobar PH eco+biome Prebiotic Feminine Bar 40g</p>
+            <p class="price">₱140.00</p>
+          </a>
         <h4>
-            <img src="https://drive.google.com/uc?id=1v3tYa0PTJKi1lKDGRZPd9OO9qam5UXq6" />
-            <p>Ecobar PH Moisture Retention Gentle Face Bar</p>
-            <p class="price">₱115.00</p>
+          <a href="#0">
+            <div class="moistb">
+              <div class="moistbhov"></div>
+            </div>
+              <p>Ecobar PH Moisture Retention Gentle Face Bar</p>
+              <p class="price">₱115.00</p>
+          </a>
         </h4>
       </div>
-
     </div>
 
-
+    <!--View all button section. Will connect to "View all products" html -->
     <div class="viewall">
-      <div class="viewallbtn">
-        <p id="viewalltxt">View all</p>
-      </div>
+      <a href="#0">
+        <div class="viewallbtn">
+          <p id="viewalltxt">View all</p>
+        </div>
+      </a>
     </div>
     
+    <!--Reviews section of the page-->
     <div class="reviews">
       <h1>What our customers say</h1>
-     
-      <img src="https://drive.google.com/uc?id=1uxTSCz1mh9wLw4ZlUaYXfVbWdE10mRAx" />
-
+      <img src="Pictures\reviews.png" />
     </div>
 
+    <!--Footer section of the page composed of two subsections (container and containerbtm)-->
     <div class="footer">
+
+      <!--"Container section"-->
       <div class="container">
         <div class="row">
           <div class="footer-col">
-                <h4>
-                  <img id="logo" src="https://drive.google.com/uc?id=1sWO_w1Wnyy5QeB3mciMseXUj_OG7spW9" /></li>
-                </h4>
+              <h4>
+                <img id="logo" src="Pictures\ecobarlogo.png" />
+              </h4>
           </div>
           <div class="footer-col">
                 <h4>MENU</h4>
                 <ul>
-                  <li><a href="#top">Home</a></li>
-                  <li><a href="#ftrcategory">Products</a></li>
-                  <li><a href="#">Shops</a></li>
-                  <li><a href="#">About Us</a></li>
+                  <li><a class="ftrlnk" href="#top">Home</a></li>
+                  <li><a class="ftrlnk" href="#ftrcategory">Products</a></li>
+                  <li><a class="ftrlnk" href="#0">Shops</a></li>
+                  <li><a class="ftrlnk" href="#0">About Us</a></li>
                 </ul>
           </div>
           <div class="footer-col">
             <h4>CONTACT</h4>
-            <ul>
-              <li><a href="mailto: ecobarph@gmail.com">E-MAIL: ecobarph@gmail.com</a></li>
-              <li><a>ON SOCIAL MEDIA:</a></li>
-            </ul>
-              <div class="social-links">
-              <a target="_blank" href="https://www.facebook.com/ecobarph/"><img class="socm" src="https://drive.google.com/uc?id=1xe21wMGVtSrjWk90B8t_EEKYsEp0Q_2L"></a>
-              <a target="_blank" href="https://www.instagram.com/ecobarph/"><img class="socm" src="https://drive.google.com/uc?id=1Y5-jxi5eANabbPNU3Z4p6f2fRwUnrpEe"></a>
-            </div>
-            
+              <ul>
+                <li><a class="ftrlnk" href="mailto: ecobarph@gmail.com">E-MAIL: ecobarph@gmail.com</a></li>
+                <li><a>ON SOCIAL MEDIA:</a></li>
+              </ul>
+                <div class="social-links">
+                  <a target="_blank" href="https://www.facebook.com/ecobarph/" class="fblogo"></a>
+                  <a target="_blank" href="https://www.instagram.com/ecobarph/" class="instalogo"></a>
+                </div>
           </div>
           <div class="footer-col">
             <h4>DEVELOPERS</h4>
               <div class="devpics">
-              <a><img class="devpics" src="https://drive.google.com/uc?id=1ke2RjW1kzWOBteknLIj1trRx77euqlRE"></a>
-              <a><img class="devpics" src="https://drive.google.com/uc?id=1d3Vjc_kFLZCwPZmHjDJsYPA5NbBE5Vs2"></a>
-              <a><img class="devpics" src="https://drive.google.com/uc?id=1SXo84BOeitgJD9m6M8MX3wcykoDwwgLC"></a>
-            </div>
+                <a><img class="devpics" src="Pictures\palenlogo.png"></a>
+                <a><img class="devpics" src="Pictures\pereyralogo.png"></a>
+                <a><img class="devpics" src="Pictures\plantalogo.png"></a>
+              </div>
           </div>
-
         </div>
       </div>
+
+      <!--container-btm section-->
       <div class="container-btm"> 
         <p>© 2021 Group 9</p>
-
       </div>
 
     </div>
