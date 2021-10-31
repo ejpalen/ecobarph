@@ -83,7 +83,6 @@ p {
   transition: all 0.2s ease-in-out;
   display: block;
   position: absolute;
-
   background-color: #6d9886;
   margin-top: 15px;
   margin-left: -8px;
@@ -371,7 +370,7 @@ p {
   width: 100%;
   left: 0px;
   margin: 0px;
-  background: #bdd2b6;
+  background: #f6f6f6;
   padding-bottom: 70px;
 }
 
@@ -401,15 +400,15 @@ p {
 }
 
 .featuredp img:hover {
-  border-radius: 8px;
+  border-radius: 5px;
   transform: scale(1.1, 1.1);
   transition: 0.3s ease;
 }
 
 .featuredp h4:hover {
-  background-color: #b5ceac;
+  background-color: #edf5ed;
   box-shadow: 0px 0px 3px #295b46;
-  border-radius: 10px;
+  border-radius: 5px;
   text-decoration: underline;
 }
 
@@ -441,7 +440,8 @@ p {
 .colorb,
 .femb,
 .moistb {
-  border-radius: 10px;
+  border-radius: 5px;
+  box-shadow: 0px 0px 1px 1.5px #d3e3d3;
   overflow: hidden;
   height: 295px;
 }
@@ -454,7 +454,7 @@ p {
 .moistbhov {
   height: 300px;
   width: 300px;
-  border-radius: 10px;
+  border-radius: 5px;
   position: relative;
   margin-bottom: 10px;
   background-position: center;
@@ -469,7 +469,6 @@ p {
 
 .acnebhov:hover {
   background-image: url("./Pictures/acnehover.png");
-  border-radius: 10px;
   transition: all 0.3s ease-in-out;
 }
 
@@ -479,7 +478,6 @@ p {
 
 .gentlebhov:hover {
   background-image: url("./Pictures/gentlebarhover.png");
-  border-radius: 10px;
   transition: all 0.3s ease-in-out;
 }
 
@@ -489,7 +487,6 @@ p {
 
 .thickbhov:hover {
   background-image: url("./Pictures/thickbarhover.png");
-  border-radius: 10px;
   transition: all 0.3s ease-in-out;
 }
 
@@ -499,7 +496,6 @@ p {
 
 .colorbhov:hover {
   background-image: url("./Pictures/colorpbarhover.png");
-  border-radius: 10px;
   transition: all 0.3s ease-in-out;
 }
 
@@ -509,7 +505,6 @@ p {
 
 .fembhov:hover {
   background-image: url("./Pictures/fembarhover.png");
-  border-radius: 10px;
   transition: all 0.3s ease-in-out;
 }
 
@@ -519,7 +514,6 @@ p {
 
 .moistbhov:hover {
   background-image: url("./Pictures/moisturehover.png");
-  border-radius: 10px;
   transition: all 0.3s ease-in-out;
 }
 
@@ -530,45 +524,55 @@ p {
   width: 100%;
   left: 0px;
   margin: 0px;
-  background: #bdd2b6;
+  background: #f6f6f6;
   padding-bottom: 70px;
 }
 
 .viewallbtn {
   transition: all 0.3s ease-in-out;
-  background: #a7c4bc;
+  background: #f6f6f6;
   margin-left: auto;
   margin-right: auto;
   margin-top: 0px;
   width: 100px;
   padding-right: 80px;
   padding-bottom: 10px;
-  border-width: 5px;
-  border-radius: 10px;
-  background-color: #a7c4bc;
+  border-radius: 5px;
+  background-color: #f6f6f6;
   text-align: center;
   font-size: 20px;
   color: #295b46;
+  border-color: #6d9886;
   padding-top: 10px;
   padding-left: 80px;
   padding-bottom: 10px;
-  box-shadow: 0px 4px 4px;
+  box-shadow: 0px 0px 0px 4px #6d9886;
 }
 
 .viewallbtn:hover {
-  color: #212121;
-  box-shadow: 0px 4px 10px;
+  color: #295b46;
+  box-shadow: 0px 0px 0px 4px;
   transition: 0.3s ease;
   transform: scale(1.1, 1.1);
+  background-color: #d3e3d3;
 }
 
 /*For reviews section*/
+.border {
+  width: 60%;
+  color: #6d9886;
+  margin-left: auto;
+  margin-right: auto;
+  border-top-style: solid;
+  border-width: 2px;
+}
 .reviews {
   width: 100%;
   left: 0px;
   margin: 0px;
-  background: #dfeeea;
+  background: #f6f6f6;
   padding-bottom: 70px;
+  padding-top: 30px;
 }
 
 .reviews h1 {
@@ -710,7 +714,7 @@ footer ul {
   background-image: url("./Pictures/tipsbanner.png");
   background-size: cover;
   background-attachment: fixed;
-  height: 650px;
+  height: 700px;
 }
 
 /*For the second banner*/
@@ -722,14 +726,14 @@ footer ul {
   background-image: url("./Pictures/tipsbanner2.png");
   background-size: cover;
   background-attachment: fixed;
-  height: 650px;
+  height: 700px;
 }
 
 .tip1 {
   width: 100%;
   left: 0px;
   margin: 0px;
-  background: #f6f6f6;
+  background: #e3f2fd;
 }
 
 .tip1 h1 {
@@ -741,8 +745,15 @@ footer ul {
 
 .tquotes {
   width: 100%;
+  background-color: #bbdefb;
 }
 
 .tquotes img {
   width: 100%;
+}
+
+.tip2 {
+  text-align: center;
+  padding: 100px 200px;
+  background: #e3f2fd;
 }
