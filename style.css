@@ -354,8 +354,9 @@ p {
 
 /*For featured products*/
 .featuredp {
-  width: 100%;
+  width: 90%;
   padding-bottom: 20px;
+  margin: 0px auto;
 }
 
 .featuredp h1 {
