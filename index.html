@@ -9,6 +9,12 @@
       href="https://fonts.googleapis.com/css2?family=Poppins&display=swap"
       rel="stylesheet"
     />
+    <script
+    src="https://code.jquery.com/jquery-3.1.1.js"
+    integrity="sha256-16cdPddA6VdVInumRGo6IbivbERE8p7CQR3HzTBuELA="
+    crossorigin="anonymous"
+  ></script>
+  <script src="main.js"></script>
   </head>
   <body>
     <!--This part is for the Navigation bar/ Menu-->
@@ -48,28 +54,18 @@
 
     <!--For the Welcome Section-->
     <div class="welcome">
-      <h1>Welcome to Ecobar PH!</h1>
-      <p>
-        Ecobar PH’s line of functional bars does not have strong and irritating
-        ingredients that can strip natural oils and moisture from the scalp and
-        hair. Ecobar PH omitted sulfates, silicones, and synthetic dyes, which
-        can cause irritation and build-up then replaced with milder and safer
-        ingredients suitable for sensitive scalp and hair. These solid bars can
-        outlast liquid counterpart, does not require plastic packaging, and is
-        convenient to use for traveling and outdoor activities.
-      </p>
+       <h1>Welcome to <font style="color: #327559;">Ecobar PH!</font></h1>
+        <p>
+          Ecobar PH’s line of functional bars does not have strong and irritating
+          ingredients that can strip natural oils and moisture from the scalp and
+          hair. Ecobar PH omitted sulfates, silicones, and synthetic dyes, which
+          can cause irritation and build-up then replaced with milder and safer
+          ingredients suitable for sensitive scalp and hair. These solid bars can
+          outlast liquid counterpart, does not require plastic packaging, and is
+          convenient to use for traveling and outdoor activities.
+        </p>
     </div>
 
-    <!--Sample Ecobar product photos-->
-    <div class="prodpics">
-        <div class="prodpicsctr">
-          <img src="Pictures\prod1.png" alt="Product image 1- Product bars 1">
-          <img src="Pictures\prod2.png" alt="Product image 2">
-          <img src="Pictures\prod3.png" alt="Product image 3- Product with LED Lights">
-          <img src="Pictures\prod4.png" alt="Product image 4-  Products in a hammock">
-          <img src="Pictures\prod5.png" alt="Product image 5- Product bars 2">
-        </div>
-    </div>
 
     <!--For the "Category" of products section-->
     <div class="category" id="ftrcategory">
@@ -114,22 +110,6 @@
       </div>
     </div>
 
-    <!--Quick Trivia/ Fast fact section-->
-    <div class="fastfact">
-      <h1>FAST FACT:</h1>
-      <p>
-        Philippines is the <font style="color: #D90003;">third world plastic polluter of oceans</font> after China
-        and Indonesia (Philstar, 2017).
-      </p>
-      <!--Connects to "tips.html", di po muna ilalagay saka na-->
-      <div class="tips">
-        <a href="tips.html">
-        <p id="tipsbtn">
-          Read valuable tips on how to reduce plastic pollution
-        </p>
-      </a>
-      </div>
-    </div>
 
     <!--Featured Products section-->
     <div class="featuredp">
@@ -202,11 +182,64 @@
     </div>
     
     <!--Reviews section of the page-->
-    <div class="reviews">
-      <div class="border"><p></p></div>
+    <div class="border"><p></p></div>
+    <div class="revtitle">
       <h1>What our customers say</h1>
-      <img src="Pictures\reviews.png" alt="Reviews"/>
+    </div>  
+
+    <div class="reviews">
+    <div class="slider">
+      <div class="slides">
+        <!--radio buttons start-->
+        <input type="radio" name="radio-btn" id="radio1">
+        <input type="radio" name="radio-btn" id="radio2">
+        <input type="radio" name="radio-btn" id="radio3">
+        <input type="radio" name="radio-btn" id="radio4">
+        <!--radio buttons end-->
+        <!--slide images start-->
+        <div class="slide first">
+          <img src="Pictures/r1.png" alt="">
+        </div>
+        <div class="slide">
+          <img src="Pictures/r2.png" alt="">
+        </div>
+        <div class="Pictures/r3.png" alt="">
+        </div>
+        <!--slide images end-->
+        <!--automatic navigation start-->
+        <div class="navigation-auto">
+          <div class="auto-btn1"></div>
+          <div class="auto-btn2"></div>
+          <div class="auto-btn3"></div>
+        </div>
+        <!--automatic navigation end-->
+      </div>
+      <!--manual navigation start-->
+      <div class="navigation-manual">
+        <label for="radio1" class="manual-btn"></label>
+        <label for="radio2" class="manual-btn"></label>
+        <label for="radio3" class="manual-btn"></label>
+      </div>
+      <!--manual navigation end-->
     </div>
+  </div>
+
+ <!--Quick Trivia/ Fast fact section-->
+ <div class="fastfact">
+  <h1>FAST FACT:</h1>
+  <p>
+    Philippines is the <font style="color: #D90003;">third world plastic polluter of oceans</font> after China
+    and Indonesia (Philstar, 2017).
+  </p>
+  <!--Connects to "tips.html", di po muna ilalagay saka na-->
+  <div class="tips">
+    <a href="tips.html">
+    <p id="tipsbtn">
+      Read valuable tips on how to reduce plastic pollution
+    </p>
+  </a>
+  </div>
+</div>
 
     <!--Footer section of the page composed of two subsections (container and containerbtm)-->
     <div class="footer">
@@ -256,6 +289,19 @@
       </div>
 
     </div>
+
+
+
+    <script type="text/javascript">
+      var counter = 1;
+      setInterval(function(){
+        document.getElementById('radio' + counter).checked = true;
+        counter++;
+        if(counter > 3){
+          counter = 1;
+        }
+      }, 5000);
+      </script>
 
   </body>
 </html>
