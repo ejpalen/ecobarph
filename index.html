@@ -4,17 +4,31 @@
     <meta charset="utf-8">
     <link rel="icon" href="Pictures/favicon.png" type="image/x-icon">
     <title>Ecobar</title>
+
+    <!--Style-->
     <link rel="stylesheet" href="style.css" />
+    <!--Poppins font-->
     <link
       href="https://fonts.googleapis.com/css2?family=Poppins&display=swap"
       rel="stylesheet"
     />
-    <script
-    src="https://code.jquery.com/jquery-3.1.1.js"
-    integrity="sha256-16cdPddA6VdVInumRGo6IbivbERE8p7CQR3HzTBuELA="
-    crossorigin="anonymous"
+   <!--Slick Slider-->
+    <link
+    rel="stylesheet"
+    type="text/css"
+    href="https://cdn.jsdelivr.net/jquery.slick/1.6.0/slick.css"
+  />
+  <link
+    rel="stylesheet"
+    type="text/css"
+    href="https://cdn.jsdelivr.net/jquery.slick/1.6.0/slick-theme.css"
+  />
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  <script
+    type="text/javascript"
+    src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"
   ></script>
-  <script src="main.js"></script>
+
   </head>
   <body>
     <!--This part is for the Navigation bar/ Menu-->
@@ -186,45 +200,21 @@
     <div class="revtitle">
       <h1>What our customers say</h1>
     </div>  
-
-    <div class="reviews">
-    <div class="slider">
-      <div class="slides">
-        <!--radio buttons start-->
-        <input type="radio" name="radio-btn" id="radio1">
-        <input type="radio" name="radio-btn" id="radio2">
-        <input type="radio" name="radio-btn" id="radio3">
-        <input type="radio" name="radio-btn" id="radio4">
-        <!--radio buttons end-->
-        <!--slide images start-->
-        <div class="slide first">
-          <img src="Pictures/r1.png" alt="">
-        </div>
-        <div class="slide">
-          <img src="Pictures/r2.png" alt="">
-        </div>
-         <div class="slide">
-          <img src="Pictures/r3.png" alt="">
-        </div>
-        <!--slide images end-->
-        <!--automatic navigation start-->
-        <div class="navigation-auto">
-          <div class="auto-btn1"></div>
-          <div class="auto-btn2"></div>
-          <div class="auto-btn3"></div>
-        </div>
-        <!--automatic navigation end-->
-      </div>
-      <!--manual navigation start-->
-      <div class="navigation-manual">
-        <label for="radio1" class="manual-btn"></label>
-        <label for="radio2" class="manual-btn"></label>
-        <label for="radio3" class="manual-btn"></label>
-      </div>
-      <!--manual navigation end-->
+    <div id="reviews">
+      <ul id="slider">
+        <li class="slide-item">
+          <img src="Pictures/r1.png" />
+        </li>
+        <li class="slide-item">
+          <img src="Pictures/r2.png" />
+        </li>
+        <li class="slide-item">
+          <img src="Pictures/r3.png" />
+        </li>
+      </ul>
     </div>
-  </div>
 
+    
  <!--Quick Trivia/ Fast fact section-->
  <div class="fastfact">
   <h1>FAST FACT:</h1>
@@ -292,17 +282,20 @@
     </div>
 
 
-
-    <script type="text/javascript">
-      var counter = 1;
-      setInterval(function(){
-        document.getElementById('radio' + counter).checked = true;
-        counter++;
-        if(counter > 3){
-          counter = 1;
-        }
-      }, 5000);
-      </script>
+    <script>
+      $(function () {
+        $("#slider").slick({
+          slidesToShow: 1,
+          slidesToScroll: 1,
+          speed: 1000,
+          dots: true,
+          autoplay: true,
+          autoplaySpeed: 3500,
+          prevArrow: '<button class="slide-arrow prev-arrow"></button>',
+          nextArrow: '<button class="slide-arrow next-arrow"></button>',
+        });
+      });
+    </script>
 
   </body>
 </html>
