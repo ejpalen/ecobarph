@@ -1,0 +1,345 @@
+* {
+  padding: 0;
+  margin: 0;
+  color: #3c4043;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  width: 100%;
+  background: #e3f2fd;
+}
+
+/*For Menu/Navbar*/
+.menu {
+  margin-right: 0px;
+  margin-left: 0px;
+  height: 69px;
+  background: #e3f2fd;
+  list-style: none;
+  text-align: center;
+}
+
+.menu ul {
+  margin-top: 5px;
+  display: inline-flex;
+  list-style: none;
+}
+
+.menu ul li {
+  transition: all 0.3s ease-in-out;
+  font-size: 20px;
+  line-height: 30px;
+  width: 90px;
+  margin: 5px;
+  padding: 8px;
+}
+
+.menu ul li a {
+  text-decoration: none;
+}
+
+.viewall a {
+  text-decoration: none;
+}
+
+.active,
+.menu ul li:hover {
+  transition: all 0.3s ease-in-out;
+  background: #eae4df;
+  border-radius: 3px;
+}
+
+.submenu {
+  transition: all 0.2s ease-in-out;
+  display: none;
+}
+
+.menu ul li:hover .submenu {
+  transition: all 0.2s ease-in-out;
+  display: block;
+  position: absolute;
+  background-color: #eae4df;
+  margin-top: 15px;
+  margin-left: -8px;
+}
+
+.menu ul li:hover .submenu ul {
+  transition: all 0.1s ease-in-out;
+  display: block;
+  margin: 10px;
+}
+
+.menu ul li:hover .submenu ul li {
+  width: 200px;
+  padding: 10px;
+  border-bottom: 1px solid #3c4043;
+  background: transparent;
+  border-radius: 0;
+  text-align: left;
+}
+
+.menu ul li:hover .submenu ul li:hover:not(:first-child):not(:nth-child(7)) {
+  width: 200px;
+  padding: 10px;
+  background-color: #dedbde;
+  border-radius: 0;
+  text-align: left;
+}
+
+.menu ul li:hover .submenu ul li:last-child {
+  border-bottom: none;
+}
+
+.menu ul li:hover .submenu ul li:first-child {
+  border-bottom: none;
+}
+
+.menu ul li:hover .submenu ul li:nth-child(7):hover {
+  border-bottom: none;
+}
+
+.menu ul li:hover .submenu ul li:nth-child(7) {
+  border-bottom: none;
+}
+
+/*For the footer section*/
+.footer {
+  width: 100%;
+  background: #f6f6f6;
+  padding: 10px 0px 5px 0px;
+}
+
+.container {
+  width: 100%;
+  margin: auto;
+}
+
+.footer .row {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.footer-col {
+  padding: 0px 20px;
+  margin: 0px 0px 0 55px;
+}
+
+.footer-col h4 {
+  padding-left: 10px;
+  font-size: 25px;
+  margin-bottom: 10px;
+  margin-top: 20px;
+  position: relative;
+}
+
+footer ul {
+  list-style: none;
+}
+
+.footer-col ul li::marker {
+  color: #f6f6f6;
+  font-size: 1.5em;
+}
+
+.footer-col ul li a {
+  padding-left: 10px;
+  padding-right: 10px;
+  margin-bottom: 5px;
+  font-size: 16px;
+  font-weight: 300;
+  text-decoration: none;
+  display: block;
+}
+
+.footer-col ul li .ftrlnk:hover {
+  background: #c8ead9;
+  border-radius: 3px;
+}
+
+.footer-col .social-links a {
+  height: 40px;
+  width: 40px;
+  display: inline-block;
+}
+
+.footer-col #logo {
+  max-width: 200px;
+}
+
+.footer-col .social-links img {
+  max-width: 45px;
+  margin-top: 5px;
+}
+
+.footer-col .devpics {
+  padding-left: 5px;
+  max-width: 100px;
+  margin-top: 5px;
+}
+
+.container-btm {
+  text-align: center;
+  padding-top: 30px;
+}
+
+.fblogo {
+  margin-left: 10px;
+  width: 44px;
+  height: 44px;
+  background-image: url("./Pictures/fblogo.png");
+  background-size: cover;
+}
+
+.fblogo:hover {
+  cursor: pointer;
+  background-image: url("./Pictures/fbhover1.png");
+  background-size: cover;
+}
+
+.instalogo {
+  width: 44px;
+  height: 44px;
+  background-image: url("./Pictures/instalogo.png");
+  background-size: cover;
+}
+
+.instalogo:hover {
+  cursor: pointer;
+  background-image: url("./Pictures/instahover.png");
+  background-size: cover;
+}
+
+/*Specifies only the .container-btm p element*/
+.container-btm p {
+  font-size: 14px;
+}
+
+.tipsbanner {
+  width: 100%;
+}
+
+.tip1 h1 {
+  text-align: left;
+  font-weight: bolder;
+  font-size: 50px;
+  color: #0d47a1;
+}
+
+.tip1 p {
+  text-align: left;
+}
+
+.tip1 b {
+  font-size: 30px;
+}
+.parallax {
+  background-image: url("./Pictures/tipsbanner.png");
+  background-size: cover;
+  background-attachment: fixed;
+  height: 700px;
+}
+
+/*For the second banner*/
+.tipsbanner2 {
+  width: 100%;
+}
+
+.parallax2 {
+  background-image: url("./Pictures/tipsbanner2.png");
+  background-size: cover;
+  background-attachment: fixed;
+  height: 700px;
+}
+
+.tip1 {
+  width: 90%;
+  margin: 0 auto 30px;
+  background: #e3f2fd;
+}
+
+.tip1 h1 {
+  width: 45%;
+  margin: 30px 0px;
+}
+
+.div1 {
+  height: 5px;
+  background-color: black;
+  width: 90%;
+  margin: 50px auto 30px;
+}
+#quotestxt {
+  width: 90%;
+  margin: 0px auto 20px;
+}
+
+#quotestxt h1 {
+  color: #0d47a1;
+  font-size: 50px;
+}
+
+.tquotes1 {
+  width: 90%;
+  margin: 0px auto;
+  background-color: #bbdefb;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  border-radius: 5px;
+}
+
+.quote1ctr1 {
+  width: 30%;
+  display: flex;
+  align-items: center;
+  text-align: end;
+  font-size: 25px;
+  margin: 10px 10px;
+}
+
+.quote1ctr2 {
+  display: flex;
+  width: 40%;
+  margin: 10px 10px;
+}
+
+.quote1ctr2 img {
+  width: 75%;
+}
+
+.tquotes2 {
+  width: 90%;
+  margin: 30px auto 0px;
+  border-radius: 5px;
+  background-color: #bbdefb;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.quote1ctr3 {
+  width: 30%;
+  display: flex;
+  align-items: center;
+  text-align: start;
+  font-size: 25px;
+  margin: 10px 10px;
+}
+
+.quote1ctr4 {
+  display: flex;
+  width: 30%;
+  margin: 10px 10px;
+}
+
+.quote1ctr4 img {
+  width: 100%;
+}
+
+.tip2 {
+  margin: 80px auto 80px;
+  width: 70%;
+  text-align: center;
+  background: #e3f2fd;
+}
