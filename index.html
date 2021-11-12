@@ -125,10 +125,11 @@
     </div>
 
 
-    <!--Featured Products section-->
-    <div class="featuredp">
-      <h1>Featured products</h1>
-      <div>
+    <div class="featuredph1">
+      <h1>Featured Products</h1>
+    </div>  
+    <div id="reviews1">
+      <ul id="slider1">
         <h4>
           <a href="#0">
             <div class="acneb">
@@ -183,23 +184,24 @@
               <p class="price">₱115.00</p>
           </a>
         </h4>
-      </div>
+      </ul>
     </div>
 
-    <!--View all button section. Will connect to "View all products" html -->
-    <div class="viewall">
-      <a href="#0">
-        <div class="viewallbtn">
-          <p id="viewalltxt">View all</p>
-        </div>
-      </a>
-    </div>
-    
+       <!--View all button section. Will connect to "View all products" html -->
+       <div class="viewall">
+        <a href="#0">
+          <div class="viewallbtn">
+            <p id="viewalltxt">View all</p>
+          </div>
+        </a>
+      </div>
+
     <!--Reviews section of the page-->
-    <div class="border"><p></p></div>
+    
+    <div class="reviewsctr">
     <div class="revtitle">
       <h1>What our customers say</h1>
-    </div>  
+    </div>
     <div id="reviews">
       <ul id="slider">
         <li class="slide-item">
@@ -213,6 +215,7 @@
         </li>
       </ul>
     </div>
+  </div>  
 
     
  <!--Quick Trivia/ Fast fact section-->
@@ -263,6 +266,14 @@
                   <a target="_blank" href="https://www.instagram.com/ecobarph/" class="instalogo"></a>
                 </div>
           </div>
+          <div class="footer-col">
+            <h4>DEVELOPERS</h4>
+              <div class="devpics">
+                <a><img class="devpics" src="Pictures\palenlogo.png" alt="Palen logo"></a>
+                <a><img class="devpics" src="Pictures\pereyralogo.png" alt="Pereyra logo"></a>
+                <a><img class="devpics" src="Pictures\plantalogo.png" alt="Planta logo"></a>
+              </div>
+          </div>
         </div>
       </div>
 
@@ -287,6 +298,20 @@
           nextArrow: '<button class="slide-arrow next-arrow"></button>',
         });
       });
+
+      $(function () {
+        $("#slider1").slick({
+          slidesToShow: 3,
+          slidesToScroll: 1,
+          speed: 1000,
+          dots: true,
+          autoplay: true,
+          autoplaySpeed: 3500,
+          prevArrow: '<button class="slide-arrow1 prev-arrow1"></button>',
+          nextArrow: '<button class="slide-arrow1 next-arrow1"></button>',
+        });
+      });
+
     </script>
 
   </body>
