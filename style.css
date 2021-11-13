@@ -350,9 +350,9 @@ p {
   height: 0;
   margin-top: -95px;
   border-left: 0 solid transparent;
-  border-right: 35px solid #327559;
-  border-top: 30px solid transparent;
-  border-bottom: 30px solid transparent;
+  border-right: 25px solid #3c4043;
+  border-top: 20px solid transparent;
+  border-bottom: 20px solid transparent;
 }
 .next-arrow1 {
   right: -20px;
@@ -360,9 +360,9 @@ p {
   height: 0;
   margin-top: -95px;
   border-right: 0 solid transparent;
-  border-left: 35px solid #327559;
-  border-top: 30px solid transparent;
-  border-bottom: 30px solid transparent;
+  border-left: 25px solid #3c4043;
+  border-top: 20px solid transparent;
+  border-bottom: 20px solid transparent;
 }
 
 .slide-arrow1 {
@@ -506,22 +506,18 @@ p {
   text-align: center;
   font-weight: 1000;
   font-size: 50px;
-  padding-top: 50px;
+  padding: 50px 0px 20px;
 }
 
 .revtitle {
-  background-color: #c1d7df;
   width: 90%;
   margin: 0px auto;
-  border-radius: 5px 5px 0 0;
 }
 
 #reviews {
-  background-color: #c1d7df;
   padding: 20px 0 50px;
   width: 90%;
   margin: 0px auto;
-  border-radius: 5px;
 }
 #slider {
   width: 70%;
@@ -531,7 +527,6 @@ p {
 
 #slider img {
   width: 100%;
-  border-radius: 5px;
 }
 
 #slider li {
@@ -561,9 +556,9 @@ button {
   width: 0;
   height: 0;
   border-left: 0 solid transparent;
-  border-right: 35px solid #327559;
-  border-top: 30px solid transparent;
-  border-bottom: 30px solid transparent;
+  border-right: 25px solid #3c4043;
+  border-top: 20px solid transparent;
+  border-bottom: 20px solid transparent;
 }
 
 .next-arrow {
@@ -571,9 +566,9 @@ button {
   width: 0;
   height: 0;
   border-right: 0 solid transparent;
-  border-left: 35px solid #327559;
-  border-top: 30px solid transparent;
-  border-bottom: 30px solid transparent;
+  border-left: 25px solid #3c4043;
+  border-top: 20px solid transparent;
+  border-bottom: 20px solid transparent;
 }
 
 /*For Fast fact section*/
@@ -698,6 +693,7 @@ footer ul {
 
 .footer-col #logo {
   max-width: 200px;
+  margin-bottom: -27px;
 }
 
 .footer-col .social-links img {
