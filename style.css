@@ -20,6 +20,7 @@ body {
 
 /*Specifies all text element*/
 h1,
+h2,
 h4,
 a,
 p,
@@ -29,7 +30,7 @@ li {
 
 /*Specifies all p element*/
 p {
-  font-size: 20px;
+  font-size: 18px;
 }
 
 /*For Menu/Navbar*/
@@ -50,7 +51,7 @@ p {
 
 .menu ul li {
   transition: all 0.3s ease-in-out;
-  font-size: 20px;
+  font-size: 18px;
   line-height: 30px;
   width: 90px;
   margin: 5px;
@@ -158,7 +159,7 @@ p {
   left: 0px;
   background: #f6f9fe;
   border-radius: 5px;
-  box-shadow: 0px 0px 0px 1px #eae4df;
+  box-shadow: 0px 0px 0px 0.5px #eae4df;
   padding: 40px;
 }
 
@@ -176,7 +177,7 @@ p {
 
 /*For category section*/
 .category {
-  margin: 0pc auto;
+  margin: 30px auto 0px;
   width: 100%;
   padding-bottom: 70px;
 }
@@ -196,28 +197,27 @@ p {
 .category h1 {
   text-align: center;
   font-weight: 1000;
-  font-size: 50px;
+  font-size: 35px;
   margin: 0px;
   padding-top: 40px;
 }
 
 .category h4 {
   font-weight: semibold;
-  padding-bottom: 10px;
-  background-color: #e8f2ed;
   border-radius: 5px 5px 5px 5px;
   margin-bottom: 20px;
   margin-left: 12px;
   margin-right: 12px;
 }
 
-.category h4:hover {
-  text-decoration: underline;
+.category h4 a {
+  text-decoration: none;
 }
 
 .category p {
   padding-top: 10px;
   font-weight: 500;
+  color: white;
 }
 
 .hcare,
@@ -225,10 +225,10 @@ p {
 .bcare,
 .icare,
 .ocare {
-  border-radius: 5px 5px 0px 0px;
+  border-radius: 5px;
   overflow: hidden;
-  width: 220px;
-  height: 220px;
+  width: 240px;
+  height: 280px;
 }
 
 .hcarehov,
@@ -236,9 +236,9 @@ p {
 .bcarehov,
 .icarehov,
 .ocarehov {
-  border-radius: 5px 5px 0px 0px;
-  width: 220px;
-  height: 220px;
+  border-radius: 5px;
+  width: 240px;
+  height: 280px;
   position: relative;
   text-align: center;
   cursor: pointer;
@@ -247,26 +247,29 @@ p {
   background-size: cover;
   overflow: hidden;
   transition: all 0.3s ease-in-out;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .hcarehov {
-  background-image: url("./Pictures/hair.jpg");
+  background-image: url("./Pictures/hcare.png");
 }
 
 .scarehov {
-  background-image: url("./Pictures/face.jpg");
+  background-image: url("./Pictures/fcare.png");
 }
 
 .bcarehov {
-  background-image: url("./Pictures/body.jpg");
+  background-image: url("./Pictures/bcare.png");
 }
 
 .icarehov {
-  background-image: url("./Pictures/int.jpg");
+  background-image: url("./Pictures/icare.png");
 }
 
 .ocarehov {
-  background-image: url("./Pictures/oral.jpg");
+  background-image: url("./Pictures/ocare.png");
 }
 
 .hcarehov:hover,
@@ -280,24 +283,23 @@ p {
 }
 
 /*For featured products*/
+.featuredp {
+  width: 90%;
+  padding-bottom: 20px;
+  margin: 0px auto;
+}
 
 .featuredp h1 {
   text-align: center;
   font-weight: 1000;
-  font-size: 50px;
+  font-size: 35px;
   margin: 0px;
 }
 
-#reviews1 {
-  width: 90%;
-  margin: 0px auto;
-  border-radius: 5px;
-}
-
-#slider1 {
+.featuredp > div {
   margin-left: 30px;
   margin-right: 30px;
-  margin-bottom: -40px;
+  margin-top: 30px;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-evenly;
@@ -305,70 +307,43 @@ p {
   margin-bottom: 20px;
 }
 
-#slider1 img {
+.featuredp img {
   max-height: 230px;
 }
 
-#slider1 img:hover {
+.featuredp img:hover {
   border-radius: 5px;
   transform: scale(1.1, 1.1);
   transition: 0.3s ease;
 }
 
-#slider1 h4 {
+.featuredp h4:hover {
+  background-color: #f6f6f6;
+  box-shadow: 0px 0px 2px;
+  border-radius: 5px;
+  text-decoration: underline;
+}
+
+.featuredp p {
+  font-weight: 500;
+  max-width: 300px;
+  padding-top: 10px;
+}
+
+.featuredp .price {
+  color: #327559;
+}
+
+.featuredp h4 {
+  padding: 10px;
   margin-bottom: 40px;
   margin-right: 15px;
   margin-left: 15px;
   text-align: center;
   font-weight: semibold;
-}
-
-#slider1 a {
-  text-decoration: none;
-}
-
-#slider1 h4:hover {
+  width: 300px;
+  box-shadow: 0px 0px 1px #000;
   border-radius: 5px;
-  text-decoration: underline;
-}
-
-#slider1 p {
-  font-size: 20px;
-  font-weight: 500;
-  max-width: 300px;
-  padding-top: 10px;
-  margin: 0px auto;
-}
-
-#slider1 .price {
-  color: #327559;
-}
-
-.prev-arrow1 {
-  left: -20px;
-  width: 0;
-  height: 0;
-  margin-top: -95px;
-  border-left: 0 solid transparent;
-  border-right: 25px solid #3c4043;
-  border-top: 20px solid transparent;
-  border-bottom: 20px solid transparent;
-}
-.next-arrow1 {
-  right: -20px;
-  width: 0;
-  height: 0;
-  margin-top: -95px;
-  border-right: 0 solid transparent;
-  border-left: 25px solid #3c4043;
-  border-top: 20px solid transparent;
-  border-bottom: 20px solid transparent;
-}
-
-.slide-arrow1 {
-  position: absolute;
-  top: 50%;
-  margin-top: -70px;
 }
 
 .acneb,
@@ -461,8 +436,8 @@ p {
   font-weight: 600;
   width: 100%;
   left: 0px;
-  margin-top: 70px;
-  padding-bottom: 80px;
+  margin: 0px;
+  padding-bottom: 90px;
 }
 
 .viewallbtn {
@@ -476,8 +451,6 @@ p {
   padding-bottom: 10px;
   border-radius: 5px;
   text-align: center;
-  font-size: 20px;
-  color: #295b46;
   border-color: #6d9886;
   padding-top: 10px;
   padding-left: 80px;
@@ -486,36 +459,32 @@ p {
 }
 
 .viewallbtn:hover {
-  color: #295b46;
-  box-shadow: 0px 0px 0px 4px;
   transition: 0.3s ease;
   transform: scale(1.1, 1.1);
   background-color: #d3e3d3;
 }
 
 /*For reviews section*/
-
-.featuredph1 h1 {
-  text-align: center;
-  font-weight: 1000;
-  font-size: 50px;
-  margin-bottom: 20px;
+.border {
+  width: 60%;
+  margin-left: auto;
+  margin-right: auto;
+  border-top-style: solid;
+  border-width: 2px;
 }
 
 .revtitle h1 {
   text-align: center;
   font-weight: 1000;
-  font-size: 50px;
-  padding: 50px 0px 20px;
-}
-
-.revtitle {
-  width: 90%;
-  margin: 0px auto;
+  font-size: 35px;
+  margin: 0px;
+  margin-bottom: 30px;
 }
 
 #reviews {
-  padding: 20px 0 50px;
+  /*background-color: #c1d7df;
+  padding: 50px 0;*/
+  padding: 0px 0 50px;
   width: 90%;
   margin: 0px auto;
 }
@@ -550,25 +519,23 @@ button {
   top: 50%;
   margin-top: -15px;
 }
-
 .prev-arrow {
-  left: -50px;
+  left: -40px;
   width: 0;
   height: 0;
   border-left: 0 solid transparent;
-  border-right: 25px solid #3c4043;
-  border-top: 20px solid transparent;
-  border-bottom: 20px solid transparent;
+  border-right: 15px solid #113463;
+  border-top: 10px solid transparent;
+  border-bottom: 10px solid transparent;
 }
-
 .next-arrow {
-  right: -50px;
+  right: -40px;
   width: 0;
   height: 0;
   border-right: 0 solid transparent;
-  border-left: 25px solid #3c4043;
-  border-top: 20px solid transparent;
-  border-bottom: 20px solid transparent;
+  border-left: 15px solid #113463;
+  border-top: 10px solid transparent;
+  border-bottom: 10px solid transparent;
 }
 
 /*For Fast fact section*/
@@ -615,9 +582,9 @@ button {
 }
 
 #tipsbtn {
+  font-size: 20px;
   background-color: #eae4df;
   padding: 10px 15px;
-  font-size: 20px;
   font-weight: 600;
   width: fit-content;
   border-radius: 5px;
