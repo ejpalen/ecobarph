@@ -705,8 +705,6 @@ footer ul {
   background-image: url("./Pictures/instahover.png");
   background-size: cover;
 }
-
-/*Specifies only the .container-btm p element*/
 .container-btm p {
   font-size: 14px;
 }
