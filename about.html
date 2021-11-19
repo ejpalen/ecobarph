@@ -1,90 +1,154 @@
-* {
-  padding: 0;
-  margin: 0;
-  color: #3c4043;
-}
+<!DOCTYPE html>
+<html lang="en" id="top">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" href="Pictures/favicon.png" type="image/x-icon" />
+    <title>About</title>
+    <link rel="stylesheet" href="about.css" />
+    <link rel="stylesheet" href="nav,footer.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="menu">
+      <ul>
+        <li><a href="homev3.html">Home</a></li>
+        <li>
+          <a href="#">Products</a>
+          <div class="submenu">
+            <ul>
+              <li class="menu-category">
+                <a href="#"><b>Browse by category</b></a>
+              </li>
+              <li><a href="#">Hair Care</a></li>
+              <li><a href="#">Skin Care</a></li>
+              <li><a href="#">Bath and Body</a></li>
+              <li><a href="#">Intimate Care</a></li>
+              <li><a href="#">Oral Care</a></li>
+              <li><a href="#"> </a></li>
+              <li class="menu-category">
+                <a href="#"><b>Browse all Products</b></a>
+              </li>
+            </ul>
+          </div>
+        </li>
+        <li><a href="#">Shops</a></li>
+        <li class="active"><a href="about.html">About</a></li>
+      </ul>
+    </div>
 
-body {
-  width: 100%;
-}
+    <div class="aboutheader">
+      <div class="aboutheader-imagectr">
+        <img src="Pictures/aboutimg1.png" />
+      </div>
+      <div class="aboutheader-txtctr">
+        <h1>About Ecobar</h1>
+        <p>
+          Ecobar is a Filipino-owned company. We offer sustainable, eco-friendly
+          and quality products that are 100% natural. The best thing in Ecobar
+          is that we use locally-sourced ingredients for our products. In
+          Ecobar, we strive for the best and the good for our environment.
+        </p>
+      </div>
+    </div>
 
-.aboutheader {
-  display: flex;
-  width: 100%;
-  justify-content: center;
-  margin: 40px 0px 60px;
-}
+    <div class="aboutcontent">
+      <div class="aboutcontentimg">
+        <img src="Pictures/aboutimg2.png" />
+      </div>
+      <div class="aboutcontenttxt">
+        <p>
+          Ecobar's goal is to inspire our consumers to be aware of the products
+          they use without sacrificing too much of their lifestyle. We aim to
+          reduce our usage of plastics in your orders; through shredded papers
+          and sticker labels as cushions, wrapping the product with donated
+          magazines, and providing plastic-free delivery.
+        </p>
+      </div>
+    </div>
 
-.aboutheader h1 {
-  font-size: 60px;
-  margin-bottom: 20px;
-}
+    <div class="aboutcontent">
+      <div class="aboutcontentimg" id="sustainable">
+        <img src="Pictures/aboutimg3.png" />
+      </div>
+      <div class="aboutcontenttxt">
+        <p>
+          Ecobar is not only sustainable, but also accessible. Caring for our
+          environment doesn’t have to be costly. That is why we produce quality
+          and pro-environment products. We also make sure that our products are
+          budget-friendly and affordable.
+        </p>
+      </div>
+    </div>
 
-.aboutheader-imagectr {
-  display: flex;
-  margin: 0px 20px;
-}
+    <div class="aboutlast">
+      <div class="aboutlastimg"><img src="Pictures/aboutimg4.png" /></div>
+      <div class="aboutlasttxt">
+        <h1>
+          Here's to continuously finding ways to make homegrown and quality
+          products created by Filipinos be accessible to Filipinos. High five!
+        </h1>
+      </div>
+    </div>
 
-.aboutheader-imagectr img {
-  width: 500px;
-}
+    <div class="footer">
+      <!--"Container section"-->
+      <div class="container">
+        <div class="row">
+          <div class="footer-col">
+            <h4>
+              <img id="logo" src="Pictures\ecobarlogo.png" />
+            </h4>
+          </div>
+          <div class="footer-col">
+            <h4>MENU</h4>
+            <ul>
+              <li><a class="ftrlnk" href="homev3.html">Home</a></li>
+              <li><a class="ftrlnk" href="#ftrcategory">Products</a></li>
+              <li><a class="ftrlnk" href="#0">Resellers</a></li>
+              <li><a class="ftrlnk" href="#top">About</a></li>
+            </ul>
+          </div>
+          <div class="footer-col">
+            <h4>CONTACT</h4>
+            <ul>
+              <li>
+                <a class="ftrlnk" href="mailto: ecobarph@gmail.com"
+                  >E-MAIL: ecobarph@gmail.com</a
+                >
+              </li>
+              <li><a>ON SOCIAL MEDIA:</a></li>
+            </ul>
+            <div class="social-links">
+              <a
+                target="_blank"
+                href="https://www.facebook.com/ecobarph/"
+                class="fblogo"
+              ></a>
+              <a
+                target="_blank"
+                href="https://www.instagram.com/ecobarph/"
+                class="instalogo"
+              ></a>
+            </div>
+          </div>
+          <div class="footer-col">
+            <h4>DEVELOPERS</h4>
+            <div class="devpics">
+              <a><img class="devpics" src="Pictures\palenlogo.png" /></a>
+              <a><img class="devpics" src="Pictures\pereyralogo.png" /></a>
+              <a><img class="devpics" src="Pictures\plantalogo.png" /></a>
+            </div>
+          </div>
+        </div>
+      </div>
 
-.aboutheader-txtctr {
-  width: 40%;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  margin: 0px 20px;
-}
-
-.aboutcontent {
-  display: flex;
-  justify-content: center;
-  background-color: #f6f9fe;
-  width: 90%;
-  margin: 50px auto;
-}
-
-.aboutcontentimg img {
-  width: 250px;
-  margin: 20px 20px;
-}
-
-#sustainable img {
-  width: 200px;
-  margin: 20px 20px;
-}
-
-.aboutcontenttxt {
-  display: flex;
-  align-items: center;
-  width: 50%;
-  margin: 0px 20px;
-}
-
-.aboutlast {
-  display: flex;
-  justify-content: center;
-  background-color: #ede3d9;
-  margin-bottom: 60px;
-  margin-top: 60px;
-}
-
-.aboutlastimg {
-  display: flex;
-  margin: 00px 40px 0px;
-}
-.aboutlastimg img {
-  width: 500px;
-}
-
-.aboutlasttxt {
-  width: 50%;
-  display: flex;
-  align-items: center;
-  margin: 40px;
-}
-
-.aboutlasttxt h1 {
-  font-size: 30px;
-}
+      <!--container-btm section-->
+      <div class="container-btm">
+        <p>© 2021 Group 9</p>
+      </div>
+    </div>
+  </body>
+</html>
