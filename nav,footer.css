@@ -4,6 +4,9 @@
   color: #3c4043;
   font-family: "Poppins", sans-serif;
 }
+#top {
+  scroll-behavior: smooth;
+}
 
 p {
   font-size: 18px;
@@ -28,6 +31,7 @@ p {
 
 .menu ul li {
   transition: all 0.3s ease-in-out;
+  font-size: 18px;
   line-height: 30px;
   width: 90px;
   margin: 5px;
