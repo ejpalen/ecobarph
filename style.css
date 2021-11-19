@@ -228,7 +228,7 @@ p {
 .ocare {
   border-radius: 5px;
   overflow: hidden;
-  width: 240px;
+  width: 220px;
   height: 280px;
 }
 
@@ -238,7 +238,7 @@ p {
 .icarehov,
 .ocarehov {
   border-radius: 5px;
-  width: 240px;
+  width: 220px;
   height: 280px;
   position: relative;
   text-align: center;
