@@ -51,7 +51,7 @@
   background-color: #f6f9fe;
 }
 
-.resellers_panel_choose:hover {
+.panelhover:hover {
   background-color: #e6f2eb;
 }
 
@@ -61,7 +61,7 @@
   margin: 0 auto 50px;
   border-style: solid;
   border-width: 1px 1px 1px 1px;
-  border-radius: 0px 0px 5px 5px;
+  border-radius: 5px;
   box-sizing: border-box;
   padding: 5px 0px 30px 70px;
 }
@@ -82,7 +82,9 @@
 
 .panelcontentlink div,
 .panelcontentlink2 div,
-.panelcontentlink3 div {
+.panelcontentlink3 div,
+.panelcontentlinkps1 div,
+.panelcontentlinkps2 div {
   display: flex;
   padding: 5px;
   margin-left: -5px;
@@ -101,18 +103,24 @@
 }
 .panelcontentlink {
   display: grid;
-  grid-template-columns: 18% 18% 18%;
-  grid-column-gap: 12%;
+  grid-template-columns: 25% 25% 25%;
+  grid-column-gap: 8%;
 }
 
 .panelcontentlink2 {
   display: grid;
-  grid-template-columns: 18% 18%;
-  grid-column-gap: 12%;
+  grid-template-columns: 25% 25%;
+  grid-column-gap: 8%;
 }
 
 .panelcontentlink3 {
   display: grid;
-  grid-template-columns: 18%;
-  grid-column-gap: 12%;
+  grid-template-columns: 25%;
+  grid-column-gap: 8%;
+}
+
+.panelcontentlinkps1,
+.panelcontentlinkps2 {
+  display: grid;
+  grid-template-columns: auto auto;
 }
