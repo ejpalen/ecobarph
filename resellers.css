@@ -155,7 +155,7 @@
   border-right: 1px solid #dddddd;
   text-align: center;
   color: #3b3b3b;
-  font-size: 14px;
+  font-size: 18px;
   font-weight: 600;
   letter-spacing: 1px;
   cursor: pointer;
@@ -209,6 +209,6 @@
 }
 
 .tab_wrap .tab_content p {
-  font-size: 14px;
+  font-size: 18px;
   line-height: 22px;
 }
