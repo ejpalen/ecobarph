@@ -1,0 +1,132 @@
+* {
+  font-family: Poppins, "Century Gothic";
+  padding: 0px;
+  margin: 0px;
+}
+
+.body {
+  background-color: #ffffff;
+  width: 100%;
+}
+
+h1 {
+  font-size: 50;
+}
+
+.Divider {
+  width: 90%;
+  margin: 20px auto;
+  text-align: center;
+  background-color: #3c4043;
+  height: 2px;
+  align-items: center;
+}
+
+.border {
+  border-style: solid;
+  border-color: black;
+  border-width: thin;
+  margin: 15px 15px;
+  border-radius: 5px;
+  padding-bottom: 15px;
+}
+
+.border:hover {
+  box-shadow: 0px 0px 5px 0.1px;
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.prodlink {
+  background-color: aqua;
+}
+.price {
+  color: green;
+}
+
+.HCheader,
+.OCheader,
+.ICheader,
+.SCheader,
+.BBCheader,
+.Allheader {
+  width: 90%;
+  margin: 20px auto;
+  text-align: center;
+  background-color: #f6f9fe;
+  height: 200px;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+}
+
+.HCcategory1,
+.HCcategory2,
+.SCcategory1,
+.BBCcategory1,
+.ICcategory1,
+.OCcategory1,
+.Allcategory1,
+.Allcategory2,
+.Allcategory3,
+.Allcategory4 {
+  margin: 0px 20px;
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+}
+
+.HCcategoryctr,
+.SCcategoryctr,
+.BBCcategoryctr,
+.ICcategoryctr,
+.OCcategoryctr,
+.Allcategoryctr {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  flex-wrap: wrap;
+  width: 100%;
+  margin: 50px 0px 70px;
+}
+
+.HCimg,
+.HCimg img,
+.SCimg,
+.SCimg img,
+.BBCimg,
+.BBCimg img,
+.ICimg,
+.ICimg img,
+.OCimg,
+.OCimg img,
+.Allimg,
+.Allimg img {
+  width: 250px;
+  height: 250px;
+  margin: 0px auto;
+}
+
+.HCdeets, 
+.Alldeets {
+  width: 225px;
+  height: 100px;
+  margin: 0px 25px;
+  text-align: center;
+}
+
+.OCdeets {
+  width: 225px;
+  height: 100px;
+  margin: 20px 25px 0px;
+  text-align: center;
+}
+
+.SCdeets,
+.BBCdeets,
+.ICdeets {
+  width: 225px;
+  height: 100px;
+  margin: 0px 25px 20px;
+  text-align: center;
+}
