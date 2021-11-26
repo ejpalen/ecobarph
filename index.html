@@ -35,21 +35,21 @@
     <div class="menu">
       <ul>
         <a href="index.html"><li class="active">Home</li></a>
-        <a href="#"><li>Products</a>
+       <li> <a href="#">Products</a>
           <!--This part is for the dropdown menu/ Submenu for "Products" in the navbar-->
           <div class="submenu">
             <ul>
               <li class="menu-category">
                 <b>Browse by category</b>
               </li>
-              <li><a href="#">Hair Care</a></li>
-              <li><a href="#">Skin Care</a></li>
-              <li><a href="#">Bath and Body</a></li>
-              <li><a href="#">Intimate Care</a></li>
-              <li><a href="#">Oral Care</a></li>
-              <li><a href="#"> </a></li>
+              <li><a href="Category_Hair.html">Hair Care</a></li>
+              <li><a href="Category_Skin.html">Skin Care</a></li>
+              <li><a href="Category_B&B.html">Bath and Body</a></li>
+              <li><a href="Category_Intimate.html">Intimate Care</a></li>
+              <li><a href="Category_Oral.html">Oral Care</a></li>
+              <li><a href="#0"> </a></li>
               <li class="menu-category">
-                <a href="#"><b>Browse all Products</b></a>
+                <a href="Category_All.html"><b>Browse all Products</b></a>
               </li>
             </ul>
           </div>
@@ -79,32 +79,31 @@
         </p>
     </div>
 
+    <!--Product category section-->
 <div class="category" id="ftrcategory">
   <h1>Browse products by category</h1>
   <div>
-    <h4>
+    <h4 target="_blank" onclick="document.location='Category_Hair.html'">
       <div class="hcare">
         <div class="hcarehov">
           <p>Hair care</p>
         </div>
       </div>
-      
     </h4>
-    <h4>
+
+    <h4 target="_blank" onclick="document.location='Category_Skin.html'">
       <div class="scare">
         <div class="scarehov"><p>Skin care</p></div>
       </div>
-      
     </h4>
-    <h4>
+    <h4 target="_blank" onclick="document.location='Category_B&B.html'">
       <a href="#0">
         <div class="bcare">
           <div class="bcarehov"><p>Bath & Body Care</p></div>
         </div>
       </a>
-      
     </h4>
-    <h4>
+    <h4 target="_blank" onclick="document.location='Category_Intimate.html'">
       <a href="#0">
         <div class="icare">
           <div class="icarehov"><p>Intimate care</p></div>
@@ -112,7 +111,7 @@
       </a>
       
     </h4>
-    <h4>
+    <h4 target="_blank" onclick="document.location='Category_Oral.html'">
       <a href="#0">
         <div class="ocare">
           <div class="ocarehov"><p>Oral care</p></div>
@@ -128,7 +127,7 @@
       <h1>Featured products</h1>
       <div>
         <h4>
-          <a href="#0">
+          <a target="_blank" href="SkinCareAcne.html">
             <div class="acneb">
               <div class="acnebhov"></div>
             </div>
@@ -137,7 +136,7 @@
           </a>
         </h4>
         <h4>
-          <a href="#0">
+          <a target="_blank" href="EcoBathBar.html">
             <div class="gentleb">
               <div class="gentlebhov"></div>
             </div>
@@ -146,7 +145,7 @@
           </a>
         </h4>
         <h4>
-          <a href="#0">
+          <a target="_blank" href="EcoThickening.html">
             <div class="thickb">
               <div class="thickbhov"></div>
             </div>
@@ -155,7 +154,7 @@
           </a>
         </h4>
         <h4>
-          <a href="#0">
+          <a target="_blank" href="EcoPreserve.html">
             <div class="colorb">
               <div class="colorbhov"></div>
             </div>
@@ -165,7 +164,7 @@
           </a>
         </h4>
         <h4>
-          <a href="#0">
+          <a target="_blank" href="EcoFeminine.html">
             <div class="femb">
               <div class="fembhov"></div>
             </div>
@@ -173,7 +172,7 @@
             <p class="price">₱140.00</p>
           </a>
         <h4>
-          <a href="#0">
+          <a target="_blank" href="EcoMoisture.html">
             <div class="moistb">
               <div class="moistbhov"></div>
             </div>
@@ -186,7 +185,7 @@
 
     <!--View all button section. Will connect to "View all products" html -->
     <div class="viewall">
-      <a href="#0">
+      <a target="_blank" href="Category_All.html">
         <div class="viewallbtn">
           <p id="viewalltxt">View all</p>
         </div>
@@ -197,6 +196,7 @@
     <div class="revtitle">
       <h1>What our customers say</h1>
     </div>  
+    
     <div id="reviews">
       <ul id="slider">
         <li class="slide-item">
@@ -277,7 +277,6 @@
       </div>
 
     </div>
-
 
     <script>
       $(function () {
