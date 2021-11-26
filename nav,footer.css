@@ -3,6 +3,8 @@
   margin: 0;
   color: #3c4043;
   font-family: "Poppins", sans-serif;
+  text-decoration: none;
+  list-style: none;
 }
 #top {
   scroll-behavior: smooth;
@@ -17,10 +19,8 @@ p {
   margin-right: 0px;
   margin-left: 0px;
   height: 69px;
-  background: #e7f2ec;
   list-style: none;
   text-align: center;
-  border-bottom: 0.1px solid #3c4043;
 }
 
 .menu ul {
@@ -49,7 +49,7 @@ p {
 .active,
 .menu ul li:hover {
   transition: all 0.3s ease-in-out;
-  background: #eae4df;
+  background: #ede3d9;
   border-radius: 3px;
 }
 
@@ -217,4 +217,8 @@ footer ul {
 /*Specifies only the .container-btm p element*/
 .container-btm p {
   font-size: 14px;
+}
+
+.contw {
+  width: 450px;
 }
