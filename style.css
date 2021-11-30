@@ -69,7 +69,7 @@ p {
 .active,
 .menu ul li:hover {
   transition: all 0.3s ease-in-out;
-  background: #eae4df;
+  background: #ede3d9;
   border-radius: 3px;
 }
 
@@ -710,4 +710,179 @@ footer ul {
 /*Specifies only the .container-btm p element*/
 .container-btm p {
   font-size: 14px;
+}
+
+@media screen and (max-width: 480px) {
+  p {
+    font-size: 20px;
+  }
+
+  .menu ul li {
+    font-size: 15px;
+    margin: 0px;
+    box-sizing: border-box;
+  }
+
+  .banner img {
+    width: 180%;
+  }
+
+  .banner {
+    overflow: hidden;
+  }
+
+  .hcare,
+  .scare,
+  .bcare,
+  .icare,
+  .ocare {
+    width: 180px;
+    height: 240px;
+  }
+
+  .hcarehov,
+  .scarehov,
+  .bcarehov,
+  .icarehov,
+  .ocarehov {
+    width: 180px;
+    height: 240px;
+  }
+
+  .category p {
+    font-size: 20px;
+  }
+
+  .category h4 {
+    margin: 5px 5px;
+  }
+
+  .category h1,
+  .welcome h1,
+  .featuredp h1,
+  .revtitle h1 {
+    font-size: 25px;
+  }
+
+  .category h1 {
+    width: 70%;
+    margin: 0px auto;
+  }
+
+  .welcome p {
+    font-size: 16px;
+    margin: 0;
+  }
+
+  .welcome {
+    padding: 15px;
+    width: 100%;
+  }
+
+  .acneb,
+  .gentleb,
+  .thickb,
+  .colorb,
+  .femb,
+  .moistb {
+    width: 180px;
+    height: 180px;
+    margin-bottom: 0px;
+  }
+
+  .acnebhov,
+  .gentlebhov,
+  .thickbhov,
+  .colorbhov,
+  .fembhov,
+  .moistbhov {
+    width: 140px;
+    height: 200px;
+    margin-bottom: 0px;
+  }
+
+  .featuredp h4 {
+    width: 170px;
+    height: 200px;
+    margin: 0px 2px 20px;
+    padding-bottom: 90px;
+    font-size: 16px;
+    margin-bottom: 20px;
+  }
+
+  .featuredp p {
+    font-size: 13px;
+    margin: 0px;
+  }
+
+  .featuredp div {
+    width: 100%;
+    margin: 0px;
+  }
+
+  .featuredp {
+    width: 100%;
+  }
+  .featuredp h1 {
+    margin-bottom: 20px;
+  }
+
+  #viewalltxt {
+    font-size: 15px;
+  }
+
+  .viewallbtn {
+    padding: 5px 15px;
+  }
+
+  .fastfact h1 {
+    font-size: 30px;
+    padding-right: 0px;
+  }
+
+  .fastfact p {
+    font-size: 20px;
+    width: 100%;
+  }
+
+  .tips {
+    margin-top: 10px;
+  }
+
+  #tipsbtn {
+    font-size: 10px;
+  }
+
+  .fastfact {
+    height: 250px;
+    padding: 15px;
+    margin-top: 30px;
+  }
+
+  .footer-col ul li a {
+    font-size: 13px;
+  }
+
+  .devftr {
+    display: none;
+  }
+
+  .logoftr {
+    margin-right: 100px;
+    margin-bottom: 20px;
+  }
+
+  .footer-col {
+    margin-left: 20px;
+    padding: 0;
+  }
+
+  #reviews,
+  .revtitle {
+    display: none;
+  }
+
+  .viewall {
+    padding-bottom: 20px;
+  }
 }
