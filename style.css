@@ -712,7 +712,7 @@ footer ul {
   font-size: 14px;
 }
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 600px) {
   p {
     font-size: 20px;
   }
