@@ -329,6 +329,15 @@ p {
   text-decoration: underline;
   box-shadow: 0px 0px 5px 0.1px;
 }
+.featuredp h4:hover .acnebhov,
+.featuredp h4:hover .gentlebhov,
+.featuredp h4:hover .thickbhov,
+.featuredp h4:hover .colorbhov,
+.featuredp h4:hover .fembhov,
+.featuredp h4:hover .moistbhov {
+  transform: scale(1.05, 1.05);
+  transition: all 0.3s ease-in-out;
+}
 
 .featuredp p {
   font-weight: 500;
@@ -374,60 +383,24 @@ p {
   background-image: url("./Pictures/acnebar2.png");
 }
 
-.acnebhov:hover {
-  transform: scale(1.05, 1.05);
-
-  transition: all 0.3s ease-in-out;
-}
-
-/*.acnebhov:hover {
-  background-image: url("./Pictures/acnehover.png");
-  transition: all 0.3s ease-in-out;
-}*/
-
 .gentlebhov {
   background-image: url("./Pictures/gentlebar1.png");
-}
-
-.gentlebhov:hover {
-  transform: scale(1.05, 1.05);
-  transition: all 0.3s ease-in-out;
 }
 
 .thickbhov {
   background-image: url("./Pictures/thickbar1.png");
 }
 
-.thickbhov:hover {
-  transform: scale(1.05, 1.05);
-  transition: all 0.3s ease-in-out;
-}
-
 .colorbhov {
   background-image: url("./Pictures/clrpreservebr.png");
-}
-
-.colorbhov:hover {
-  transform: scale(1.05, 1.05);
-  transition: all 0.3s ease-in-out;
 }
 
 .fembhov {
   background-image: url("./Pictures/femininebr.png");
 }
 
-.fembhov:hover {
-  transform: scale(1.05, 1.05);
-  transition: all 0.3s ease-in-out;
-}
-
 .moistbhov {
   background-image: url("./Pictures/moisturebar.png");
-}
-
-.moistbhov:hover {
-  transform: scale(1.05, 1.05);
-  transition: all 0.3s ease-in-out;
 }
 
 /*For "View all button" in the featured products section*/
