@@ -740,8 +740,8 @@ footer ul {
   .bcare,
   .icare,
   .ocare {
-    width: 180px;
-    height: 240px;
+    width: 160px;
+    height: 230px;
   }
 
   .hcarehov,
@@ -749,16 +749,12 @@ footer ul {
   .bcarehov,
   .icarehov,
   .ocarehov {
-    width: 180px;
-    height: 240px;
+    width: 170px;
+    height: 230px;
   }
 
   .category p {
-    font-size: 20px;
-  }
-
-  .category h4 {
-    margin: 5px 5px;
+    font-size: 16px;
   }
 
   .category h1,
@@ -782,10 +778,12 @@ footer ul {
   .welcome {
     padding: 15px;
     width: 100%;
+    background: none;
   }
 
   .welcome h1 {
     letter-spacing: -2px;
+    font-size: 35px;
   }
   .acneb,
   .gentleb,
@@ -815,10 +813,11 @@ footer ul {
     padding-bottom: 90px;
     font-size: 16px;
     margin-bottom: 20px;
+    box-shadow: none;
   }
 
   .featuredp p {
-    font-size: 13px;
+    font-size: 16px;
     margin: 0px;
     padding: 0;
   }
@@ -859,7 +858,7 @@ footer ul {
   }
 
   #tipsbtn {
-    font-size: 10px;
+    font-size: 11px;
     padding: 5px;
   }
 
@@ -931,7 +930,7 @@ footer ul {
     height: 157px;
     padding-bottom: 90px;
     font-size: 16px;
-    margin-bottom: 20px;
+    margin-bottom: 50px;
   }
 
   .hcare,
@@ -946,6 +945,10 @@ footer ul {
   .ocarehov {
     width: 160px;
     height: 220px;
+  }
+
+  .viewallbtn {
+    margin-top: 25px;
   }
 }
 
