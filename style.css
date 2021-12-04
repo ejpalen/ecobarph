@@ -771,6 +771,7 @@ footer ul {
   .category h1 {
     width: 70%;
     margin: 0px auto;
+    letter-spacing: -2px;
   }
 
   .welcome p {
@@ -783,6 +784,9 @@ footer ul {
     width: 100%;
   }
 
+  .welcome h1 {
+    letter-spacing: -2px;
+  }
   .acneb,
   .gentleb,
   .thickb,
@@ -826,6 +830,7 @@ footer ul {
 
   .featuredp h1 {
     margin-bottom: 20px;
+    letter-spacing: -2px;
   }
 
   #viewalltxt {
