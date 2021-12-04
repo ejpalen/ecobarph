@@ -779,6 +779,7 @@ footer ul {
     padding: 15px;
     width: 100%;
     background: none;
+    box-shadow: none;
   }
 
   .welcome h1 {
@@ -858,7 +859,7 @@ footer ul {
   }
 
   #tipsbtn {
-    font-size: 11px;
+    font-size: 10px;
     padding: 5px;
   }
 
