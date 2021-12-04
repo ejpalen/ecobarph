@@ -218,3 +218,36 @@ footer ul {
 .container-btm p {
   font-size: 14px;
 }
+
+@media screen and (max-width: 720px) {
+  p {
+    font-size: 15px;
+  }
+
+  .menu ul li {
+    font-size: 15px;
+    margin: 0px;
+    box-sizing: border-box;
+  }
+  .aboutheader,
+  .aboutcontent,
+  .aboutlast {
+    flex-wrap: wrap;
+  }
+
+  .aboutlastimg img,
+  .aboutheader img {
+    width: 300px;
+  }
+
+  .footer .row {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+  }
+
+  .footer-col {
+    margin-left: 20px;
+    padding: 0;
+  }
+}
