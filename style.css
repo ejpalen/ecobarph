@@ -571,7 +571,6 @@ button {
   transform: scale(1.05, 1.05);
 }
 
-/*For the footer section*/
 .footer {
   width: 100%;
   background: #f6f6f6;
@@ -684,7 +683,39 @@ footer ul {
   font-size: 14px;
 }
 
-@media screen and (max-width: 600px) {
+@media (max-width: 1200px) {
+  .featuredp div {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0;
+    margin-top: 20px;
+  }
+
+  .featuredp h4 {
+    margin: 10px -15px;
+  }
+}
+
+@media (max-width: 900px) {
+  .banner img {
+    width: 160%;
+    margin-left: -50px;
+  }
+  .banner {
+    overflow: hidden;
+  }
+
+  .revtitle,
+  #reviews {
+    display: none;
+  }
+
+  .viewall {
+    padding-bottom: 20px;
+  }
+}
+
+@media screen and (max-width: 720px) {
   p {
     font-size: 20px;
   }
@@ -758,8 +789,8 @@ footer ul {
   .colorb,
   .femb,
   .moistb {
-    width: 180px;
-    height: 180px;
+    width: 100px;
+    height: 160px;
     margin-bottom: 0px;
   }
 
@@ -769,15 +800,14 @@ footer ul {
   .colorbhov,
   .fembhov,
   .moistbhov {
-    width: 140px;
-    height: 200px;
+    width: 100px;
+    height: 160px;
     margin-bottom: 0px;
   }
 
   .featuredp h4 {
-    width: 170px;
-    height: 200px;
-    margin: 0px 2px 20px;
+    width: 155px;
+    height: 160px;
     padding-bottom: 90px;
     font-size: 16px;
     margin-bottom: 20px;
@@ -786,6 +816,7 @@ footer ul {
   .featuredp p {
     font-size: 13px;
     margin: 0px;
+    padding: 0;
   }
 
   .featuredp div {
@@ -793,9 +824,6 @@ footer ul {
     margin: 0px;
   }
 
-  .featuredp {
-    width: 100%;
-  }
   .featuredp h1 {
     margin-bottom: 20px;
   }
@@ -827,6 +855,7 @@ footer ul {
 
   #tipsbtn {
     font-size: 10px;
+    padding: 5px;
   }
 
   .fastfact {
@@ -863,34 +892,61 @@ footer ul {
   }
 }
 
-@media (max-width: 1200px) {
-  .featuredp div {
-    display: flex;
-    flex-wrap: wrap;
-    margin: 0;
-    margin-top: 20px;
+@media screen and (max-width: 400px) {
+  .acneb,
+  .gentleb,
+  .thickb,
+  .colorb,
+  .femb,
+  .moistb {
+    width: 100px;
+    height: 160px;
+    margin-bottom: 0px;
+  }
+
+  .acnebhov,
+  .gentlebhov,
+  .thickbhov,
+  .colorbhov,
+  .fembhov,
+  .moistbhov {
+    width: 90px;
+    height: 135px;
+    margin-bottom: 0px;
   }
 
   .featuredp h4 {
-    margin: 10px -15px;
+    width: 130px;
+    height: 157px;
+    padding-bottom: 90px;
+    font-size: 16px;
+    margin-bottom: 20px;
+  }
+
+  .hcare,
+  .scare,
+  .bcare,
+  .icare,
+  .ocare,
+  .hcarehov,
+  .scarehov,
+  .bcarehov,
+  .icarehov,
+  .ocarehov {
+    width: 160px;
+    height: 220px;
   }
 }
 
-@media (max-width: 900px) {
-  .banner img {
-    width: 160%;
-    margin-left: -50px;
-  }
-  .banner {
-    overflow: hidden;
+@media screen and (max-width: 360px) {
+  .menu ul li {
+    font-size: 10px;
+    margin: 0px;
   }
 
-  .revtitle,
-  #reviews {
-    display: none;
-  }
-
-  .viewall {
-    padding-bottom: 20px;
+  .menu ul {
+    width: 90%;
+    margin-top: 5px;
+    margin-left: -20px;
   }
 }
