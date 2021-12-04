@@ -43,6 +43,7 @@ body {
   background-color: #f6f9fe;
   width: 90%;
   margin: 50px auto;
+  border-radius: 10px;
 }
 
 .aboutcontentimg img {
@@ -87,4 +88,70 @@ body {
 
 .aboutlasttxt h1 {
   font-size: 30px;
+}
+
+@media screen and (max-width: 990px) {
+  p {
+    font-size: 20px;
+  }
+
+  .aboutheader,
+  .aboutcontent,
+  .aboutlast {
+    flex-wrap: wrap;
+  }
+
+  .aboutlastimg img,
+  .aboutheader img {
+    width: 250px;
+  }
+
+  .aboutheader {
+    margin-top: 0;
+  }
+
+  .aboutheader h1 {
+    font-size: 40px;
+    margin-bottom: 5px;
+  }
+
+  .aboutheader-txtctr {
+    width: 90%;
+    text-align: center;
+  }
+
+  .aboutcontenttxt {
+    width: 90%;
+    text-align: center;
+    margin-bottom: 40px;
+  }
+
+  .aboutcontent {
+    box-shadow: 0px 0px 9px -5px #000;
+    margin: 30px auto;
+  }
+
+  .aboutcontentimg img {
+    width: 200px;
+  }
+  .aboutlast {
+    margin-top: 40px;
+  }
+
+  .aboutlasttxt {
+    width: 100%;
+    text-align: center;
+    margin-top: 10px;
+  }
+
+  .aboutlasttxt h1 {
+    font-size: 20px;
+  }
+}
+
+@media (min-width: 721px) and (max-width: 990px) {
+  .aboutlastimg img,
+  .aboutheader img {
+    width: 400px;
+  }
 }
