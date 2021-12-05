@@ -28,6 +28,8 @@
     type="text/javascript"
     src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"
   ></script>
+  <link rel="stylesheet" href="navstyle.css" />
+    <script src="navscript.js" defer></script>
   <meta content="width=device-width, initial-scale=1" name="viewport" />
 
   </head>
@@ -303,14 +305,6 @@
           nextArrow: '<button class="slide-arrow next-arrow"></button>',
         });
       });
-
-
-      const toggleButton = document.getElementsByClassName('toggle-button')[0]
-const navbarLinks = document.getElementsByClassName('navbar-links')[0]
-
-toggleButton.addEventListener('click', () => {
-  navbarLinks.classList.toggle('active')
-})
     </script>
 
   </body>
