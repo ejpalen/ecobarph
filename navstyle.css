@@ -38,7 +38,7 @@
 }
 .navbar-links1 li {
   list-style: none;
-  background-color: #eae4df;
+  background-color: #f6f9fe;
 }
 .navbar-links li a {
   display: block;
@@ -47,7 +47,7 @@
 }
 
 .navbar-links li a:hover {
-  background-color: #cfc3cf;
+  background-color: #e7f1ec;
 }
 
 .toggle-button {
