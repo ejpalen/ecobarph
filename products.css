@@ -134,6 +134,16 @@ h1 {
 }
 
 @media (min-width: 805px) and (max-width: 1259px) {
+  .HCimg,
+  .HCimg img,
+  .SCimg,
+  .SCimg img,
+  .BBCimg,
+  .BBCimg img,
+  .ICimg,
+  .ICimg img,
+  .OCimg,
+  .OCimg img,
   .Allimg img,
   .Allimg {
     width: 200px;
@@ -142,21 +152,46 @@ h1 {
     margin: 0 auto;
   }
 
-  .Alldeets p {
+  .Alldeets p,
+  .HCdeets p,
+  .OCdeets p,
+  .SCdeets p,
+  .BBCdeets p,
+  .ICdeets p {
     margin: 0;
     font-size: 15px;
   }
 }
 
 @media screen and (max-width: 655px) {
+  .HCheader h1,
+  .OCheader h1,
+  .ICheader h1,
+  .SCheader h1,
+  .BBCheader h1,
   .Allheader h1 {
     font-size: 30px;
   }
 
-  .Allheader {
+  .Allheader,
+  .HCheader,
+  .OCheader,
+  .ICheader,
+  .SCheader,
+  .BBCheader {
     height: 100px;
   }
 
+  .HCimg,
+  .HCimg img,
+  .SCimg,
+  .SCimg img,
+  .BBCimg,
+  .BBCimg img,
+  .ICimg,
+  .ICimg img,
+  .OCimg,
+  .OCimg img,
   .Allimg img,
   .Allimg {
     width: 180px;
@@ -169,13 +204,23 @@ h1 {
     width: 150px;
   }
 
-  .Alldeets p {
+  .Alldeets p,
+  .HCdeets p,
+  .OCdeets p,
+  .SCdeets p,
+  .BBCdeets p,
+  .ICdeets p {
     margin: 0 -10px;
     font-size: 14px;
     text-align: center;
   }
 
-  .Alldeets {
+  .Alldeets,
+  .HCdeets,
+  .OCdeets,
+  .SCdeets,
+  .BBCdeets,
+  .ICdeets {
     margin: 0px auto;
   }
 
@@ -187,7 +232,13 @@ h1 {
     box-shadow: none;
   }
 
-  .Allcategory1 {
+  .Allcategory1,
+  .HCcategory1,
+  .HCcategory2,
+  .SCcategory1,
+  .BBCcategory1,
+  .ICcategory1,
+  .OCcategory1 {
     justify-content: center;
     margin: 0px auto;
   }
@@ -198,7 +249,12 @@ h1 {
     margin-right: 0px;
   }
 
-  div.alldeets {
+  div.Alldeets,
+  div.HCdeets,
+  div.OCdeets,
+  div.SCdeets,
+  div.BBCdeets,
+  div.ICdeets {
     display: flex;
     flex-direction: column;
     margin-right: 0;
@@ -208,11 +264,21 @@ h1 {
 }
 
 @media (min-width: 501px) and (max-width: 655px) {
-  .Alldeets p {
+  .Alldeets p,
+  .HCdeets p,
+  .OCdeets p,
+  .SCdeets p,
+  .BBCdeets p,
+  .ICdeets p {
     width: 200px;
   }
 
-  .Alldeets {
+  .Alldeets,
+  .HCdeets,
+  .OCdeets,
+  .SCdeets,
+  .BBCdeets,
+  .ICdeets {
     width: 200px;
     margin-left: -10px;
   }
