@@ -219,3 +219,25 @@ footer ul {
 .container-btm p {
   font-size: 14px;
 }
+
+@media screen and (max-width: 720px) {
+  .footer-col ul li a {
+    font-size: 13px;
+  }
+
+  .logoftr {
+    margin-right: 100px;
+    margin-bottom: 20px;
+  }
+
+  .footer-col {
+    margin-left: 20px;
+    padding: 0;
+  }
+
+  .footer .row {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+  }
+}
