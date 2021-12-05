@@ -814,7 +814,7 @@ footer ul {
   .bcarehov,
   .icarehov,
   .ocarehov {
-    width: 130px;
+    width: 120px;
     height: 200px;
   }
 
@@ -828,15 +828,16 @@ footer ul {
   .revtitle h1 {
     font-size: 25px;
   }
-  .category h4 {
-    margin-left: 6px;
-    margin-right: 6px;
-  }
 
   .category h1 {
     width: 70%;
     margin: 0px auto;
     letter-spacing: -2px;
+  }
+
+  .category h4 {
+    margin-left: 6px;
+    margin-right: 6px;
   }
 
   .welcome p {
@@ -861,7 +862,7 @@ footer ul {
   .colorb,
   .femb,
   .moistb {
-    width: 140px;
+    width: 100px;
     height: 140px;
     margin-bottom: 0px;
   }
@@ -873,16 +874,16 @@ footer ul {
   .fembhov,
   .moistbhov {
     width: 100px;
-    height: 140px;
+    height: 135px;
     margin-bottom: 0px;
   }
 
   .featuredp h4 {
     width: 155px;
-    height: 265px;
+    height: 250px;
     padding-bottom: 90px;
     font-size: 16px;
-    margin-bottom: 20px;
+    margin-bottom: 40px;
     box-shadow: none;
   }
 
@@ -894,10 +895,6 @@ footer ul {
     font-size: 16px;
     margin: 0px;
     padding: 0;
-  }
-
-  .featuredp {
-    margin-bottom: 20px;
   }
 
   .featuredp div {
