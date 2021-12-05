@@ -832,7 +832,6 @@ footer ul {
   .category h1 {
     width: 70%;
     margin: 0px auto;
-    letter-spacing: -2px;
   }
 
   .category h4 {
@@ -853,7 +852,6 @@ footer ul {
   }
 
   .welcome h1 {
-    letter-spacing: -2px;
     font-size: 35px;
   }
   .acneb,
@@ -904,7 +902,6 @@ footer ul {
 
   .featuredp h1 {
     margin-bottom: 20px;
-    letter-spacing: -2px;
   }
 
   .featuredp {
