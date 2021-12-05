@@ -1,21 +1,131 @@
-@import url("https://fonts.googleapis.com/css?family=Raleway");
-
 * {
-  font-family: Raleway;
-}
-
-html {
-  background-color: white;
-}
-
-* {
-  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  color: #3c4043;
 }
 
 body {
-  margin: 0;
-  padding: 0;
+  width: 100%;
 }
+
+/*id for html tag- will scroll to the top from footer*/
+#top {
+  scroll-behavior: smooth;
+}
+
+/*id for category section- will scroll to the top from footer*/
+#ftrcategory {
+  scroll-behavior: smooth;
+}
+
+/*Specifies all text element*/
+h1,
+h2,
+h4,
+a,
+p,
+li {
+  font-family: "Poppins", sans-serif;
+}
+
+/*Specifies all p element*/
+p {
+  font-size: 18px;
+}
+
+/*For Menu/Navbar*/
+.menu {
+  margin-right: 0px;
+  margin-left: 0px;
+  height: 69px;
+  list-style: none;
+  text-align: center;
+}
+
+.menu ul {
+  margin-top: 5px;
+  display: inline-flex;
+  list-style: none;
+}
+
+.menu ul li {
+  transition: all 0.3s ease-in-out;
+  font-size: 18px;
+  line-height: 30px;
+  width: 90px;
+  margin: 5px;
+  padding: 8px;
+}
+
+.menu ul a {
+  text-decoration: none;
+}
+
+.viewall a {
+  text-decoration: none;
+}
+
+.active,
+.menu ul li:hover {
+  transition: all 0.01s ease-in-out;
+  background: #ede3d9;
+  border-radius: 3px;
+}
+
+.submenu {
+  transition: all 0.2s ease-in-out;
+  display: none;
+}
+
+.menu ul li:hover .submenu {
+  transition: all 0.2s ease-in-out;
+  display: block;
+  position: absolute;
+  background-color: #eae4df;
+  margin-top: 15px;
+  margin-left: -8px;
+}
+
+.menu ul li:hover .submenu ul {
+  transition: all 0.1s ease-in-out;
+  display: block;
+  margin: 10px;
+}
+
+.menu ul li:hover .submenu ul li {
+  width: 200px;
+  padding: 10px;
+  border-bottom: 1px solid #3c4043;
+  background: transparent;
+  border-radius: 0;
+  text-align: left;
+}
+
+.menu ul li:hover .submenu ul li:hover:not(:first-child):not(:nth-child(7)) {
+  width: 200px;
+  padding: 10px;
+  background-color: #cfc3cf;
+  border-radius: 0;
+  text-align: left;
+  cursor: pointer;
+}
+
+.menu ul li:hover .submenu ul li:last-child {
+  border-bottom: none;
+}
+
+.menu ul li:hover .submenu ul li:first-child {
+  border-bottom: none;
+}
+
+.menu ul li:hover .submenu ul li:nth-child(7):hover {
+  border-bottom: none;
+}
+
+.menu ul li:hover .submenu ul li:nth-child(7) {
+  border-bottom: none;
+}
+
 .navbar {
   display: flex;
   position: relative;
@@ -80,46 +190,864 @@ body {
 .navbar {
   display: none;
 }
-@media (max-width: 720px) {
-  .menu {
+
+/*For banner*/
+
+.banner {
+  width: 100%;
+
+  text-align: center;
+  padding: 0px;
+  padding-bottom: 30px;
+}
+
+.banner img {
+  width: 90%;
+  margin: 0 auto;
+  display: block;
+  border-radius: 5px;
+  box-shadow: 0px 0px 0px 1px #eae4df;
+}
+
+/*For  welcome section for home.html*/
+
+.welcome {
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+  box-sizing: border-box;
+  left: 0px;
+  background: #f6f9fe;
+  border-radius: 5px;
+  box-shadow: 0px 0px 0px 0.5px #eae4df;
+  padding: 40px;
+}
+
+.welcome h1 {
+  text-align: center;
+  font-weight: 1000;
+  font-size: 50px;
+  margin-bottom: 20px;
+}
+
+.welcome p {
+  text-align: center;
+  margin: 0px 80px;
+}
+
+/*For category section*/
+.category {
+  margin: 30px auto 0px;
+  width: 100%;
+  padding-bottom: 70px;
+}
+
+.category > div {
+  padding-top: 30px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  text-align: center;
+}
+
+.category img {
+  max-width: 254px;
+}
+
+.category h1 {
+  text-align: center;
+  font-weight: 1000;
+  font-size: 35px;
+  margin: 0px;
+  padding-top: 40px;
+}
+
+.category h4 {
+  font-weight: semibold;
+  border-radius: 5px 5px 5px 5px;
+  margin-bottom: 20px;
+  margin-left: 12px;
+  margin-right: 12px;
+}
+
+.category h4 a {
+  text-decoration: none;
+}
+
+.category p {
+  padding-top: 10px;
+  font-weight: 500;
+  color: white;
+}
+
+.hcare,
+.scare,
+.bcare,
+.icare,
+.ocare {
+  border-radius: 5px;
+  overflow: hidden;
+  width: 220px;
+  height: 280px;
+}
+
+.hcarehov,
+.scarehov,
+.bcarehov,
+.icarehov,
+.ocarehov {
+  border-radius: 5px;
+  width: 220px;
+  height: 280px;
+  position: relative;
+  text-align: center;
+  cursor: pointer;
+  margin-bottom: 10px;
+  background-position: center;
+  background-size: cover;
+  overflow: hidden;
+  transition: all 0.3s ease-in-out;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.hcarehov {
+  background-image: url("./Pictures/hcare.png");
+}
+
+.scarehov {
+  background-image: url("./Pictures/fcare.png");
+}
+
+.bcarehov {
+  background-image: url("./Pictures/bcare.png");
+}
+
+.icarehov {
+  background-image: url("./Pictures/icare.png");
+}
+
+.ocarehov {
+  background-image: url("./Pictures/ocare.png");
+}
+
+.hcarehov:hover,
+.scarehov:hover,
+.bcarehov:hover,
+.icarehov:hover,
+.ocarehov:hover {
+  border-radius: 5px;
+  transform: scale(1.15, 1.15);
+  transition: all 0.3s ease-in-out;
+}
+
+/*For featured products*/
+.featuredp {
+  width: 90%;
+  padding-bottom: 20px;
+  margin: 0px auto;
+}
+
+.featuredp h1 {
+  text-align: center;
+  font-weight: 1000;
+  font-size: 35px;
+  margin: 0px;
+}
+
+.featuredp > div {
+  margin-left: 30px;
+  margin-right: 30px;
+  margin-top: 30px;
+  display: grid;
+  grid-template-columns: 300px 300px 300px;
+  text-align: center;
+  margin-bottom: 20px;
+  column-gap: 60px;
+  justify-content: center;
+}
+
+.featuredp h4 {
+  padding: 10px;
+  margin-bottom: 40px;
+  margin-right: 15px;
+  margin-left: 15px;
+  text-align: center;
+  font-weight: semibold;
+  width: 300px;
+  box-shadow: 0px 0px 2px #000;
+  border-radius: 5px;
+}
+.featuredp img {
+  max-height: 230px;
+}
+
+.featuredp img:hover {
+  border-radius: 5px;
+  transform: scale(1.1, 1.1);
+  transition: 0.3s ease;
+}
+
+.featuredp h4:hover {
+  border-radius: 5px;
+  text-decoration: underline;
+  box-shadow: 0px 0px 5px 0.1px;
+}
+.featuredp h4:hover .acnebhov,
+.featuredp h4:hover .gentlebhov,
+.featuredp h4:hover .thickbhov,
+.featuredp h4:hover .colorbhov,
+.featuredp h4:hover .fembhov,
+.featuredp h4:hover .moistbhov {
+  transform: scale(1.05, 1.05);
+  transition: all 0.3s ease-in-out;
+}
+
+.featuredp p {
+  font-weight: 500;
+  max-width: 300px;
+  padding-top: 10px;
+}
+
+.featuredp .price {
+  color: #327559;
+}
+
+.acneb,
+.gentleb,
+.thickb,
+.colorb,
+.femb,
+.moistb {
+  border-radius: 5px;
+  overflow: hidden;
+  height: 270px;
+}
+
+.acnebhov,
+.gentlebhov,
+.thickbhov,
+.colorbhov,
+.fembhov,
+.moistbhov {
+  height: 270px;
+  width: 270px;
+  border-radius: 5px;
+  position: relative;
+  margin-bottom: 10px;
+  margin-left: auto;
+  margin-right: auto;
+  background-position: center;
+  background-size: cover;
+  overflow: hidden;
+  transition: all 0.3s ease-in-out;
+}
+
+.acnebhov {
+  background-image: url("./Pictures/acnebar2.png");
+}
+
+.gentlebhov {
+  background-image: url("./Pictures/gentlebar1.png");
+}
+
+.thickbhov {
+  background-image: url("./Pictures/thickbar1.png");
+}
+
+.colorbhov {
+  background-image: url("./Pictures/clrpreservebr.png");
+}
+
+.fembhov {
+  background-image: url("./Pictures/femininebr.png");
+}
+
+.moistbhov {
+  background-image: url("./Pictures/moisturebar.png");
+}
+
+/*For "View all button" in the featured products section*/
+.viewall {
+  transition: all 0.3s ease-in-out;
+  font-weight: 600;
+  width: 100%;
+  left: 0px;
+  margin: 0px;
+  padding-bottom: 90px;
+}
+
+.viewallbtn {
+  transition: all 0.3s ease-in-out;
+  background: #f6f6f6;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 0px;
+  width: 100px;
+  padding-right: 80px;
+  padding-bottom: 10px;
+  border-radius: 5px;
+  text-align: center;
+  border-color: #6d9886;
+  padding-top: 10px;
+  padding-left: 80px;
+  padding-bottom: 10px;
+  box-shadow: 0px 0px 0px 2px #6d9886;
+}
+
+.viewallbtn:hover {
+  transition: 0.3s ease;
+  transform: scale(1.1, 1.1);
+  background-color: #d3e3d3;
+}
+
+/*For reviews section*/
+.border {
+  width: 60%;
+  margin-left: auto;
+  margin-right: auto;
+  border-top-style: solid;
+  border-width: 2px;
+}
+
+.revtitle h1 {
+  text-align: center;
+  font-weight: 1000;
+  font-size: 35px;
+  margin: 0px;
+  margin-bottom: 30px;
+}
+
+#reviews {
+  /*background-color: #c1d7df;
+  padding: 50px 0;*/
+  padding: 0px 0 50px;
+  width: 90%;
+  margin: 0px auto;
+}
+#slider {
+  width: 70%;
+  margin: 0 auto;
+  padding-left: 0px;
+}
+
+#slider img {
+  width: 100%;
+}
+
+#slider li {
+  margin: 0px 5px;
+}
+
+button {
+  margin: 0;
+  padding: 0;
+  background: none;
+  border: none;
+  border-radius: 0;
+  outline: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  cursor: pointer;
+}
+.slide-arrow {
+  position: absolute;
+  top: 50%;
+  margin-top: -15px;
+}
+.prev-arrow {
+  left: -40px;
+  width: 0;
+  height: 0;
+  border-left: 0 solid transparent;
+  border-right: 15px solid #113463;
+  border-top: 10px solid transparent;
+  border-bottom: 10px solid transparent;
+}
+.next-arrow {
+  right: -40px;
+  width: 0;
+  height: 0;
+  border-right: 0 solid transparent;
+  border-left: 15px solid #113463;
+  border-top: 10px solid transparent;
+  border-bottom: 10px solid transparent;
+}
+
+/*For Fast fact section*/
+.fastfact {
+  width: 90%;
+  height: 500px;
+  margin: 0px auto;
+  background: #a8cabc;
+  background-image: url("./Pictures/fastfact4.jpg");
+  background-position: bottom;
+  background-size: cover;
+  border-radius: 5px;
+  text-align: right;
+  padding-right: 30px;
+  box-sizing: border-box;
+  margin-bottom: 50px;
+  margin-top: 60px;
+}
+
+.fastfact h1 {
+  font-weight: 1000;
+  font-size: 70px;
+}
+
+.fastfact p {
+  font-size: 40px;
+  margin-left: auto;
+  width: 60%;
+}
+
+.fastfact a {
+  text-decoration: none;
+}
+
+.featuredp a {
+  text-decoration: none;
+}
+
+/*For tips button*/
+.tips {
+  text-align: right;
+  margin-top: 30px;
+  margin-left: auto;
+}
+
+#tipsbtn {
+  font-size: 20px;
+  background-color: #eae4df;
+  padding: 10px 15px;
+  font-weight: 600;
+  width: fit-content;
+  border-radius: 5px;
+  box-shadow: 0px 0px 0px 2px #000;
+  transition: all 0.3s ease-in-out;
+}
+
+#tipsbtn:hover {
+  color: #212121;
+  transition: all 0.3s ease-in-out;
+  transform: scale(1.05, 1.05);
+}
+
+.footer {
+  width: 100%;
+  background: #f6f6f6;
+  padding: 10px 0px 5px 0px;
+}
+
+.container {
+  width: 100%;
+  margin: auto;
+}
+
+.footer .row {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.footer-col {
+  padding: 0px 20px;
+  margin: 0px 0px 0 55px;
+}
+
+.footer-col h4 {
+  padding-left: 10px;
+  font-size: 25px;
+  margin-bottom: 10px;
+  margin-top: 20px;
+  position: relative;
+}
+
+footer ul {
+  list-style: none;
+}
+
+.footer-col ul li::marker {
+  color: #f6f6f6;
+  font-size: 1.5em;
+}
+
+.footer-col ul li a {
+  padding-left: 10px;
+  padding-right: 10px;
+  margin-bottom: 5px;
+  font-size: 16px;
+  font-weight: 300;
+  text-decoration: none;
+  display: block;
+}
+
+.footer-col ul li .ftrlnk:hover {
+  background: #c8ead9;
+  border-radius: 3px;
+}
+
+.footer-col .social-links a {
+  height: 40px;
+  width: 40px;
+  display: inline-block;
+}
+
+.footer-col #logo {
+  max-width: 200px;
+  margin-bottom: -27px;
+}
+
+.footer-col .social-links img {
+  max-width: 45px;
+  margin-top: 5px;
+}
+
+.footer-col .devpics {
+  padding-left: 5px;
+  max-width: 100px;
+  margin-top: 5px;
+}
+
+.container-btm {
+  text-align: center;
+  padding-top: 30px;
+}
+
+.fblogo {
+  margin-left: 10px;
+  width: 44px;
+  height: 44px;
+  background-image: url("./Pictures/fblogo.png");
+  background-size: cover;
+}
+
+.fblogo:hover {
+  cursor: pointer;
+  background-image: url("./Pictures/fbhover1.png");
+  background-size: cover;
+}
+
+.instalogo {
+  width: 44px;
+  height: 44px;
+  background-image: url("./Pictures/instalogo.png");
+  background-size: cover;
+}
+
+.instalogo:hover {
+  cursor: pointer;
+  background-image: url("./Pictures/instahover.png");
+  background-size: cover;
+}
+
+/*Specifies only the .container-btm p element*/
+.container-btm p {
+  font-size: 14px;
+}
+
+@media (max-width: 1200px) {
+  .featuredp div {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0;
+    margin-top: 20px;
+  }
+
+  .featuredp h4 {
+    margin: 10px -15px;
+  }
+}
+
+@media (max-width: 900px) {
+  .banner img {
+    width: 160%;
+    margin-left: -50px;
+  }
+  .banner {
+    overflow: hidden;
+  }
+
+  .revtitle,
+  #reviews {
     display: none;
   }
 
-  .navbar {
-    display: flex;
+  .viewall {
+    padding-bottom: 20px;
+  }
+}
+
+@media screen and (max-width: 720px) {
+  p {
+    font-size: 20px;
+  }
+
+  .menu ul li {
+    font-size: 15px;
+    margin: 0px;
     box-sizing: border-box;
   }
 
-  .navbar {
-    flex-direction: column;
-    align-items: flex-start;
+  .banner img {
+    width: 160%;
+    margin-left: -50px;
   }
 
-  .toggle-button {
-    display: flex;
+  .banner {
+    overflow: hidden;
   }
 
-  .navbar-links {
+  .hcare,
+  .scare,
+  .bcare,
+  .icare,
+  .ocare {
+    width: 120px;
+    height: 200px;
+  }
+
+  .hcarehov,
+  .scarehov,
+  .bcarehov,
+  .icarehov,
+  .ocarehov {
+    width: 120px;
+    height: 200px;
+  }
+
+  .category p {
+    font-size: 16px;
+  }
+
+  .category h1,
+  .welcome h1,
+  .featuredp h1,
+  .revtitle h1 {
+    font-size: 25px;
+  }
+
+  .category h1 {
+    width: 70%;
+    margin: 0px auto;
+    letter-spacing: -2px;
+  }
+
+  .category h4 {
+    margin-left: 6px;
+    margin-right: 6px;
+  }
+
+  .welcome p {
+    font-size: 16px;
+    margin: 0;
+  }
+
+  .welcome {
+    padding: 15px;
+    width: 100%;
+    background: none;
+    box-shadow: none;
+  }
+
+  .welcome h1 {
+    letter-spacing: -2px;
+    font-size: 35px;
+  }
+  .acneb,
+  .gentleb,
+  .thickb,
+  .colorb,
+  .femb,
+  .moistb {
+    width: 100px;
+    height: 140px;
+    margin-bottom: 0px;
+  }
+
+  .acnebhov,
+  .gentlebhov,
+  .thickbhov,
+  .colorbhov,
+  .fembhov,
+  .moistbhov {
+    width: 100px;
+    height: 135px;
+    margin-bottom: 0px;
+  }
+
+  .featuredp h4 {
+    width: 155px;
+    height: 250px;
+    padding-bottom: 90px;
+    font-size: 16px;
+    margin-bottom: 40px;
+    box-shadow: none;
+  }
+
+  .featuredp h4:hover {
+    box-shadow: none;
+  }
+
+  .featuredp p {
+    font-size: 16px;
+    margin: 0px;
+    padding: 0;
+  }
+
+  .featuredp div {
+    width: 100%;
+    margin: 0px;
+  }
+
+  .featuredp h1 {
+    margin-bottom: 20px;
+    letter-spacing: -2px;
+  }
+
+  .featuredp {
+    margin-bottom: 25px;
+  }
+
+  #viewalltxt {
+    font-size: 15px;
+  }
+
+  .viewallbtn {
+    padding: 5px 15px;
+  }
+
+  .fastfact h1 {
+    font-size: 30px;
+    padding-right: 0px;
+    text-align: left;
+  }
+
+  .fastfact p {
+    font-size: 20px;
+    width: 100%;
+    margin-left: 0;
+    text-align: left;
+  }
+
+  .tips {
+    margin-top: 10px;
+  }
+
+  #tipsbtn {
+    font-size: 10px;
+    padding: 5px;
+  }
+
+  .fastfact {
+    height: 250px;
+    padding: 15px;
+    margin-top: 30px;
+  }
+
+  .footer-col ul li a {
+    font-size: 13px;
+  }
+
+  .devftr {
     display: none;
-    width: 100%;
   }
 
-  .navbar-links ul {
-    width: 100%;
-    flex-direction: column;
-    background-color: white;
-    border-top: 1px solid #eaeaeb;
+  .logoftr {
+    margin-right: 100px;
+    margin-bottom: 20px;
   }
 
-  .navbar-links ul li {
-    text-align: center;
+  .footer-col {
+    margin-left: 20px;
+    padding: 0;
   }
 
-  .navbar-links ul li a {
-    padding: 0.5rem 1rem;
+  #reviews,
+  .revtitle {
+    display: none;
   }
 
-  .navbar-links.active {
+  .viewall {
+    padding-bottom: 20px;
+  }
+
+  .footer .row {
     display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .acneb,
+  .gentleb,
+  .thickb,
+  .colorb,
+  .femb,
+  .moistb {
+    width: 100px;
+    height: 160px;
+    margin-bottom: 0px;
+  }
+
+  .acnebhov,
+  .gentlebhov,
+  .thickbhov,
+  .colorbhov,
+  .fembhov,
+  .moistbhov {
+    width: 90px;
+    height: 135px;
+    margin-bottom: 0px;
+  }
+
+  .featuredp h4 {
+    width: 130px;
+    height: 157px;
+    padding-bottom: 90px;
+    font-size: 16px;
+    margin-bottom: 50px;
+  }
+
+  .hcare,
+  .scare,
+  .bcare,
+  .icare,
+  .ocare,
+  .hcarehov,
+  .scarehov,
+  .bcarehov,
+  .icarehov,
+  .ocarehov {
+    width: 160px;
+    height: 220px;
+  }
+
+  .viewallbtn {
+    margin-top: 25px;
+  }
+}
+
+@media screen and (max-width: 360px) {
+  .menu ul li {
+    font-size: 10px;
+    margin: 0px;
+  }
+
+  .menu ul {
+    width: 90%;
+    margin-top: 5px;
+    margin-left: -20px;
+  }
+}
+
+@media (min-width: 721px) and (max-width: 836px) {
+  .fastfact {
+    height: 590px;
+    padding: 15px;
+    margin-top: 30px;
   }
 }
