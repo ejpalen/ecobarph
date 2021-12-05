@@ -235,9 +235,8 @@ footer ul {
     flex-wrap: wrap;
   }
 
-  .aboutlastimg img,
   .aboutheader img {
-    width: 300px;
+    width: 220px;
   }
 
   .footer .row {
