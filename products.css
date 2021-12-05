@@ -70,14 +70,12 @@ h1 {
 .BBCcategory1,
 .ICcategory1,
 .OCcategory1,
-.Allcategory1,
-.Allcategory2,
-.Allcategory3,
-.Allcategory4 {
+.Allcategory1 {
   margin: 0px 20px;
   display: flex;
   justify-content: center;
   flex-direction: row;
+  flex-wrap: wrap;
 }
 
 .HCcategoryctr,
@@ -133,4 +131,78 @@ h1 {
   height: 100px;
   margin: 0px 25px 20px;
   text-align: center;
+}
+
+@media (min-width: 805px) and (max-width: 1259px) {
+  .Allimg img,
+  .Allimg {
+    width: 200px;
+    height: 200px;
+    display: flex;
+    margin: 0;
+  }
+
+  .Alldeets p {
+    margin: 0;
+    font-size: 15px;
+  }
+}
+
+@media screen and (max-width: 655px) {
+  .Allheader h1 {
+    font-size: 30px;
+  }
+
+  .Allheader {
+    height: 100px;
+  }
+
+  .Allimg img,
+  .Allimg {
+    width: 180px;
+    height: 180px;
+    display: flex;
+    margin: 0px -5px;
+  }
+
+  .border {
+    width: 150px;
+  }
+
+  .Alldeets p {
+    margin: 0 -10px;
+    font-size: 14px;
+    text-align: center;
+  }
+
+  .Alldeets {
+    margin: 0px auto;
+  }
+
+  .border {
+    box-shadow: none;
+  }
+
+  .border:hover {
+    box-shadow: none;
+  }
+
+  .Allcategory1 {
+    justify-content: center;
+    margin: 0px auto;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .logoftr {
+    margin-right: 0px;
+  }
+
+  div.alldeets {
+    display: flex;
+    flex-direction: column;
+    margin-right: 0;
+    width: 100%;
+    margin-bottom: -60px;
+  }
 }
