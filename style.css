@@ -805,8 +805,8 @@ footer ul {
   .bcare,
   .icare,
   .ocare {
-    width: 160px;
-    height: 230px;
+    width: 120px;
+    height: 200px;
   }
 
   .hcarehov,
@@ -814,8 +814,8 @@ footer ul {
   .bcarehov,
   .icarehov,
   .ocarehov {
-    width: 170px;
-    height: 230px;
+    width: 130px;
+    height: 200px;
   }
 
   .category p {
@@ -827,6 +827,10 @@ footer ul {
   .featuredp h1,
   .revtitle h1 {
     font-size: 25px;
+  }
+  .category h4 {
+    margin-left: 6px;
+    margin-right: 6px;
   }
 
   .category h1 {
@@ -857,8 +861,8 @@ footer ul {
   .colorb,
   .femb,
   .moistb {
-    width: 100px;
-    height: 160px;
+    width: 140px;
+    height: 140px;
     margin-bottom: 0px;
   }
 
@@ -869,16 +873,20 @@ footer ul {
   .fembhov,
   .moistbhov {
     width: 100px;
-    height: 160px;
+    height: 140px;
     margin-bottom: 0px;
   }
 
   .featuredp h4 {
     width: 155px;
-    height: 160px;
+    height: 265px;
     padding-bottom: 90px;
     font-size: 16px;
     margin-bottom: 20px;
+    box-shadow: none;
+  }
+
+  .featuredp h4:hover {
     box-shadow: none;
   }
 
@@ -886,6 +894,10 @@ footer ul {
     font-size: 16px;
     margin: 0px;
     padding: 0;
+  }
+
+  .featuredp {
+    margin-bottom: 20px;
   }
 
   .featuredp div {
@@ -965,49 +977,6 @@ footer ul {
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
-  }
-}
-
-@media (max-width: 720px) {
-  .menu {
-    display: none;
-  }
-
-  .navbar {
-    display: flex;
-    box-sizing: border-box;
-  }
-
-  .navbar {
-    flex-direction: column;
-    align-items: flex-start;
-  }
-
-  .toggle-button {
-    display: flex;
-  }
-
-  .navbar-links {
-    display: none;
-    width: 100%;
-  }
-
-  .navbar-links ul {
-    width: 100%;
-    flex-direction: column;
-    background-color: white;
-  }
-
-  .navbar-links ul li {
-    text-align: center;
-  }
-
-  .navbar-links ul li a {
-    padding: 0.5rem 1rem;
-  }
-
-  .navbar-links.active {
-    display: flex;
   }
 }
 
