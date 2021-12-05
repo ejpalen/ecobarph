@@ -60,6 +60,22 @@
       </ul>
     </div>
 
+    <nav class="navbar">
+      <div class="brand-title"></div>
+      <a href="#" class="toggle-button">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </a>
+      <div class="navbar-links">
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Products</a></li>
+          <li><a href="#">Resellers</a></li>
+          <li><a href="#">About</a></li>
+        </ul>
+      </div>
+    </nav>
 
     <!--This part is for the Ecobar banner (The very front of the homepage)-->    
     <div class="banner">
@@ -201,13 +217,13 @@
     <div id="reviews">
       <ul id="slider">
         <li class="slide-item">
-          <img src="Pictures/r1a.png" />
+          <img src="Pictures/r1a.png" loading="lazy"/>
         </li>
         <li class="slide-item">
-          <img src="Pictures/r2a.png" />
+          <img src="Pictures/r2a.png" loading="lazy"/>
         </li>
         <li class="slide-item">
-          <img src="Pictures/r3a.png" />
+          <img src="Pictures/r3a.png" loading="lazy"/>
         </li>
       </ul>
     </div>
@@ -287,6 +303,13 @@
           nextArrow: '<button class="slide-arrow next-arrow"></button>',
         });
       });
+
+
+const toggleButton = document.getElementsByClassName('toggle-button')[0]
+const navbarLinks = document.getElementsByClassName('navbar-links')[0]
+toggleButton.addEventListener('click', () => {
+navbarLinks.classList.toggle('active')
+})
     </script>
 
   </body>
