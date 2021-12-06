@@ -352,6 +352,9 @@ footer ul {
   text-align: center;
   margin: 0 auto;
 }
+.tipsbannerresp {
+  display: none;
+}
 
 .tipsbannerresp img {
   width: 100%;
@@ -363,6 +366,11 @@ footer ul {
   .tipsbanner,
   .tipsbanner2 {
     display: none;
+  }
+
+  .tipsbannerresp {
+    display: flex;
+    flex-direction: column;
   }
 }
 
