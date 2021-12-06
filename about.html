@@ -10,45 +10,75 @@
       href="https://fonts.googleapis.com/css2?family=Poppins&display=swap"
       rel="stylesheet"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
     <meta content="width=device-width, initial-scale=1" name="viewport" />
     <link rel="stylesheet" href="navstyle.css" />
     <script src="navscript.js" defer></script>
   </head>
   <body>
-    <div class="menu">
-      <ul>
-        <a href="index.html"><li>Home</li></a>
-        <li>
-          <a href="#">Products</a>
-          <!--This part is for the dropdown menu/ Submenu for "Products" in the navbar-->
-          <div class="submenu">
-            <ul>
-              <li class="menu-category">
-                <b>Browse by category</b>
-              </li>
-              <li><a href="Category_Hair.html">Hair Care</a></li>
-              <li><a href="Category_Skin.html">Skin Care</a></li>
-              <li><a href="Category_B&B.html">Bath and Body</a></li>
-              <li><a href="Category_Intimate.html">Intimate Care</a></li>
-              <li><a href="Category_Oral.html">Oral Care</a></li>
-              <li><a href="#0"> </a></li>
-              <li class="menu-category">
-                <a href="Category_All.html"><b>Browse all Products</b></a>
-              </li>
-            </ul>
-          </div>
-        </li>
-        <a href="resellers.html"><li>Resellers</li></a>
-        <a href="about.html"><li class="active">About</li></a>
-      </ul>
+    <div class="menuwrapper">
+      <div class="navleft">
+        <a href="index.html"><h1>ecobar™</h1></a>
+
+        <div class="menu">
+          <ul>
+            <li>
+              <a href="#">Products</a>
+              <!--This part is for the dropdown menu/ Submenu for "Products" in the navbar-->
+              <div class="submenu">
+                <ul>
+                  <li class="menu-category">
+                    <b>Browse by category</b>
+                  </li>
+                  <li><a href="Category_Hair.html">Hair Care</a></li>
+                  <li><a href="Category_Skin.html">Skin Care</a></li>
+                  <li><a href="Category_B&B.html">Bath and Body</a></li>
+                  <li><a href="Category_Intimate.html">Intimate Care</a></li>
+                  <li><a href="Category_Oral.html">Oral Care</a></li>
+                  <li><a href="#0"> </a></li>
+                  <li class="menu-category">
+                    <a href="Category_All.html"><b>Browse all Products</b></a>
+                  </li>
+                </ul>
+              </div>
+            </li>
+            <a href="resellers.html"><li>Resellers</li></a>
+            <a href="about.html"><li>About</li></a>
+          </ul>
+        </div>
+      </div>
+      <div class="navfeatures">
+        <a href="#" class="navicon" title="Add to cart"
+          ><i class="fa fa-fw fa-shopping-cart"></i
+        ></a>
+        <a href="#" class="navicon" title="My Account"
+          ><i class="fa fa-fw fa-user"></i
+        ></a>
+      </div>
     </div>
+
     <nav class="navbar">
-      <div class="brand-title"></div>
-      <a href="#" class="toggle-button">
-        <span class="bar"></span>
-        <span class="bar"></span>
-        <span class="bar"></span>
-      </a>
+      <div class="hello">
+        <div class="navrespleft">
+          <a href="#" class="toggle-button">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+          </a>
+        </div>
+        <a href="index.html"><h1>ecobar™</h1></a>
+        <div class="navfeatures">
+          <a href="#" class="navicon" title="Add to cart"
+            ><i class="fa fa-fw fa-shopping-cart"></i
+          ></a>
+          <a href="#" class="navicon" title="My Account"
+            ><i class="fa fa-fw fa-user"></i
+          ></a>
+        </div>
+      </div>
       <div class="navbar-links">
         <ul>
           <li><a href="index.html">Home</a></li>
