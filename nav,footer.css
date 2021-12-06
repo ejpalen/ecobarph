@@ -21,7 +21,6 @@ p {
   height: 69px;
   list-style: none;
   text-align: center;
-  background-color: #f6f9fe;
 }
 
 .menu ul {
@@ -222,4 +221,21 @@ footer ul {
 
 .contw {
   width: 450px;
+}
+
+@media screen and (max-width: 720px) {
+  p {
+    font-size: 15px;
+  }
+
+  .footer .row {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+  }
+
+  .footer-col {
+    margin-left: 20px;
+    padding: 0;
+  }
 }
