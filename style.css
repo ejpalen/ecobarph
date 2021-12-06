@@ -320,26 +320,25 @@ p {
 
 .viewallbtn {
   transition: all 0.3s ease-in-out;
-  background: #f6f6f6;
+  background: #3c4043;
   margin-left: auto;
   margin-right: auto;
   margin-top: 0px;
-  width: 100px;
-  padding-right: 80px;
-  padding-bottom: 10px;
+  padding: 15px 25px;
+  width: 160px;
   border-radius: 5px;
   text-align: center;
-  border-color: #6d9886;
-  padding-top: 10px;
-  padding-left: 80px;
-  padding-bottom: 10px;
-  box-shadow: 0px 0px 0px 2px #6d9886;
+  cursor: pointer;
+}
+
+#viewalltxt {
+  color: white;
 }
 
 .viewallbtn:hover {
   transition: 0.3s ease;
   transform: scale(1.1, 1.1);
-  background-color: #d3e3d3;
+  background-color: #327559;
 }
 
 /*For reviews section*/
@@ -750,6 +749,7 @@ footer ul {
 
   #viewalltxt {
     font-size: 15px;
+    padding: 5px;
   }
 
   .viewallbtn {
