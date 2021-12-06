@@ -98,6 +98,7 @@ h2 {
   padding: 15px;
   border-radius: 5px;
   box-shadow: 0px 0px 1px #000;
+  box-sizing: unset;
 }
 .p1:hover,
 .p2:hover,
@@ -247,4 +248,127 @@ button {
   border: none;
   border-radius: 5px;
   cursor: pointer;
+}
+
+@media screen and (max-width: 1300px) {
+  .p1 img,
+  .p2 img,
+  .p3 img,
+  .p4 img {
+    width: 200px;
+    border-radius: 5px;
+  }
+
+  .p1,
+  .p2,
+  .p3,
+  .p4 {
+    width: 200px;
+    margin: 57px 10px 0px;
+  }
+}
+
+@media screen and (max-width: 1020px) {
+  .p1,
+  .p2,
+  .p3,
+  .p4 {
+    width: 150px;
+    box-shadow: none;
+  }
+
+  .p1 img,
+  .p2 img,
+  .p3 img,
+  .p4 img {
+    width: 150px;
+    border-radius: 5px;
+  }
+}
+
+@media screen and (max-width: 790px) {
+  .details2 {
+    margin-left: 20px;
+  }
+  .suggestions2 {
+    display: grid;
+    grid-template-columns: 150px 150px;
+    grid-gap: 0px 80px;
+    margin-top: 20px;
+  }
+
+  .p1,
+  .p2,
+  .p3,
+  .p4 {
+    width: 150px;
+    box-shadow: none;
+    margin-top: 10px;
+    margin-left: -14px;
+  }
+
+  .p1 img,
+  .p2 img,
+  .p3 img,
+  .p4 img {
+    width: 150px;
+    border-radius: 5px;
+  }
+}
+
+@media screen and (max-width: 990px) {
+  .info2 {
+    flex-wrap: wrap;
+    flex-direction: column;
+    margin-bottom: 20px;
+    margin-top: 0px !important;
+  }
+
+  .contw {
+    width: 90% !important;
+    margin: 20px auto;
+  }
+
+  .product2 {
+    width: 90%;
+    margin-bottom: 20px;
+  }
+
+  .prodimage2 img {
+    width: 350px;
+  }
+
+  .ingred2 {
+    margin-left: 0px;
+    margin-right: 0px;
+  }
+}
+
+@media screen and (max-width: 610px) {
+  .product2 {
+    flex-direction: column;
+  }
+
+  .prodimage2,
+  .prodd2 {
+    margin: 0;
+  }
+
+  .details2 {
+    margin: 0;
+    margin-top: 10px;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .prodimage2 img {
+    width: 320px;
+  }
+
+  .desc2,
+  .usage2,
+  .ingredient2 {
+    padding: 0;
+    background-color: white;
+  }
 }
