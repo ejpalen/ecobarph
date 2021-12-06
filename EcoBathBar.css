@@ -358,6 +358,24 @@ button {
     margin: 0;
     margin-top: 10px;
   }
+
+  .details2 h1 {
+    font-size: 30px;
+  }
+
+  .writereviewctr h1,
+  .revtitle h1,
+  .youmay h1 {
+    font-size: 25px;
+  }
+
+  .ingredient2 p {
+    font-size: 16px;
+  }
+
+  h2 {
+    font-size: 20px;
+  }
 }
 
 @media screen and (max-width: 450px) {
@@ -370,5 +388,13 @@ button {
   .ingredient2 {
     padding: 0;
     background-color: white;
+  }
+
+  .suggestions2 {
+    grid-gap: 0px 50px;
+  }
+
+  .product2 {
+    margin-top: 30px;
   }
 }
