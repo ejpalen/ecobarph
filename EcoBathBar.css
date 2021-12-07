@@ -6,6 +6,7 @@ h2 {
   margin-bottom: 10px;
 }
 
+/*For product header- image and name*/
 .product2 {
   display: flex;
   justify-content: center;
@@ -14,7 +15,7 @@ h2 {
 }
 .prodimage2 img {
   width: 450px;
-  border-radius: 17px;
+  border-radius: 10px;
 }
 .prodimage2 {
   margin-left: 20px;
@@ -30,6 +31,8 @@ h2 {
   display: flex;
   align-items: end;
 }
+
+/*For product info*/
 .info2 {
   display: flex;
   margin: 50px 0px 70px;
@@ -40,7 +43,7 @@ h2 {
   background-color: #ede3d9;
   margin-left: 20px;
   margin-right: 20px;
-  border-radius: 17px;
+  border-radius: 10px;
   padding: 20px;
   box-sizing: border-box;
 }
@@ -55,7 +58,7 @@ h2 {
 }
 .ingredient2 {
   background-color: #ede3d9;
-  border-radius: 17px;
+  border-radius: 10px;
   padding: 20px;
   box-sizing: border-box;
 }
@@ -65,7 +68,7 @@ h2 {
 .usage2 {
   background-color: #ede3d9;
   margin-top: 20px;
-  border-radius: 17px;
+  border-radius: 10px;
   padding: 20px;
   box-sizing: border-box;
   margin-left: 20px;
@@ -78,6 +81,9 @@ h2 {
 .usage2 p {
   text-align: justify;
 }
+
+/*For suggestions*/
+
 .youmay {
   text-align: center;
   margin-top: 75px;
@@ -119,7 +125,8 @@ h2 {
   color: #327559;
   font-weight: 500;
 }
-/*button*/
+
+/*For button*/
 .butt {
   border-radius: 5px;
   font-size: 20px;
@@ -129,11 +136,23 @@ h2 {
   color: white;
   border: none;
   margin-top: 10px;
+  width: 180px;
 }
 .butt:hover {
   background-color: #327559;
   transition: 0.3s;
   color: white;
+}
+
+.order_buttons {
+  display: flex;
+  flex-direction: column;
+}
+
+.cart {
+  background-color: white;
+  border: 2px solid #3c4043;
+  color: #3c4043;
 }
 
 /*Start of reviews slider*/
@@ -159,12 +178,9 @@ h2 {
   padding-left: 0px;
 }
 
-#slider img {
-  width: 100%;
-}
-
 #slider li {
   margin: 0px 5px;
+  padding: 10px;
 }
 
 button {
@@ -189,7 +205,7 @@ button {
   width: 0;
   height: 0;
   border-left: 0 solid transparent;
-  border-right: 15px solid #113463;
+  border-right: 15px solid #3c4043;
   border-top: 10px solid transparent;
   border-bottom: 10px solid transparent;
 }
@@ -198,12 +214,14 @@ button {
   width: 0;
   height: 0;
   border-right: 0 solid transparent;
-  border-left: 15px solid #113463;
+  border-left: 15px solid #3c4043;
   border-top: 10px solid transparent;
   border-bottom: 10px solid transparent;
 }
 
 /*End of reviews slider*/
+
+/*Write a review*/
 
 .writereviewctr {
   background-color: #f6f9fe;
@@ -231,11 +249,16 @@ button {
 .reviewinput input,
 .reviewinput textarea {
   margin: 0px 0px 10px;
-  padding: 5px;
+  padding: 10px;
+  border-radius: 10px;
+  border-style: solid;
+  border-color: #3c4043;
+  border-width: 2px;
 }
 
 #fname,
-#textarea {
+#textarea,
+#Email {
   width: 350px;
 }
 
@@ -249,6 +272,57 @@ button {
   border-radius: 5px;
   cursor: pointer;
 }
+
+#submit:hover {
+  background: #327559;
+}
+
+/*CARD STYLES*/
+h2 {
+  font-size: 20px;
+}
+
+.checked {
+  color: orange;
+}
+
+.reviewcard {
+  width: 100%;
+  padding: 30px 30px 50px;
+  border-radius: 10px;
+  height: 330px;
+  box-shadow: 0px 0px 18px -4px #ceced1;
+  margin: 4px 2px;
+}
+
+.reviewcard .reuserdetail {
+  margin-left: 10px;
+}
+.reviewcard p {
+  font-size: 14px;
+  margin-top: 10px;
+}
+
+.reviewcard img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+}
+
+.revuser {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.revuser h6 {
+  color: #919191;
+}
+
+/*END OF CARD STYLES*/
+
+/*Mediq Queries*/
 
 @media screen and (max-width: 1300px) {
   .p1 img,
@@ -372,10 +446,6 @@ button {
   .ingredient2 p {
     font-size: 16px;
   }
-
-  h2 {
-    font-size: 20px;
-  }
 }
 
 @media screen and (max-width: 450px) {
@@ -396,5 +466,31 @@ button {
 
   .product2 {
     margin-top: 30px;
+  }
+}
+
+/*for Reviews slider Media Queries*/
+
+@media screen and (max-width: 1090px) {
+  #revieww {
+    width: 100%;
+  }
+
+  #slider {
+    width: 100%;
+  }
+
+  .prev-arrow {
+    left: -20px;
+  }
+
+  .next-arrow {
+    right: -20px;
+  }
+}
+
+@media screen and (max-width: 717px) {
+  #slider {
+    width: 90%;
   }
 }
