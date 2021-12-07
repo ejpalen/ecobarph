@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en" id="top">
+  <head>
+    <meta charset="utf-8" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="icon" href="Pictures/favicon.png" type="image/x-icon" />
+    <title>Ecobar | Log-in</title>
+
+    <!--Style-->
+    <link rel="stylesheet" href="1login.css" />
+    <link rel="stylesheet" href="navnoborder,footer.css" />
+    <!--Poppins font-->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins&display=swap"
+      rel="stylesheet"
+    />
+    <!--Slick Slider-->
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdn.jsdelivr.net/jquery.slick/1.6.0/slick.css"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdn.jsdelivr.net/jquery.slick/1.6.0/slick-theme.css"
+    />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"
+    ></script>
+    <link rel="stylesheet" href="navstyle.css" />
+
+    <script src="navscript.js" defer></script>
+    <meta content="width=device-width, initial-scale=1" name="viewport" />
+    <style>
+      .menuwrapper {
+        margin-bottom: 0px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="allwrapper">
+      <div class="menuwrapper">
+        <div class="navleft">
+          <a href="index.html"><h1>ecobar™</h1></a>
+
+          <div class="menu">
+            <ul>
+              <li>
+                <a href="#">Products</a>
+                <!--This part is for the dropdown menu/ Submenu for "Products" in the navbar-->
+                <div class="submenu">
+                  <ul>
+                    <li class="menu-category">
+                      <b>Browse by category</b>
+                    </li>
+                    <li><a href="Category_Hair.html">Hair Care</a></li>
+                    <li><a href="Category_Skin.html">Skin Care</a></li>
+                    <li><a href="Category_B&B.html">Bath and Body</a></li>
+                    <li><a href="Category_Intimate.html">Intimate Care</a></li>
+                    <li><a href="Category_Oral.html">Oral Care</a></li>
+                    <li><a href="#0"> </a></li>
+                    <li class="menu-category">
+                      <a href="Category_All.html"><b>Browse all Products</b></a>
+                    </li>
+                  </ul>
+                </div>
+              </li>
+              <a href="resellers.html"><li>Resellers</li></a>
+              <a href="about.html"><li>About</li></a>
+            </ul>
+          </div>
+        </div>
+        <div class="navfeatures">
+          <a href="#" class="navicon" title="Add to cart"
+            ><i class="fa fa-fw fa-shopping-cart"></i
+          ></a>
+          <a href="#" class="navicon active" title="My Account"
+            ><i class="fa fa-fw fa-user"></i
+          ></a>
+        </div>
+      </div>
+
+      <nav class="navbar">
+        <div class="hello">
+          <div class="navrespleft">
+            <a href="#" class="toggle-button">
+              <span class="bar"></span>
+              <span class="bar"></span>
+              <span class="bar"></span>
+            </a>
+          </div>
+          <a href="index.html"><h1>ecobar™</h1></a>
+          <div class="navfeatures">
+            <a href="#" class="navicon" title="Add to cart"
+              ><i class="fa fa-fw fa-shopping-cart"></i
+            ></a>
+            <a href="#" class="navicon" title="My Account"
+              ><i class="fa fa-fw fa-user"></i
+            ></a>
+          </div>
+        </div>
+        <div class="navbar-links">
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li>
+              <a href="#" class="toggle1">Products</a>
+  
+              <div class="navbar-links1">
+                <ul>
+                  <li><a href="Category_Hair.html">Hair Care</a></li>
+                  <li><a href="Category_Skin.html">Skin Care</a></li>
+                  <li><a href="Category_B&B.html">Bath and Body Care</a></li>
+                  <li><a href="Category_Intimate.html">Intimate Care</a></li>
+                  <li><a href="Category_Oral.html">Oral Care</a></li>
+                  <li><a href="Category_All.html">All Products</a></li>
+                </ul>
+              </div>
+            </li>
+            <li><a href="resellers.html">Resellers</a></li>
+            <li><a href="about.html">About</a></li>
+          </ul>
+        </div>
+      </nav>
+
+      <div class="wrapper">
+        <div class="writereviewctr">
+          <div class="signupwrapper">
+            <h1>Log in</h1>
+          </div>
+          <form class="ownreview" action="" method="POST">
+            <div class="reviewinput">
+              <label for="Email"> Email:</label>
+              <input
+                type="email"
+                id="Email"
+                name="Email"
+                placeholder="Enter your email"
+              />
+              <label for="password"> Password:</label>
+              <input
+                type="password"
+                id="password"
+                name="password"
+                placeholder="Enter your password"
+              />
+
+              <input id="submit" type="submit" value="Log in" />
+            </div>
+          </form>
+          <p id="pbottom">Don't have an account yet? <a href="1createaccount.html" id="acclink">Sign up</a></p>
+        </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

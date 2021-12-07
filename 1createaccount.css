@@ -1,0 +1,142 @@
+* {
+  padding: 0;
+  margin: 0;
+  color: #3c4043;
+
+  font-family: "Poppins", sans-serif;
+}
+body {
+  width: 100%;
+  overflow: hidden;
+}
+
+.hellothere {
+  height: 50px;
+}
+.wrapper {
+  display: flex;
+  width: 90%;
+  margin: 0 auto;
+}
+
+.signupwrapper h1 {
+  margin-top: 20px;
+  font-size: 50px;
+}
+
+.signupwrapper p {
+  font-size: 20px;
+}
+
+.writereviewctr {
+  border-radius: 10px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.16);
+  width: 500px;
+  display: flex;
+  flex-direction: column;
+  padding-left: 40px;
+  margin-top: 30px;
+  padding-bottom: 30px;
+  margin-left: 20px;
+}
+
+.writereviewctr h1 {
+  font-size: 40px;
+}
+
+.reviewinput {
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  margin-top: 10px;
+}
+
+.reviewinput label {
+  margin: 10px 0px -5px;
+  color: #3c4043;
+}
+
+.reviewinput input,
+.reviewinput textarea {
+  margin: 10px 0;
+  padding: 10px;
+  border-radius: 10px;
+  border-style: solid;
+  border-color: #3c4043;
+  border-width: 2px;
+  font-size: 18px;
+  background-color: #f6f9fe;
+  color: black;
+}
+
+#fname,
+#Email,
+#password {
+  width: 80%;
+}
+
+#submit {
+  width: 140px;
+  background: #3c4043;
+  color: white;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-bottom: 20px;
+}
+
+#submit:hover {
+  background: #327559;
+}
+
+.accimg {
+  height: 100vh;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url("./Pictures/login.jpg");
+}
+
+#acclink {
+  color: #327559;
+}
+
+@media screen and (max-width: 1100px) {
+  .writereviewctr {
+    margin-left: 0;
+  }
+  .wrapper {
+    justify-content: center;
+  }
+
+  body {
+    overflow: visible;
+    margin-bottom: 40px;
+  }
+}
+
+@media screen and (max-width: 720px) {
+  .signupwrapper h1 {
+    font-size: 35px;
+  }
+
+  .reviewinput input,
+  .reviewinput textarea {
+    font-size: 15px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .writereviewctr {
+    width: 400px;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  #pbottom {
+    width: 230px;
+  }
+}
