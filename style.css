@@ -108,6 +108,19 @@ p {
   margin-bottom: 20px;
   margin-left: 12px;
   margin-right: 12px;
+  box-shadow: 1px 14px 18px -4px #ceced1;
+}
+
+.hello {
+  background: linear-gradient(
+    to top,
+    rgba(0, 0, 0, 0.8),
+    rgba(0, 0, 0, 0.5),
+    rgba(0, 0, 0, 0)
+  );
+  padding: 20px;
+  width: 100%;
+  bottom: 0;
 }
 
 .category h4 a {
@@ -149,27 +162,27 @@ p {
   transition: all 0.3s ease-in-out;
   display: flex;
   justify-content: center;
-  align-items: center;
+  align-items: flex-end;
 }
 
 .hcarehov {
-  background-image: url("./Pictures/hcare.png");
+  background-image: url("./Pictures/h1.png");
 }
 
 .scarehov {
-  background-image: url("./Pictures/fcare.png");
+  background-image: url("./Pictures/h2.png");
 }
 
 .bcarehov {
-  background-image: url("./Pictures/bcare.png");
+  background-image: url("./Pictures/h3.png");
 }
 
 .icarehov {
-  background-image: url("./Pictures/icare.png");
+  background-image: url("./Pictures/h4.png");
 }
 
 .ocarehov {
-  background-image: url("./Pictures/ocare.png");
+  background-image: url("./Pictures/h5.png");
 }
 
 .hcarehov:hover,
@@ -177,8 +190,7 @@ p {
 .bcarehov:hover,
 .icarehov:hover,
 .ocarehov:hover {
-  border-radius: 5px;
-  transform: scale(1.15, 1.15);
+  transform: scale(1.05, 1.05);
   transition: all 0.3s ease-in-out;
 }
 
@@ -342,13 +354,6 @@ p {
 }
 
 /*For reviews section*/
-.border {
-  width: 60%;
-  margin-left: auto;
-  margin-right: auto;
-  border-top-style: solid;
-  border-width: 2px;
-}
 
 .revtitle h1 {
   text-align: center;
@@ -371,12 +376,9 @@ p {
   padding-left: 0px;
 }
 
-#slider img {
-  width: 100%;
-}
-
 #slider li {
   margin: 0px 5px;
+  padding: 10px;
 }
 
 button {
@@ -449,6 +451,49 @@ button {
 
 .featuredp a {
   text-decoration: none;
+}
+
+/*CARD STYLES*/
+h2 {
+  font-size: 20px;
+}
+
+.checked {
+  color: orange;
+}
+
+.reviewcard {
+  width: 100%;
+  padding: 30px 30px 50px;
+  border-radius: 10px;
+  height: 330px;
+  box-shadow: 0px 0px 18px -4px #ceced1;
+  margin: 4px 2px;
+}
+
+.reviewcard .reuserdetail {
+  margin-left: 10px;
+}
+.reviewcard p {
+  font-size: 14px;
+  margin-top: 10px;
+}
+
+.reviewcard img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+}
+
+.revuser {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.revuser h6 {
+  color: #919191;
 }
 
 /*For tips button*/
@@ -607,11 +652,6 @@ footer ul {
   }
   .banner {
     overflow: hidden;
-  }
-
-  .revtitle,
-  #reviews {
-    display: none;
   }
 
   .viewall {
@@ -788,10 +828,6 @@ footer ul {
     font-size: 13px;
   }
 
-  .devftr {
-    display: none;
-  }
-
   .logoftr {
     margin-right: 100px;
     margin-bottom: 20px;
@@ -800,11 +836,6 @@ footer ul {
   .footer-col {
     margin-left: 20px;
     padding: 0;
-  }
-
-  #reviews,
-  .revtitle {
-    display: none;
   }
 
   .viewall {
@@ -886,5 +917,31 @@ footer ul {
     height: 590px;
     padding: 15px;
     margin-top: 30px;
+  }
+}
+
+/*for Reviews slider Media Queries*/
+
+@media screen and (max-width: 1090px) {
+  #revieww {
+    width: 100%;
+  }
+
+  #slider {
+    width: 100%;
+  }
+
+  .prev-arrow {
+    left: -20px;
+  }
+
+  .next-arrow {
+    right: -20px;
+  }
+}
+
+@media screen and (max-width: 717px) {
+  #slider {
+    width: 90%;
   }
 }
