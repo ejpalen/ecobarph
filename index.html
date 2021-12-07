@@ -70,7 +70,7 @@
     </div>
   </div>
 <div class="navfeatures">
-    <a href="#" class="navicon" title="Add to cart"><i class="fa fa-fw fa-shopping-cart"></i></a>
+    <a href="1Cart.html" class="navicon" title="My Cart"><i class="fa fa-fw fa-shopping-cart"></i></a>
     <a href="1login.html" class="navicon" title="My Account"><i class="fa fa-fw  fa-user"></i></a>
   </div>
     </div>
@@ -88,7 +88,7 @@
     <a href="index.html"><h1>ecobar™</h1></a>
       <div class="navfeatures">
         <a href="#" class="navicon" title="Add to cart"><i class="fa fa-fw fa-shopping-cart"></i></a>
-        <a href="1login.html" class="navicon" title="My Account"><i class="fa fa-fw  fa-user"></i></a>
+        <a href="#" class="navicon" title="My Account"><i class="fa fa-fw  fa-user"></i></a>
       </div>
     </div>
       <div class="navbar-links">
@@ -142,27 +142,27 @@
     <h4 target="_blank" onclick="document.location='Category_Hair.html'">
       <div class="hcare">
         <div class="hcarehov">
-          <p>Hair care</p>
+          <div class="hello"><p>Hair Care</p></div>
         </div>
       </div>
     </h4>
 
     <h4 target="_blank" onclick="document.location='Category_Skin.html'">
       <div class="scare">
-        <div class="scarehov"><p>Skin care</p></div>
+        <div class="scarehov"><div class="hello"><p>Skin Care</p></div></div>
       </div>
     </h4>
     <h4 target="_blank" onclick="document.location='Category_B&B.html'">
       <a href="#0">
         <div class="bcare">
-          <div class="bcarehov"><p>Bath & Body Care</p></div>
+          <div class="bcarehov"><div class="hello"><p>Bath & Body care</p></div></div>
         </div>
       </a>
     </h4>
     <h4 target="_blank" onclick="document.location='Category_Intimate.html'">
       <a href="#0">
         <div class="icare">
-          <div class="icarehov"><p>Intimate care</p></div>
+          <div class="icarehov"><div class="hello"><p>Intimate Care</p></div></div>
         </div>
       </a>
       
@@ -170,7 +170,7 @@
     <h4 target="_blank" onclick="document.location='Category_Oral.html'">
       <a href="#0">
         <div class="ocare">
-          <div class="ocarehov"><p>Oral care</p></div>
+          <div class="ocarehov"><div class="hello"><p>Intimate Care</p></div></div>
         </div>
       </a>
       
@@ -256,13 +256,87 @@
     <div id="reviews">
       <ul id="slider">
         <li class="slide-item">
-          <img src="Pictures/r1a.png" loading="lazy"/>
+          <div class="reviewcard">
+            <div class="revuser">
+              <img src="Pictures/fcare.png" alt="" />
+              <div class="reuserdetail">
+                <h3>esdeealvarezureta</h3>
+                <h6>Shopee Review</h6>
+              </div>
+            </div>
+            <div class="revstars">
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+
+              <p>
+                It was my first time trying this red clay and I was curious
+                about it since I'm pregnant and I needed a product that has no
+                chemicals and not too strong scent. It's a little bit too strong
+                for me but I love the effect on my skin, it's really soft and
+                smooth. I will buy this again next time.
+              </p>
+            </div>
+          </div>
+          <!--reviee end-->
         </li>
         <li class="slide-item">
-          <img src="Pictures/r2a.png" loading="lazy"/>
+          <div class="reviewcard">
+            <div class="revuser">
+              <img src="Pictures/fcare.png" alt="" />
+              <div class="reuserdetail">
+                <h3>esdeealvarezureta</h3>
+                <h6>Shopee Review</h6>
+              </div>
+            </div>
+            <div class="revstars">
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star"></span>
+              <span class="fa fa-star"></span>
+
+              <p>
+                It was my first time trying this red clay and I was curious
+                about it since I'm pregnant and I needed a product that has no
+                chemicals and not too strong scent. It's a little bit too strong
+                for me but I love the effect on my skin, it's really soft and
+                smooth. I will buy this again next time.
+              </p>
+            </div>
+          </div>
+          <!--reviee end-->
         </li>
         <li class="slide-item">
-          <img src="Pictures/r3a.png" loading="lazy"/>
+          <div class="reviewcard">
+            <div class="revuser">
+              <img src="Pictures/fcare.png" alt="" />
+              <div class="reuserdetail">
+                <h3>esdeealvarezureta</h3>
+                <h6>Shopee Review</h6>
+              </div>
+            </div>
+            <div class="revstars">
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star"></span>
+              <span class="fa fa-star"></span>
+
+              <p>
+                It was my first time trying this red clay and I was curious
+                about it since I'm pregnant and I needed a product that has no
+                chemicals and not too strong scent. It's a little bit too strong
+                for me but I love the effect on my skin, it's really soft and
+                smooth. I will buy this again next time. It's a little bit too
+                strong for me but I love the effect on my skin, it's really soft
+                and smooth. I will buy this again next time.
+              </p>
+            </div>
+          </div>
+          <!--reviee end-->
         </li>
       </ul>
     </div>
@@ -332,14 +406,22 @@
     <script>
       $(function () {
         $("#slider").slick({
-          slidesToShow: 1,
+          slidesToShow: 2,
           slidesToScroll: 1,
           speed: 1000,
           dots: true,
-          autoplay: true,
           autoplaySpeed: 3500,
           prevArrow: '<button class="slide-arrow prev-arrow"></button>',
           nextArrow: '<button class="slide-arrow next-arrow"></button>',
+          //Responsive slider
+          responsive: [
+            {
+              breakpoint: 717,
+              settings: {
+                slidesToShow: 1,
+              },
+            },
+          ], //End of Responsive slider
         });
       });
     </script>
