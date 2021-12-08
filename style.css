@@ -61,7 +61,6 @@ p {
   box-sizing: border-box;
   left: 0px;
   border-radius: 5px;
-  padding: 40px 0;
   display: flex;
   align-items: center;
   margin: 0 auto;
@@ -525,7 +524,7 @@ h2 {
 
 .footer {
   width: 100%;
-  background: #f6f6f6;
+  background: #f6f9fe;
   padding: 10px 0px 5px 0px;
 }
 
