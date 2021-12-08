@@ -33,6 +33,10 @@ p {
   font-size: 18px;
 }
 
+.menuwrapper {
+  margin-bottom: 0;
+}
+
 /*For banner*/
 
 .banner {
@@ -41,6 +45,7 @@ p {
   padding: 0px;
   margin: 0px auto;
   margin-bottom: 30px;
+  background-color: #e7f1ec;
 }
 
 .banner img {
@@ -53,28 +58,41 @@ p {
 
 .welcome {
   width: 90%;
-  margin-left: auto;
-  margin-right: auto;
   box-sizing: border-box;
   left: 0px;
-  background: #f6f9fe;
   border-radius: 5px;
-  box-shadow: 0px 0px 0px 0.5px #eae4df;
-  padding: 40px;
+  padding: 40px 0;
+  display: flex;
+  align-items: center;
+  margin: 0 auto;
+  justify-content: space-between;
+}
+
+.welcomeright {
+  width: 50%;
+  display: flex;
+  justify-content: center;
+}
+
+.welcomeleft {
+  width: 50%;
+  position: relative;
+}
+
+.welcomeright img {
+  width: 600px;
+  display: flex;
 }
 
 .welcome h1 {
-  text-align: center;
   font-weight: 1000;
   font-size: 50px;
   margin-bottom: 20px;
 }
 
 .welcome p {
-  text-align: center;
-  margin: 0px 80px;
+  margin-top: 20px;
 }
-
 /*For category section*/
 .category {
   margin: 30px auto 0px;
@@ -85,9 +103,11 @@ p {
 .category > div {
   padding-top: 30px;
   display: flex;
+  width: 90%;
   flex-wrap: wrap;
-  justify-content: center;
+  justify-content: space-between;
   text-align: center;
+  margin: 0 auto;
 }
 
 .category img {
@@ -106,21 +126,26 @@ p {
   font-weight: semibold;
   border-radius: 5px 5px 5px 5px;
   margin-bottom: 20px;
-  margin-left: 12px;
-  margin-right: 12px;
-  box-shadow: 1px 14px 18px -4px #ceced1;
 }
 
-.hello {
-  background: linear-gradient(
-    to top,
-    rgba(0, 0, 0, 0.8),
-    rgba(0, 0, 0, 0.5),
-    rgba(0, 0, 0, 0)
-  );
-  padding: 20px;
-  width: 100%;
-  bottom: 0;
+.browse {
+  display: flex;
+  justify-content: space-between;
+}
+
+.browseleft {
+  display: flex;
+  align-items: end;
+}
+
+.browse a {
+  padding: 15px;
+  border-radius: 10px;
+  margin-bottom: -15px;
+}
+
+.browse a:hover {
+  background-color: #ede3d9;
 }
 
 .category h4 a {
@@ -130,7 +155,6 @@ p {
 .category p {
   padding-top: 10px;
   font-weight: 500;
-  color: white;
 }
 
 .hcare,
@@ -138,10 +162,10 @@ p {
 .bcare,
 .icare,
 .ocare {
-  border-radius: 5px;
+  border-radius: 0px 25px;
   overflow: hidden;
-  width: 220px;
-  height: 280px;
+  width: 200px;
+  height: 230px;
 }
 
 .hcarehov,
@@ -149,12 +173,9 @@ p {
 .bcarehov,
 .icarehov,
 .ocarehov {
-  border-radius: 5px;
-  width: 220px;
-  height: 280px;
+  width: 200px;
+  height: 230px;
   position: relative;
-  text-align: center;
-  cursor: pointer;
   margin-bottom: 10px;
   background-position: center;
   background-size: cover;
@@ -163,6 +184,20 @@ p {
   display: flex;
   justify-content: center;
   align-items: flex-end;
+}
+
+.carewrapper {
+  padding: 20px;
+  border-radius: 0px 25px;
+  overflow: hidden;
+  box-shadow: 0px 0px 29px -11px #ceced1;
+  cursor: pointer;
+}
+
+.carewrapper:hover {
+  transition: all 0.3s ease-in-out;
+  background-color: #e7f1ec;
+  box-shadow: none;
 }
 
 .hcarehov {
@@ -185,12 +220,29 @@ p {
   background-image: url("./Pictures/h5.png");
 }
 
-.hcarehov:hover,
-.scarehov:hover,
-.bcarehov:hover,
-.icarehov:hover,
-.ocarehov:hover {
+.carewrapper:hover .hcarehov,
+.carewrapper:hover .scarehov,
+.carewrapper:hover .bcarehov,
+.carewrapper:hover .icarehov,
+.carewrapper:hover .ocarehov {
   transform: scale(1.05, 1.05);
+  transition: all 0.3s ease-in-out;
+}
+
+.hcare:hover,
+.scare:hover,
+.bcare:hover,
+.icare:hover,
+.ocare:hover {
+  transition: all 0.3s ease-in-out;
+  box-shadow: 0px 0px 29px -11px #ceced1;
+}
+
+.hcare:hover p,
+.scare:hover p,
+.bcare:hover p,
+.icare:hover p,
+.ocare:hover p {
   transition: all 0.3s ease-in-out;
 }
 
@@ -202,18 +254,15 @@ p {
 }
 
 .featuredp h1 {
-  text-align: center;
   font-weight: 1000;
   font-size: 35px;
   margin: 0px;
 }
 
 .featuredp > div {
-  margin-left: 30px;
-  margin-right: 30px;
   margin-top: 30px;
   display: grid;
-  grid-template-columns: 300px 300px 300px;
+  grid-template-columns: 300px 300px 300px 300px;
   text-align: center;
   margin-bottom: 20px;
   column-gap: 60px;
@@ -226,20 +275,18 @@ p {
   text-align: center;
   font-weight: semibold;
   width: 300px;
-  border-radius: 5px;
-  background-color: #f6f9fe;
+  border-radius: 0 25px;
+  box-shadow: 0px 0px 29px -11px #ceced1;
 }
 .featuredp img {
   max-height: 230px;
 }
 
 .featuredp h4:hover {
-  border-radius: 5px;
   text-decoration: underline;
-  box-shadow: 0px 0px 29px -11px #ceced1;
-  transform: scale(1.02, 1.02);
-  background-color: white;
+  background-color: #e7f1ec;
   transition: 0.3s ease;
+  box-shadow: none;
 }
 .featuredp h4:hover .acnebhov,
 .featuredp h4:hover .gentlebhov,
@@ -271,6 +318,7 @@ p {
   border-radius: 5px;
   overflow: hidden;
   height: 250px;
+  margin: 0 auto;
 }
 
 .acnebhov,
@@ -296,10 +344,6 @@ p {
   background-image: url("./Pictures/acnebar2.png");
 }
 
-.gentlebhov {
-  background-image: url("./Pictures/gentlebar1.png");
-}
-
 .thickbhov {
   background-image: url("./Pictures/thickbar1.png");
 }
@@ -308,45 +352,8 @@ p {
   background-image: url("./Pictures/clrpreservebr.png");
 }
 
-.fembhov {
-  background-image: url("./Pictures/femininebr.png");
-}
-
 .moistbhov {
   background-image: url("./Pictures/moisturebar.png");
-}
-
-/*For "View all button" in the featured products section*/
-.viewall {
-  transition: all 0.3s ease-in-out;
-  font-weight: 600;
-  width: 100%;
-  left: 0px;
-  margin: 0px;
-  padding-bottom: 90px;
-}
-
-.viewallbtn {
-  transition: all 0.3s ease-in-out;
-  background: #3c4043;
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: 0px;
-  padding: 15px 25px;
-  width: 160px;
-  border-radius: 5px;
-  text-align: center;
-  cursor: pointer;
-}
-
-#viewalltxt {
-  color: white;
-}
-
-.viewallbtn:hover {
-  transition: 0.3s ease;
-  transform: scale(1.1, 1.1);
-  background-color: #327559;
 }
 
 /*For reviews section*/
@@ -628,19 +635,6 @@ footer ul {
   font-size: 14px;
 }
 
-@media (max-width: 1200px) {
-  .featuredp div {
-    display: flex;
-    flex-wrap: wrap;
-    margin: 0;
-    margin-top: 20px;
-  }
-
-  .featuredp h4 {
-    margin: 10px -15px;
-  }
-}
-
 @media (max-width: 900px) {
   .banner img {
     width: 160%;
@@ -762,17 +756,6 @@ footer ul {
 
   .featuredp h4:hover {
     box-shadow: none;
-  }
-
-  .featuredp p {
-    font-size: 16px;
-    margin: 0px;
-    padding: 0;
-  }
-
-  .featuredp div {
-    width: 100%;
-    margin: 0px;
   }
 
   .featuredp h1 {
@@ -939,5 +922,260 @@ footer ul {
 @media screen and (max-width: 717px) {
   #slider {
     width: 90%;
+  }
+}
+
+@media screen and (max-width: 1450px) {
+  .featuredp > div {
+    grid-gap: 20px;
+    justify-content: flex-start;
+  }
+}
+
+@media screen and (max-width: 1450px) {
+  .featuredp > div {
+    grid-gap: 20px;
+    grid-template-columns: repeat(4, 1fr);
+    justify-content: space-between;
+  }
+  .acneb,
+  .gentleb,
+  .thickb,
+  .colorb,
+  .femb,
+  .moistb {
+    border-radius: 5px;
+    overflow: hidden;
+    height: 220px;
+    width: 220px;
+  }
+
+  .acnebhov,
+  .gentlebhov,
+  .thickbhov,
+  .colorbhov,
+  .fembhov,
+  .moistbhov {
+    width: 220px;
+    height: 220px;
+  }
+  .featuredp h4 {
+    width: auto;
+  }
+}
+
+@media screen and (max-width: 1450px) {
+  .acneb,
+  .gentleb,
+  .thickb,
+  .colorb,
+  .femb,
+  .moistb {
+    border-radius: 5px;
+    overflow: hidden;
+    height: 220px;
+    width: 220px;
+  }
+
+  .acnebhov,
+  .gentlebhov,
+  .thickbhov,
+  .colorbhov,
+  .fembhov,
+  .moistbhov {
+    width: 220px;
+    height: 220px;
+  }
+  .featuredp > div {
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: repeat(4, 1fr);
+  }
+
+  .featuredp h4 {
+    margin: 0;
+  }
+}
+
+@media screen and (max-width: 1400px) {
+  .hcare,
+  .scare,
+  .bcare,
+  .icare,
+  .ocare,
+  .hcarehov,
+  .scarehov,
+  .bcarehov,
+  .icarehov,
+  .ocarehov {
+    width: 170px;
+    height: 200px;
+  }
+}
+
+@media screen and (max-width: 1240px) {
+  .hcare,
+  .scare,
+  .bcare,
+  .icare,
+  .ocare,
+  .hcarehov,
+  .scarehov,
+  .bcarehov,
+  .icarehov,
+  .ocarehov {
+    width: 150px;
+    height: 180px;
+  }
+}
+
+@media screen and (max-width: 1100px) {
+  .carewrapper {
+    padding: 15px;
+  }
+}
+
+@media screen and (max-width: 1100px) {
+  .acneb,
+  .gentleb,
+  .thickb,
+  .colorb,
+  .femb,
+  .moistb {
+    height: 200px;
+    width: 200px;
+  }
+
+  .acnebhov,
+  .gentlebhov,
+  .thickbhov,
+  .colorbhov,
+  .fembhov,
+  .moistbhov {
+    width: 200px;
+    height: 200px;
+  }
+
+  .welcomeright {
+    justify-content: end;
+  }
+  .welcomeright img {
+    width: 400px;
+  }
+}
+
+@media screen and (min-width: 800px) and (max-width: 900px) {
+  .acneb,
+  .gentleb,
+  .thickb,
+  .colorb,
+  .femb,
+  .moistb {
+    height: 150px;
+    width: 150px;
+  }
+
+  .acnebhov,
+  .gentlebhov,
+  .thickbhov,
+  .colorbhov,
+  .fembhov,
+  .moistbhov {
+    width: 150px;
+    height: 150px;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .featuredp > div {
+    grid-gap: 30px;
+    grid-template-columns: repeat(2, 300px);
+    justify-content: center;
+  }
+
+  .featuredp h1 {
+    text-align: center;
+  }
+
+  .welcomeleft {
+    width: 100%;
+  }
+
+  .welcomeright {
+    display: none;
+  }
+
+  .welcome {
+    padding: 0 30px;
+  }
+
+  .category {
+    margin-top: 0;
+  }
+}
+
+@media screen and (max-width: 850px) {
+  .category > div {
+    justify-content: center;
+  }
+
+  .browseleft {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 850px) and (min-width: 500px) {
+  .category h4 {
+    margin: 0 15px 15px;
+  }
+}
+
+@media screen and (max-width: 720px) {
+  .acneb,
+  .gentleb,
+  .thickb,
+  .colorb,
+  .femb,
+  .moistb {
+    height: 150px;
+    width: 150px;
+  }
+
+  .acnebhov,
+  .gentlebhov,
+  .thickbhov,
+  .colorbhov,
+  .fembhov,
+  .moistbhov {
+    width: 150px;
+    height: 150px;
+  }
+
+  .featuredp > div {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: 0px;
+    grid-row-gap: 15px;
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .featuredp p {
+    width: 160px;
+  }
+
+  .hcare,
+  .scare,
+  .bcare,
+  .icare,
+  .ocare,
+  .hcarehov,
+  .scarehov,
+  .bcarehov,
+  .icarehov,
+  .ocarehov {
+    width: 120px;
+    height: 140px;
   }
 }
