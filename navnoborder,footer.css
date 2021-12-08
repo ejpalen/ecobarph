@@ -15,6 +15,14 @@ p {
 }
 
 /*For Menu/Navbar*/
+
+.txtlogo a {
+  display: flex;
+}
+
+.txtlogo p {
+  padding-top: 9px;
+}
 .menu {
   margin-right: 0px;
   margin-left: 10px;
@@ -109,7 +117,7 @@ p {
 /*For the footer section*/
 .footer {
   width: 100%;
-  background: #f6f6f6;
+  background: #f6f9fe;
   padding: 10px 0px 5px 0px;
 }
 
