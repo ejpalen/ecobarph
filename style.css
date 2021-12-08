@@ -130,6 +130,8 @@ p {
 .browse {
   display: flex;
   justify-content: space-between;
+  border-bottom: 2px solid #eaeaeb;
+  padding-bottom: 10px;
 }
 
 .browseleft {
@@ -138,9 +140,9 @@ p {
 }
 
 .browse a {
-  padding: 15px;
-  border-radius: 10px;
-  margin-bottom: -15px;
+  padding: 8px 20px;
+  border-radius: 0 15px;
+  background-color: #ede3d9;
 }
 
 .browse a:hover {
@@ -246,6 +248,13 @@ p {
 }
 
 /*For featured products*/
+
+.featurewrapper {
+  background-color: #e7f1ec;
+  padding: 55px 0 0px;
+  margin-bottom: 30px;
+}
+
 .featuredp {
   width: 90%;
   padding-bottom: 20px;
@@ -275,7 +284,7 @@ p {
   font-weight: semibold;
   width: 300px;
   border-radius: 0 25px;
-  box-shadow: 0px 0px 29px -11px #ceced1;
+  background-color: white;
 }
 .featuredp img {
   max-height: 230px;
@@ -283,9 +292,8 @@ p {
 
 .featuredp h4:hover {
   text-decoration: underline;
-  background-color: #e7f1ec;
   transition: 0.3s ease;
-  box-shadow: none;
+  box-shadow: 0px 0px 29px -11px #ceced1;
 }
 .featuredp h4:hover .acnebhov,
 .featuredp h4:hover .gentlebhov,
@@ -299,8 +307,10 @@ p {
 
 .featuredp p {
   font-weight: 500;
-  max-width: 300px;
-  padding-top: 10px;
+  max-width: 250px;
+  text-align: left;
+  padding-left: 10px;
+  margin: 0 auto;
 }
 
 .featuredp .price {
@@ -722,6 +732,7 @@ footer ul {
   .welcome h1 {
     font-size: 35px;
   }
+
   .acneb,
   .gentleb,
   .thickb,
