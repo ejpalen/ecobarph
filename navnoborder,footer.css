@@ -71,8 +71,9 @@ p {
   display: block;
   position: absolute;
   background-color: #eae4df;
-  margin-top: 15px;
+  margin-top: 5px;
   margin-left: -8px;
+  border-top: 5px solid white;
 }
 
 .menu ul li:hover .submenu ul {
