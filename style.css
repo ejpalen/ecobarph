@@ -257,7 +257,7 @@ p {
 
 .featuredp {
   width: 90%;
-  padding-bottom: 20px;
+  padding-bottom: 1px;
   margin: 0px auto;
 }
 
@@ -268,11 +268,10 @@ p {
 }
 
 .featuredp > div {
-  margin-top: 30px;
+  margin: 30px 0;
   display: grid;
   grid-template-columns: 300px 300px 300px 300px;
   text-align: center;
-  margin-bottom: 20px;
   column-gap: 60px;
   justify-content: center;
 }
@@ -368,24 +367,30 @@ p {
 /*For reviews section*/
 
 .revtitle h1 {
-  text-align: center;
   font-weight: 1000;
   font-size: 35px;
   margin: 0px;
-  margin-bottom: 30px;
+  text-align: center;
+  padding-top: 40px;
+}
+
+.revtitle {
+  margin: 10px 0 40px;
 }
 
 #reviews {
   /*background-color: #c1d7df;
   padding: 50px 0;*/
-  padding: 0px 0 50px;
   width: 90%;
   margin: 0px auto;
+  padding: 0 50px;
+  padding-bottom: 40px;
 }
 #slider {
   width: 70%;
   margin: 0 auto;
   padding-left: 0px;
+  padding-bottom: 20px;
 }
 
 #slider li {
@@ -476,11 +481,21 @@ h2 {
 
 .reviewcard {
   width: 100%;
-  padding: 30px 30px 50px;
-  border-radius: 10px;
   height: 330px;
-  box-shadow: 0px 0px 18px -4px #ceced1;
-  margin: 4px 2px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  box-shadow: 4px 4px 29px -11px #ceced1;
+  border-radius: 0px 20px;
+  box-sizing: border-box;
+}
+
+.reviewleft {
+  display: flex;
+  height: 330px;
+  background-color: #ede3d9;
+  border-radius: 0px 20px 0px 20px;
+  align-items: center;
 }
 
 .reviewcard .reuserdetail {
@@ -491,10 +506,20 @@ h2 {
   margin-top: 10px;
 }
 
-.reviewcard img {
+.reviewleft img {
+  display: flex;
+  width: 310px;
+  height: 280px;
+}
+
+.reviewright img {
   width: 50px;
   height: 50px;
   border-radius: 50%;
+}
+
+.reviewright {
+  margin: 0 20px;
 }
 
 .revuser {
@@ -508,6 +533,12 @@ h2 {
   color: #919191;
 }
 
+.reviewwrapper {
+  width: 78%;
+  margin: 0 auto;
+  align-items: center;
+}
+
 /*For tips button*/
 .tips {
   text-align: right;
@@ -517,17 +548,16 @@ h2 {
 
 #tipsbtn {
   font-size: 20px;
-  background-color: #eae4df;
   padding: 10px 15px;
   font-weight: 600;
   width: fit-content;
   border-radius: 5px;
-  box-shadow: 0px 0px 0px 2px #000;
   transition: all 0.3s ease-in-out;
+  background-color: #3c4043;
+  color: white;
 }
 
 #tipsbtn:hover {
-  color: #212121;
   transition: all 0.3s ease-in-out;
   transform: scale(1.05, 1.05);
 }
@@ -774,15 +804,6 @@ footer ul {
 
   .featuredp {
     margin-bottom: 25px;
-  }
-
-  #viewalltxt {
-    font-size: 15px;
-    padding: 5px;
-  }
-
-  .viewallbtn {
-    padding: 5px 15px;
   }
 
   .fastfact h1 {
