@@ -100,13 +100,13 @@ p {
 }
 
 .category > div {
-  padding-top: 30px;
   display: flex;
   width: 90%;
   flex-wrap: wrap;
   justify-content: space-between;
   text-align: center;
   margin: 0 auto;
+  margin-top: 40px;
 }
 
 .category img {
@@ -562,113 +562,6 @@ h2 {
   transform: scale(1.05, 1.05);
 }
 
-.footer {
-  width: 100%;
-  background: #f6f9fe;
-  padding: 10px 0px 5px 0px;
-}
-
-.container {
-  width: 100%;
-  margin: auto;
-}
-
-.footer .row {
-  display: flex;
-  flex-wrap: wrap;
-}
-
-.footer-col {
-  padding: 0px 20px;
-  margin: 0px 0px 0 55px;
-}
-
-.footer-col h4 {
-  padding-left: 10px;
-  font-size: 25px;
-  margin-bottom: 10px;
-  margin-top: 20px;
-  position: relative;
-}
-
-footer ul {
-  list-style: none;
-}
-
-.footer-col ul li::marker {
-  color: #f6f6f6;
-  font-size: 1.5em;
-}
-
-.footer-col ul li a {
-  padding-left: 10px;
-  padding-right: 10px;
-  margin-bottom: 5px;
-  font-size: 16px;
-  font-weight: 300;
-  text-decoration: none;
-  display: block;
-}
-
-.footer-col ul li .ftrlnk:hover {
-  background: #c8ead9;
-  border-radius: 3px;
-}
-
-.footer-col .social-links a {
-  height: 40px;
-  width: 40px;
-  display: inline-block;
-}
-
-.footer-col #logo {
-  max-width: 200px;
-  margin-bottom: -27px;
-}
-
-.footer-col .social-links img {
-  max-width: 45px;
-  margin-top: 5px;
-}
-
-.footer-col .devpics {
-  padding-left: 5px;
-  max-width: 100px;
-  margin-top: 5px;
-}
-
-.container-btm {
-  text-align: center;
-  padding-top: 30px;
-}
-
-.fblogo {
-  margin-left: 10px;
-  width: 44px;
-  height: 44px;
-  background-image: url("./Pictures/fblogo.png");
-  background-size: cover;
-}
-
-.fblogo:hover {
-  cursor: pointer;
-  background-image: url("./Pictures/fbhover1.png");
-  background-size: cover;
-}
-
-.instalogo {
-  width: 44px;
-  height: 44px;
-  background-image: url("./Pictures/instalogo.png");
-  background-size: cover;
-}
-
-.instalogo:hover {
-  cursor: pointer;
-  background-image: url("./Pictures/instahover.png");
-  background-size: cover;
-}
-
 /*Specifies only the .container-btm p element*/
 .container-btm p {
   font-size: 14px;
@@ -832,30 +725,6 @@ footer ul {
     height: 250px;
     padding: 15px;
     margin-top: 30px;
-  }
-
-  .footer-col ul li a {
-    font-size: 13px;
-  }
-
-  .logoftr {
-    margin-right: 100px;
-    margin-bottom: 20px;
-  }
-
-  .footer-col {
-    margin-left: 20px;
-    padding: 0;
-  }
-
-  .viewall {
-    padding-bottom: 20px;
-  }
-
-  .footer .row {
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: column;
   }
 }
 
