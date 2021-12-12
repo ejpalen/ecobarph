@@ -6,11 +6,15 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
     />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.14.0/css/all.css"
+    />
     <link rel="icon" href="Pictures/favicon.png" type="image/x-icon" />
-    <title>Ecobar | Log-in</title>
+    <title>Ecobar | Log in</title>
 
     <!--Style-->
-    <link rel="stylesheet" href="1login.css" />
+
     <link rel="stylesheet" href="navnoborder,footer.css" />
     <!--Poppins font-->
     <link
@@ -37,6 +41,7 @@
 
     <script src="navscript.js" defer></script>
     <meta content="width=device-width, initial-scale=1" name="viewport" />
+    <link rel="stylesheet" href="1account.css" />
     <style>
       .menuwrapper {
         margin-bottom: 0px;
@@ -77,15 +82,14 @@
           </div>
         </div>
         <div class="navfeatures">
-          <a href="#" class="navicon" title="Add to cart"
+          <a href="1Cart.html" class="navicon" title="Cart"
             ><i class="fa fa-fw fa-shopping-cart"></i
           ></a>
-          <a href="#" class="navicon active" title="My Account"
+          <a href="1login.html" class="navicon active" title="Account"
             ><i class="fa fa-fw fa-user"></i
           ></a>
         </div>
       </div>
-
       <nav class="navbar">
         <div class="hello">
           <div class="navrespleft">
@@ -97,10 +101,10 @@
           </div>
           <a href="index.html"><h1>ecobar™</h1></a>
           <div class="navfeatures">
-            <a href="#" class="navicon" title="Add to cart"
+            <a href="1Cart.html" class="navicon" title="Cart"
               ><i class="fa fa-fw fa-shopping-cart"></i
             ></a>
-            <a href="#" class="navicon" title="My Account"
+            <a href="1login.html" class="navicon" title="Account"
               ><i class="fa fa-fw fa-user"></i
             ></a>
           </div>
@@ -110,7 +114,7 @@
             <li><a href="index.html">Home</a></li>
             <li>
               <a href="#" class="toggle1">Products</a>
-  
+
               <div class="navbar-links1">
                 <ul>
                   <li><a href="Category_Hair.html">Hair Care</a></li>
@@ -127,11 +131,11 @@
           </ul>
         </div>
       </nav>
-
       <div class="wrapper">
+        <!--For signup-->
         <div class="writereviewctr">
           <div class="signupwrapper">
-            <h1>Log in</h1>
+            <h1>Login</h1>
           </div>
           <form class="ownreview" action="" method="POST">
             <div class="reviewinput">
@@ -153,9 +157,71 @@
               <input id="submit" type="submit" value="Log in" />
             </div>
           </form>
-          <p id="pbottom">Don't have an account yet? <a href="1createaccount.html" id="acclink">Sign up</a></p>
+          <p id="pbottom">
+            Don't have an account yet?
+            <a href="1createaccount.html" id="acclink" style="color: #327559"
+              >Sign up</a
+            >
+          </p>
         </div>
+      </div>
+    </div>
+
+    <!--Footer section of the page composed of two subsections (container and containerbtm)-->
+    <div class="footer">
+      <!--"Container section"-->
+      <div class="container">
+        <div class="row">
+          <div class="footer-col logoftr">
+            <h4>
+              <div class="txtlogo">
+                <a href="index.html"
+                  ><h1>ecobar</h1>
+                  <p>™</p></a
+                >
+              </div>
+            </h4>
+          </div>
+          <div class="footer-col">
+            <h4>MENU</h4>
+            <ul>
+              <li><a class="ftrlnk" href="#top">Home</a></li>
+              <li><a class="ftrlnk" href="#ftrcategory">Products</a></li>
+              <li><a class="ftrlnk" href="resellers.html">Resellers</a></li>
+              <li><a class="ftrlnk" href="about.html">About</a></li>
+            </ul>
+          </div>
+          <div class="footer-col">
+            <h4>CONTACT</h4>
+            <ul>
+              <li>
+                <a class="ftrlnk" href="mailto: ecobarph@gmail.com"
+                  >E-MAIL: ecobarph@gmail.com</a
+                >
+              </li>
+              <li><a>ON SOCIAL MEDIA:</a></li>
+            </ul>
+            <div class="social-links">
+              <a
+                target="_blank"
+                href="https://www.facebook.com/ecobarph/"
+                class="fblogo"
+                ><i class="fab fa-facebook-square"></i
+              ></a>
+              <a
+                target="_blank"
+                href="https://www.instagram.com/ecobarph/"
+                class="instalogo"
+                ><i class="fab fa-instagram-square"></i
+              ></a>
+            </div>
+          </div>
         </div>
+      </div>
+
+      <!--container-btm section-->
+      <div class="container-btm">
+        <p>© 2021 Group 9</p>
       </div>
     </div>
   </body>
