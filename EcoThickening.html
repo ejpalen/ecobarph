@@ -25,64 +25,135 @@
       type="text/javascript"
       src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"
     ></script>
-  </head>
 
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="stylesheet" href="navstyle.css" />
+    <script src="navscript.js" defer></script>
+    <meta content="width=device-width, initial-scale=1" name="viewport" />
+  </head>
   <body>
-    <!--- Menu Navigation Bar -->
-    <div class="menu">
-      <ul>
-        <li><a href="index.html">Home</a></li>
-        <li class="active">
-          <a href="#">Products</a>
-          <!--This part is for the dropdown menu/ Submenu for "Products" in the navbar-->
-          <div class="submenu">
-            <ul>
-              <li class="menu-category">
-                <b>Browse by category</b>
-              </li>
-              <li><a href="Category_Hair.html">Hair Care</a></li>
-              <li><a href="Category_Skin.html">Skin Care</a></li>
-              <li><a href="Category_B&B.html">Bath and Body</a></li>
-              <li><a href="Category_Intimate.html">Intimate Care</a></li>
-              <li><a href="Category_Oral.html">Oral Care</a></li>
-              <li><a href="#"> </a></li>
-              <li class="menu-category">
-                <a href="Category_All.html"><b>Browse all Products</b></a>
-              </li>
-            </ul>
-          </div>
-        </li>
-        <li><a href="resellers.html">Resellers</a></li>
-        <li><a href="about.html">About</a></li>
-      </ul>
-    </div>
-    <!--Parent Class of "Product" -->
-    <div class="product">
-      <div class="prodimage contw">
-        <img src="Pictures/Products/image 26.png" />
+    <!--Menu-->
+    <div class="menuwrapper">
+      <div class="navleft">
+        <a href="index.html"><h1>ecobar™</h1></a>
+
+        <div class="menu">
+          <ul>
+            <li>
+              <a href="#">Products</a>
+              <!--This part is for the dropdown menu/ Submenu for "Products" in the navbar-->
+              <div class="submenu">
+                <ul>
+                  <li class="menu-category">
+                    <b>Browse by category</b>
+                  </li>
+                  <li><a href="Category_Hair.html">Hair Care</a></li>
+                  <li><a href="Category_Skin.html">Skin Care</a></li>
+                  <li><a href="Category_B&B.html">Bath and Body</a></li>
+                  <li><a href="Category_Intimate.html">Intimate Care</a></li>
+                  <li><a href="Category_Oral.html">Oral Care</a></li>
+                  <li><a href="#0"> </a></li>
+                  <li class="menu-category">
+                    <a href="Category_All.html"><b>Browse all Products</b></a>
+                  </li>
+                </ul>
+              </div>
+            </li>
+            <a href="resellers.html"><li>Resellers</li></a>
+            <a href="about.html"><li>About</li></a>
+          </ul>
+        </div>
       </div>
-      <div class="prodd contw">
-        <div class="details">
+      <div class="navfeatures">
+        <a href="#" class="navicon" title="Add to cart"
+          ><i class="fa fa-fw fa-shopping-cart"></i
+        ></a>
+        <a href="#" class="navicon" title="My Account"
+          ><i class="fa fa-fw fa-user"></i
+        ></a>
+      </div>
+    </div>
+
+    <!--Responsive Menu-->
+    <nav class="navbar">
+      <div class="hello">
+        <div class="navrespleft">
+          <a href="#" class="toggle-button">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+          </a>
+        </div>
+        <a href="index.html"><h1>ecobar™</h1></a>
+        <div class="navfeatures">
+          <a href="1Cart.html" class="navicon" title="Add to cart"
+            ><i class="fa fa-fw fa-shopping-cart"></i
+          ></a>
+          <a href="1login.html" class="navicon" title="My Account"
+            ><i class="fa fa-fw fa-user"></i
+          ></a>
+        </div>
+      </div>
+      <div class="navbar-links">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li>
+            <a href="#" class="toggle1">Products</a>
+
+            <div class="navbar-links1">
+              <ul>
+                <li><a href="Category_Hair.html">Hair Care</a></li>
+                <li><a href="Category_Skin.html">Skin Care</a></li>
+                <li><a href="Category_B&B.html">Bath and Body Care</a></li>
+                <li><a href="Category_Intimate.html">Intimate Care</a></li>
+                <li><a href="Category_Oral.html">Oral Care</a></li>
+                <li><a href="Category_All.html">All Products</a></li>
+              </ul>
+            </div>
+          </li>
+          <li><a href="resellers.html">Resellers</a></li>
+          <li><a href="about.html">About</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <!--Parent Class of "Product" -->
+    <div class="product2">
+      <div class="prodimage2 contw">
+        <img
+          src="Pictures/Products/image 26.png"
+          alt="Ecobar Thickening Shampoo"
+        />
+      </div>
+      <div class="prodd2 contw">
+        <div class="details2">
           <h1>Ecobar Thickening Shampoo Bar</h1>
-          <p class="price">₱180.00</p>
+          <h3 class="price">₱180.00</h3>
           <!-- Order now button"-->
-          <a
-            target="_blank"
-            href="https://docs.google.com/forms/d/e/1FAIpQLSfvve2VbukTr4owZdarJhctWvv83z7KhJ5yNsTQHNUtSqPYnw/viewform"
-            ><button class="butt">Order Now</button></a
-          >
+          <div class="order_buttons">
+            <a target="_blank" href="#0">
+              <button class="butt cart">Add to cart</button></a
+            >
+            <a
+              target="_blank"
+              href="https://docs.google.com/forms/d/e/1FAIpQLSfvve2VbukTr4owZdarJhctWvv83z7KhJ5yNsTQHNUtSqPYnw/viewform"
+              ><button class="butt">Buy Now</button></a
+            >
+          </div>
         </div>
       </div>
     </div>
     <!-- Parent Class of "Info"-->
-    <div class="info">
-      <div class="desc contw">
+    <div class="info2">
+      <div class="desc2 contw">
         <h2>Description:</h2>
         <p>
           A proprietary blend of gugo, applestem, and pea extract helps
           stimulates hair growth and strengthens hair follicles. Recommended to
           give volume, full-bodied look and encourages hair growth.
-
           <br />
           <br />
           Ecobar PH’s line of functional bars does not have strong and
@@ -95,8 +166,8 @@
           outdoor activities.
         </p>
       </div>
-      <div class="ingred">
-        <div class="ingredient contw">
+      <div class="ingred2">
+        <div class="ingredient2 contw">
           <h2>Ingredients:</h2>
           <p>
             Sodium Cocoyl Isethionate, Triticum Vulgare (Wheat) flour, Cetyl
@@ -108,27 +179,98 @@
             Etidronic Acid, C. I. 77491, 77492, 77499
           </p>
         </div>
-        <div class="usage contw">
+        <div class="usage2 contw">
           <h2>Suggested Usage:</h2>
           <p>Rub directly onto hair and scalp. Lather then rinse.</p>
         </div>
       </div>
     </div>
+
     <!-- "Reviews" -->
     <div class="revtitle">
       <h1>Customer Reviews</h1>
     </div>
 
+    <!--Card Reviews-->
     <div id="reviews">
       <ul id="slider">
         <li class="slide-item">
-          <img src="Pictures/Reviews/thick1.png" />
+          <div class="reviewcard">
+            <div class="revuser">
+              <img src="Pictures/revpic/a1.jpg" alt="jhaja_11" />
+              <div class="reuserdetail">
+                <h3>jhaja_11</h3>
+                <h6>Shopee Review</h6>
+              </div>
+            </div>
+            <div class="revstars">
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+
+              <p>
+                Second order ng shampoo na to sa shop din na 'to. Seems
+                effective nmn Kasi may nakikita akong maliliit na hair tapos
+                konti n lng ung nalalagas na hair ko when I wash it. So far good
+                nmn ung effect so I ordered again.
+              </p>
+            </div>
+          </div>
+          <!--reviee end-->
         </li>
         <li class="slide-item">
-          <img src="Pictures/Reviews/thick2.png" />
+          <div class="reviewcard">
+            <div class="revuser">
+              <img src="Pictures/revpic/a2.jpg" alt="fashion_allure" />
+              <div class="reuserdetail">
+                <h3>fashion_allure</h3>
+                <h6>Shopee Review</h6>
+              </div>
+            </div>
+            <div class="revstars">
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star"></span>
+
+              <p>
+                Received parcel in good condition, but the seller didn't ship it
+                agd. Anyhow, I like all the items I ordered, and most of all
+                it's all environment friendly SANA ALL!! ☺ TYSM Seller &
+                courier. Stay safe & healthy. 🙏😊
+              </p>
+            </div>
+          </div>
+          <!--reviee end-->
         </li>
         <li class="slide-item">
-          <img src="Pictures/Reviews/sen1.png" />
+          <div class="reviewcard">
+            <div class="revuser">
+              <img src="Pictures/revpic/a3.jpg" alt="reuserdetail" />
+              <div class="reuserdetail">
+                <h3>esdeealvarezureta</h3>
+                <h6>Shopee Review</h6>
+              </div>
+            </div>
+            <div class="revstars">
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+
+              <p>
+                Second time to use this shampoo and I think I found the shampoo
+                that my hair loves: lather, scent, does not melt quickly,
+                price... All good! The best pa rin talaga ang plastic-free
+                packaging. Salamat, seller!
+              </p>
+            </div>
+          </div>
+          <!--reviee end-->
         </li>
       </ul>
     </div>
@@ -149,6 +291,13 @@
             name="Name"
             placeholder="Enter your name"
           />
+          <label for="Email"> Email:</label>
+          <input
+            type="email"
+            id="Email"
+            name="Email"
+            placeholder="Enter your email"
+          />
           <label for="Review">Your review:</label>
           <textarea
             name="Review"
@@ -161,30 +310,44 @@
         </div>
       </form>
     </div>
+
     <!-- "You May Also like" -->
     <div class="youmay">
-      <h1>YOU MAY ALSO LIKE</h1>
+      <h1>You may also like</h1>
     </div>
+
     <!-- Parent Class of "Suggestion"-->
-    <div class="suggestions">
+    <div class="suggestions2">
       <div class="p1" onclick="document.location='EcoSensitive.html'">
-        <img src="Pictures/Products/image 30.png" />
+        <img
+          src="Pictures/Products/image 30.png"
+          alt="Ecobar Sensitive Shampoo Bar"
+        />
         <p>Ecobar Sensitive Shampoo Bar</p>
         <p class="price">₱180.00</p>
       </div>
       <div class="p2" onclick="document.location='EcoHydrate.html'">
-        <img src="Pictures/Products/image 15.png" />
+        <img
+          src="Pictures/Products/image 15.png"
+          alt="Ecobar Hydrate Shampoo Bar"
+        />
         <p>Ecobar Hydrate Shampoo Bar</p>
         <p class="price">₱180.00</p>
       </div>
       <div class="p3" onclick="document.location='EcoRepair.html'">
-        <img src="Pictures/Products/image 16.png" />
+        <img
+          src="Pictures/Products/image 16.png"
+          alt="Ecobar Repair and Nourish Conditioner Bar"
+        />
         <p>Ecobar Repair and Nourish Conditioner Bar</p>
         <p class="price">₱220.00</p>
       </div>
-      <div class="p4" onclick="document.location='EcoDetox.html'">
-        <img src="Pictures/Products/image 17.png" />
-        <p>Ecobar Dandruff Control Shampoo Bar (aka Heal + Detox)</p>
+      <div class="p4" onclick="document.location='EcoPreserve.html'">
+        <img
+          src="Pictures/Products/image 18.png"
+          alt="Ecobar Color Preserve Shampoo Bar"
+        />
+        <p>Ecobar Color Preserve Shampoo Bar</p>
         <p class="price">₱180.00</p>
       </div>
     </div>
@@ -231,29 +394,6 @@
             ></a>
           </div>
         </div>
-        <div class="footer-col">
-          <h4>DEVELOPERS</h4>
-          <div class="devpics">
-            <a
-              ><img
-                class="devpics"
-                src="Pictures\palenlogo.png"
-                alt="Palen logo"
-            /></a>
-            <a
-              ><img
-                class="devpics"
-                src="Pictures\pereyralogo.png"
-                alt="Pereyra logo"
-            /></a>
-            <a
-              ><img
-                class="devpics"
-                src="Pictures\plantalogo.png"
-                alt="Planta logo"
-            /></a>
-          </div>
-        </div>
       </div>
     </div>
 
@@ -261,17 +401,26 @@
       <p>© 2021 Group 9</p>
     </div>
   </div>
+
   <script>
     $(function () {
       $("#slider").slick({
-        slidesToShow: 1,
+        slidesToShow: 2,
         slidesToScroll: 1,
         speed: 1000,
         dots: true,
-        autoplay: true,
         autoplaySpeed: 3500,
         prevArrow: '<button class="slide-arrow prev-arrow"></button>',
         nextArrow: '<button class="slide-arrow next-arrow"></button>',
+        //Responsive slider
+        responsive: [
+          {
+            breakpoint: 717,
+            settings: {
+              slidesToShow: 1,
+            },
+          },
+        ], //End of Responsive slider
       });
     });
   </script>
