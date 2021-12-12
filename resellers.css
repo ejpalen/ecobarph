@@ -5,6 +5,10 @@
   text-decoration: none;
 }
 
+body {
+  min-width: 390px;
+}
+
 .resellers_header {
   width: 90%;
   margin: 20px auto 50px;
@@ -161,6 +165,9 @@
   cursor: pointer;
   transition: all 0.2s ease;
   position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .tabs ul li .icon {
@@ -211,6 +218,12 @@
 .tab_wrap .tab_content p {
   font-size: 18px;
   line-height: 22px;
+}
+
+@media screen and (max-width: 1050px) {
+  .wrapper {
+    width: 95%;
+  }
 }
 
 @media screen and (max-width: 720px) {
