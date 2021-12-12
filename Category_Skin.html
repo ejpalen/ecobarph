@@ -1,5 +1,13 @@
 <html>
     <head>
+      <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.14.0/css/all.css"
+    />
 		 <link rel="stylesheet" href="productsnavfooter.css">
      <link rel="stylesheet" href="products.css">
       <link href="https://fonts.googleapis.com/css2?family=Poppins&amp;display=swap"
@@ -18,11 +26,16 @@
     <body>
       <div class="menuwrapper">
         <div class="navleft">
-          <a href="index.html"><h1>ecobar™</h1></a>
+          <div class="txtlogo">
+            <a href="index.html"
+              ><h1>ecobar</h1>
+              <p>™</p></a
+            >
+          </div>
   
           <div class="menu">
             <ul>
-              <li class="active">
+              <li  class="active">
                 <a href="#">Products</a>
                 <!--This part is for the dropdown menu/ Submenu for "Products" in the navbar-->
                 <div class="submenu">
@@ -48,10 +61,10 @@
           </div>
         </div>
         <div class="navfeatures">
-          <a href="#" class="navicon" title="Add to cart"
+          <a href="1Cart.html" class="navicon" title="My Cart"
             ><i class="fa fa-fw fa-shopping-cart"></i
           ></a>
-          <a href="#" class="navicon" title="My Account"
+          <a href="1login.html" class="navicon" title="My Account"
             ><i class="fa fa-fw fa-user"></i
           ></a>
         </div>
@@ -98,6 +111,7 @@
           </ul>
         </div>
       </nav>
+  
 	
 	<div class = "SCheader">
 		<h1>Skin Care</h1>
@@ -115,6 +129,10 @@
 			  <div class = "SC1cntr">
                   <div class = "SCimg">
                       <image src = "Pictures/images/Skin Care/AcneControl.png">
+                        <div class="middle">
+                          <div class="textwrap"></div>
+                          <div class="text">View</div>
+                        </div>
                   </div>
               <div class = "SCdeets">
 				  <p>Ecobar eco+biome Acne Control Prebiotic Face Bar</a></p>
@@ -127,6 +145,10 @@
               <div class = "SC2cntr">
                   <div class = "SCimg">
                       <image src = "Pictures/images/Skin Care/MoistureRetention.png">
+                        <div class="middle">
+                          <div class="textwrap"></div>
+                          <div class="text">View</div>
+                        </div>
                   </div>
               <div class = "SCdeets">
 			      <p>Ecobar Moisture Retention Gentle Face Bar</a></p>
@@ -139,6 +161,10 @@
               <div class = "SC3cntr">
                   <div class = "SCimg">
                       <image src = "Pictures/images/Skin Care/PrebioticPowder.png">
+                        <div class="middle">
+                          <div class="textwrap"></div>
+                          <div class="text">View</div>
+                        </div>
                   </div>
               <div class = "SCdeets">
 				  <p>Ecobar eco+biome Prebiotic Powder Cleanser 35g</a></p>
@@ -151,44 +177,62 @@
 
     </div>
 
-	 <div class="footer">
-
-        <!--"Container section"-->
-        <div class="container">
-          <div class="row">
-            <div class="footer-col">
-                <h4>
-                  <img id="logo" src="Pictures\ecobarlogo.png" alt="Ecobar Logo"/>
-                </h4>
-            </div>
-            <div class="footer-col">
-                  <h4>MENU</h4>
-                  <ul>
-                    <li><a class="ftrlnk" href="index.html">Home</a></li>
-                    <li><a class="ftrlnk" href="Category_All.html">Products</a></li>
-                    <li><a class="ftrlnk" href="resellers.html">Resellers</a></li>
-                    <li><a class="ftrlnk" href="about.html">About Us</a></li>
-                  </ul>
-            </div>
-            <div class="footer-col">
-              <h4>CONTACT</h4>
-                <ul>
-                  <li><a class="ftrlnk" href="mailto: ecobarph@gmail.com">E-MAIL: ecobarph@gmail.com</a></li>
-                  <li><a>ON SOCIAL MEDIA:</a></li>
-                </ul>
-                  <div class="social-links">
-                    <a target="_blank" href="https://www.facebook.com/ecobarph/" class="fblogo"></a>
-                    <a target="_blank" href="https://www.instagram.com/ecobarph/" class="instalogo"></a>
-                  </div>
+    <div class="footer">
+      <!--"Container section"-->
+      <div class="container">
+        <div class="row">
+          <div class="footer-col logoftr">
+            <h4>
+              <div class="txtlogo">
+                <a href="index.html"
+                  ><h1>ecobar</h1>
+                  <p>™</p></a
+                >
+              </div>
+            </h4>
+          </div>
+          <div class="footer-col">
+            <h4>MENU</h4>
+            <ul>
+              <li><a class="ftrlnk" href="index.html">Home</a></li>
+              <li><a class="ftrlnk" href="#top">Products</a></li>
+              <li><a class="ftrlnk" href="resellers.html">Resellers</a></li>
+              <li><a class="ftrlnk" href="about.html">About</a></li>
+            </ul>
+          </div>
+          <div class="footer-col">
+            <h4>CONTACT</h4>
+            <ul>
+              <li>
+                <a class="ftrlnk" href="mailto: ecobarph@gmail.com"
+                  >E-MAIL: ecobarph@gmail.com</a
+                >
+              </li>
+              <li><a>ON SOCIAL MEDIA:</a></li>
+            </ul>
+            <div class="social-links">
+              <a
+                target="_blank"
+                href="https://www.facebook.com/ecobarph/"
+                class="fblogo"
+                ><i class="fab fa-facebook-square"></i
+              ></a>
+              <a
+                target="_blank"
+                href="https://www.instagram.com/ecobarph/"
+                class="instalogo"
+                ><i class="fab fa-instagram-square"></i
+              ></a>
             </div>
           </div>
         </div>
-
-        <div class="container-btm"> 
-          <p>© 2021 Group 9</p>
-        </div>
-
       </div>
+
+      <!--container-btm section-->
+      <div class="container-btm">
+        <p>© 2021 Group 9</p>
+      </div>
+    </div>
 
 </body>
 </html>
