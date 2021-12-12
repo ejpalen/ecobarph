@@ -2,6 +2,14 @@
 <html lang="en" id="top">
   <head>
     <meta charset="utf-8" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.14.0/css/all.css"
+    />
     <link rel="icon" href="Pictures/favicon.png" type="image/x-icon" />
     <title>Resellers</title>
     <link rel="stylesheet" href="resellers.css" />
@@ -21,11 +29,16 @@
   <body>
     <div class="menuwrapper">
       <div class="navleft">
-        <a href="index.html"><h1>ecobar™</h1></a>
+        <div class="txtlogo">
+          <a href="index.html"
+            ><h1>ecobar</h1>
+            <p>™</p></a
+          >
+        </div>
 
         <div class="menu">
           <ul>
-            <li class="active">
+            <li>
               <a href="#">Products</a>
               <!--This part is for the dropdown menu/ Submenu for "Products" in the navbar-->
               <div class="submenu">
@@ -45,16 +58,16 @@
                 </ul>
               </div>
             </li>
-            <a href="resellers.html"><li>Resellers</li></a>
+            <a href="resellers.html"><li class="active">Resellers</li></a>
             <a href="about.html"><li>About</li></a>
           </ul>
         </div>
       </div>
       <div class="navfeatures">
-        <a href="#" class="navicon" title="Add to cart"
+        <a href="1Cart.html" class="navicon" title="My Cart"
           ><i class="fa fa-fw fa-shopping-cart"></i
         ></a>
-        <a href="#" class="navicon" title="My Account"
+        <a href="1login.html" class="navicon" title="My Account"
           ><i class="fa fa-fw fa-user"></i
         ></a>
       </div>
@@ -120,6 +133,7 @@
                   height: 20px;
                   margin: -1px;
                   margin-right: 5px;
+                  margin-top: 5px;
                 "
                 src="Pictures/instaicon.png"
               />
@@ -134,6 +148,7 @@
                   height: 20px;
                   margin: -1px;
                   margin-right: 5px;
+                  margin-top: 5px;
                 "
                 src="Pictures/fbicon.png"
               />
@@ -148,6 +163,7 @@
                   height: 20px;
                   margin: -1px;
                   margin-right: 5px;
+                  margin-top: 5px;
                 "
                 src="Pictures/shopeeicon.png"
               />
@@ -162,6 +178,7 @@
                   height: 20px;
                   margin: -1px;
                   margin-right: 5px;
+                  margin-top: 5px;
                 "
                 src="Pictures/psicon.png"
               />
@@ -821,17 +838,22 @@
       <!--"Container section"-->
       <div class="container">
         <div class="row">
-          <div class="footer-col">
+          <div class="footer-col logoftr">
             <h4>
-              <img id="logo" src="Pictures\ecobarlogo.png" />
+              <div class="txtlogo">
+                <a href="index.html"
+                  ><h1>ecobar</h1>
+                  <p>™</p></a
+                >
+              </div>
             </h4>
           </div>
           <div class="footer-col">
             <h4>MENU</h4>
             <ul>
               <li><a class="ftrlnk" href="index.html">Home</a></li>
-              <li><a class="ftrlnk" href="#0">Products</a></li>
-              <li><a class="ftrlnk" href="#top">Resellers</a></li>
+              <li><a class="ftrlnk" href="#top">Products</a></li>
+              <li><a class="ftrlnk" href="resellers.html">Resellers</a></li>
               <li><a class="ftrlnk" href="about.html">About</a></li>
             </ul>
           </div>
@@ -850,11 +872,13 @@
                 target="_blank"
                 href="https://www.facebook.com/ecobarph/"
                 class="fblogo"
+                ><i class="fab fa-facebook-square"></i
               ></a>
               <a
                 target="_blank"
                 href="https://www.instagram.com/ecobarph/"
                 class="instalogo"
+                ><i class="fab fa-instagram-square"></i
               ></a>
             </div>
           </div>
