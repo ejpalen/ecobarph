@@ -1,6 +1,14 @@
 <!DOCTYPE html>
 <html lang="en" id="top">
   <head>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.14.0/css/all.css"
+    />
     <meta charset="utf-8" />
     <link rel="icon" href="Pictures/favicon.png" type="image/x-icon" />
     <title>Ecobar | About</title>
@@ -21,7 +29,12 @@
   <body>
     <div class="menuwrapper">
       <div class="navleft">
-        <a href="index.html"><h1>ecobar™</h1></a>
+        <div class="txtlogo">
+          <a href="index.html"
+            ><h1>ecobar</h1>
+            <p>™</p></a
+          >
+        </div>
 
         <div class="menu">
           <ul>
@@ -46,15 +59,15 @@
               </div>
             </li>
             <a href="resellers.html"><li>Resellers</li></a>
-            <a href="about.html"><li>About</li></a>
+            <a href="about.html"><li class="active">About</li></a>
           </ul>
         </div>
       </div>
       <div class="navfeatures">
-        <a href="#" class="navicon" title="Add to cart"
+        <a href="1Cart.html" class="navicon" title="My Cart"
           ><i class="fa fa-fw fa-shopping-cart"></i
         ></a>
-        <a href="#" class="navicon" title="My Account"
+        <a href="1login.html" class="navicon" title="My Account"
           ><i class="fa fa-fw fa-user"></i
         ></a>
       </div>
@@ -155,23 +168,27 @@
         </h1>
       </div>
     </div>
-
     <div class="footer">
       <!--"Container section"-->
       <div class="container">
         <div class="row">
-          <div class="footer-col">
+          <div class="footer-col logoftr">
             <h4>
-              <img id="logo" src="Pictures\ecobarlogo.png" />
+              <div class="txtlogo">
+                <a href="index.html"
+                  ><h1>ecobar</h1>
+                  <p>™</p></a
+                >
+              </div>
             </h4>
           </div>
           <div class="footer-col">
             <h4>MENU</h4>
             <ul>
               <li><a class="ftrlnk" href="index.html">Home</a></li>
-              <li><a class="ftrlnk" href="Category_All.html">Products</a></li>
+              <li><a class="ftrlnk" href="#top">Products</a></li>
               <li><a class="ftrlnk" href="resellers.html">Resellers</a></li>
-              <li><a class="ftrlnk" href="#top">About</a></li>
+              <li><a class="ftrlnk" href="about.html">About</a></li>
             </ul>
           </div>
           <div class="footer-col">
@@ -189,11 +206,13 @@
                 target="_blank"
                 href="https://www.facebook.com/ecobarph/"
                 class="fblogo"
+                ><i class="fab fa-facebook-square"></i
               ></a>
               <a
                 target="_blank"
                 href="https://www.instagram.com/ecobarph/"
                 class="instalogo"
+                ><i class="fab fa-instagram-square"></i
               ></a>
             </div>
           </div>
