@@ -158,18 +158,22 @@
       </div>
     </div>
     <!--Product category section-->
-    <div class="category" id="ftrcategory">
-      <div class="browse">
-        <h1>Browse products by category</h1>
-        <div class="browseleft">
-          <a href="Category_All.html">Browse all</a>
-        </div>
+    <div class="browse">
+      <h1>Browse products by category</h1>
+      <div class="browseleft">
+        <a href="Category_All.html">Browse all</a>
       </div>
-      <div>
+    </div>
+    <div class="category" id="ftrcategory">
+      <div class="category5">
         <h4 target="_blank" onclick="document.location='Category_Hair.html'">
           <div class="carewrapper">
             <div class="hcare">
               <div class="hcarehov"></div>
+              <div class="middle">
+                <div class="textwrap"></div>
+                <div class="text">View</div>
+              </div>
             </div>
             <p>Hair Care</p>
           </div>
@@ -179,6 +183,10 @@
           <div class="carewrapper">
             <div class="scare">
               <div class="scarehov"></div>
+              <div class="middle">
+                <div class="textwrap"></div>
+                <div class="text">View</div>
+              </div>
             </div>
             <p>Skin Care</p>
           </div>
@@ -198,6 +206,10 @@
           <div class="carewrapper">
             <div class="icare">
               <div class="icarehov"></div>
+              <div class="middle">
+                <div class="textwrap"></div>
+                <div class="text">View</div>
+              </div>
             </div>
             <p>Intimate Care</p>
           </div>
@@ -206,8 +218,23 @@
           <div class="carewrapper">
             <div class="ocare">
               <div class="ocarehov"></div>
+              <div class="middle">
+                <div class="textwrap"></div>
+                <div class="text">View</div>
+              </div>
             </div>
             <p>Oral Care</p>
+          </div>
+        </h4>
+        <h4
+          target="_blank"
+          class="browseallresph4"
+          onclick="document.location='Category_Oral.html'"
+        >
+          <div class="carewrapper">
+            <div class="ocare browseallresp">
+              <p>Browse all</p>
+            </div>
           </div>
         </h4>
       </div>
@@ -222,6 +249,10 @@
             <a href="SkinCareAcne.html">
               <div class="acneb">
                 <div class="acnebhov"></div>
+                <div class="middle">
+                  <div class="textwrap"></div>
+                  <div class="text">View</div>
+                </div>
               </div>
               <p>Ecobar eco+biome Acne Control Prebiotic Facebar</p>
               <p class="price">₱120.00</p>
@@ -231,6 +262,10 @@
             <a href="EcoThickening.html">
               <div class="thickb">
                 <div class="thickbhov"></div>
+                <div class="middle">
+                  <div class="textwrap"></div>
+                  <div class="text">View</div>
+                </div>
               </div>
               <p>Ecobar Thickening Shampoo Bar</p>
               <p class="price">₱105.00</p>
@@ -240,6 +275,10 @@
             <a href="EcoPreserve.html">
               <div class="colorb">
                 <div class="colorbhov"></div>
+                <div class="middle">
+                  <div class="textwrap"></div>
+                  <div class="text">View</div>
+                </div>
               </div>
 
               <p>Ecobar Color Preserve Shampoo Bar</p>
@@ -247,9 +286,26 @@
             </a>
           </h4>
           <h4>
+            <a href="EcoBathBar.html">
+              <div class="gentleb">
+                <div class="gentlebhov"></div>
+                <div class="middle">
+                  <div class="textwrap"></div>
+                  <div class="text">View</div>
+                </div>
+              </div>
+              <p>Ecobar Gentle Bath Bar</p>
+              <p class="price">₱190.00</p>
+            </a>
+          </h4>
+          <h4>
             <a href="EcoMoisture.html">
               <div class="moistb">
                 <div class="moistbhov"></div>
+                <div class="middle">
+                  <div class="textwrap"></div>
+                  <div class="text">View</div>
+                </div>
               </div>
               <p>Ecobar Moisture Retention Gentle Face Bar</p>
               <p class="price">₱115.00</p>
@@ -459,7 +515,7 @@
           slidesToScroll: 1,
           speed: 1000,
           dots: true,
-          autoplay: true,
+          autoplay: false,
           prevArrow: '<button class="slide-arrow prev-arrow"></button>',
           nextArrow: '<button class="slide-arrow next-arrow"></button>',
           autoplaySpeed: 3500, //Responsive slider
