@@ -590,7 +590,7 @@ h2 {
 
 .reviewleft img {
   display: flex;
-  width: 310px;
+  width: auto;
   height: 280px;
 }
 
@@ -598,6 +598,14 @@ h2 {
   width: 50px;
   height: 50px;
   border-radius: 50%;
+}
+
+.revcolorpreserve img {
+  margin-top: -35px;
+}
+
+.revrepair img {
+  margin-top: -20px;
 }
 
 .reviewright {
