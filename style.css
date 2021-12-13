@@ -624,7 +624,7 @@ h2 {
 }
 
 .reviewwrapper {
-  width: 78%;
+  width: 90%;
   margin: 0 auto;
   align-items: center;
 }
@@ -655,6 +655,10 @@ h2 {
 /*Specifies only the .container-btm p element*/
 .container-btm p {
   font-size: 14px;
+}
+
+.prodnameresp {
+  display: none;
 }
 
 @media (max-width: 1390px) {
@@ -1178,8 +1182,50 @@ h2 {
   }
 }
 
-@media screen and (max-width: 717px) {
-  #slider {
-    width: 90%;
+@media screen and (max-width: 1000px) {
+  .reviewwrapper {
+    width: 100%;
+  }
+
+  #reviews {
+    padding: 0 10px;
+  }
+
+  .reviewleft img {
+    height: 230px;
+  }
+}
+
+@media screen and (max-width: 720px) {
+  .reviewleft img {
+    height: 170px;
+  }
+}
+
+@media screen and (max-width: 630px) {
+  .reviewleft {
+    display: none;
+  }
+
+  .prodnameresp {
+    display: block;
+  }
+
+  .revstars {
+    margin-top: 10px;
+  }
+
+  .revuser {
+    margin-bottom: 15px;
+  }
+
+  .reviewcard {
+    height: 380px;
+  }
+}
+
+@media screen and (max-width: 460px) {
+  .reviewcard {
+    height: 420px;
   }
 }
