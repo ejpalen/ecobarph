@@ -463,7 +463,7 @@ p {
 #reviews {
   /*background-color: #c1d7df;
   padding: 50px 0;*/
-  width: 90%;
+  width: 70%;
   margin: 0px auto;
   padding: 0 50px;
   padding-bottom: 40px;
@@ -679,6 +679,10 @@ h2 {
     width: 170px;
     height: 200px;
   }
+
+  #reviews {
+    width: 80%;
+  }
 }
 
 @media (max-width: 1200px) {
@@ -702,6 +706,10 @@ h2 {
 
   .carewrapper {
     padding: 15px;
+  }
+
+  #reviews {
+    width: 90%;
   }
 }
 
