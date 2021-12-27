@@ -9,6 +9,14 @@
   font-size: 32px;
 }
 
+.txtlogo a {
+  display: flex;
+}
+
+.txtlogo p {
+  padding-top: 9px;
+}
+
 .menu {
   margin-left: 10px;
 }
@@ -213,21 +221,5 @@
     margin-left: 50px;
     margin-top: -3px;
     font-weight: 500;
-  }
-}
-
-@media (max-width: 350px) {
-  .navbar .navfeatures {
-    display: none;
-  }
-
-  .hello {
-    justify-content: flex-start;
-  }
-}
-
-@media (max-width: 280px) {
-  .navbar .hello h1 {
-    margin-left: 10px;
   }
 }
