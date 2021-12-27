@@ -17,7 +17,7 @@ p {
 /*For Menu/Navbar*/
 .menu {
   margin-right: 0px;
-  margin-left: 0px;
+  margin-left: 10px;
   height: 69px;
   list-style: none;
   text-align: center;
@@ -33,7 +33,7 @@ p {
   transition: all 0.3s ease-in-out;
   font-size: 18px;
   line-height: 30px;
-  width: 90px;
+  width: 95px;
   margin: 5px;
   padding: 8px;
 }
@@ -63,8 +63,9 @@ p {
   display: block;
   position: absolute;
   background-color: #eae4df;
-  margin-top: 15px;
+  margin-top: 5px;
   margin-left: -8px;
+  border-top: 5px solid white;
 }
 
 .menu ul li:hover .submenu ul {
@@ -109,7 +110,7 @@ p {
 /*For the footer section*/
 .footer {
   width: 100%;
-  background: #f6f6f6;
+  background: #f6f9fe;
   padding: 10px 0px 5px 0px;
 }
 
@@ -129,11 +130,15 @@ p {
 }
 
 .footer-col h4 {
-  padding-left: 10px;
   font-size: 25px;
   margin-bottom: 10px;
   margin-top: 20px;
   position: relative;
+  padding-left: 10px;
+}
+
+.footer h1 {
+  margin-left: -10px;
 }
 
 footer ul {
@@ -187,33 +192,21 @@ footer ul {
   padding-top: 30px;
 }
 
-.fblogo {
-  margin-left: 10px;
-  width: 44px;
-  height: 44px;
-  background-image: url("./Pictures/fblogo.png");
-  background-size: cover;
+.social-links {
+  padding-left: 10px;
 }
 
-.fblogo:hover {
-  cursor: pointer;
-  background-image: url("./Pictures/fbhover1.png");
-  background-size: cover;
-}
-
+.fblogo,
 .instalogo {
-  width: 44px;
-  height: 44px;
-  background-image: url("./Pictures/instalogo.png");
-  background-size: cover;
+  font-size: 44px;
+  position: relative;
+  margin-top: -10px;
 }
 
-.instalogo:hover {
-  cursor: pointer;
-  background-image: url("./Pictures/instahover.png");
-  background-size: cover;
+.fblogo:hover .fab,
+.instalogo:hover .fab {
+  color: #327559;
 }
-
 /*Specifies only the .container-btm p element*/
 .container-btm p {
   font-size: 14px;
@@ -237,5 +230,9 @@ footer ul {
   .footer-col {
     margin-left: 20px;
     padding: 0;
+  }
+
+  .footer-col:nth-child(2) {
+    margin-top: -25px;
   }
 }
