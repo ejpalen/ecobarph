@@ -8,6 +8,7 @@
 
 body {
   background-color: #f6f9fe;
+  min-width: 400px;
 }
 
 .productswrapper {
@@ -91,6 +92,7 @@ form label {
   background-color: #3c4043;
   color: white;
   border: none;
+  border-radius: 5px;
 }
 
 .total button:hover {
@@ -185,6 +187,6 @@ form label {
   }
 
   .total {
-    align-items: flex-start;
+    align-items: center;
   }
 }
