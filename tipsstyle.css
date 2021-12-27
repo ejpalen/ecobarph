@@ -8,6 +8,7 @@
 body {
   width: 100%;
   background: #e3f2fd;
+  min-width: 400px;
 }
 
 /*For Menu/Navbar*/
@@ -15,7 +16,6 @@ body {
   margin-right: 0px;
   margin-left: 0px;
   height: 69px;
-  background: #e3f2fd;
   list-style: none;
   text-align: center;
 }
@@ -182,33 +182,6 @@ footer ul {
 .container-btm {
   text-align: center;
   padding-top: 30px;
-}
-
-.fblogo {
-  margin-left: 10px;
-  width: 44px;
-  height: 44px;
-  background-image: url("./Pictures/fblogo.png");
-  background-size: cover;
-}
-
-.fblogo:hover {
-  cursor: pointer;
-  background-image: url("./Pictures/fbhover1.png");
-  background-size: cover;
-}
-
-.instalogo {
-  width: 44px;
-  height: 44px;
-  background-image: url("./Pictures/instalogo.png");
-  background-size: cover;
-}
-
-.instalogo:hover {
-  cursor: pointer;
-  background-image: url("./Pictures/instahover.png");
-  background-size: cover;
 }
 
 /*Specifies only the .container-btm p element*/
