@@ -27,6 +27,7 @@ h1 {
   margin: 0 auto;
   margin-top: -110px;
   background: #3c4043;
+  border-radius: 5px;
 }
 
 .Allimg {
@@ -42,6 +43,7 @@ h1 {
   height: 100%;
   position: absolute;
   transition: all 0.1s ease-in-out;
+  border-radius: 5px;
 }
 
 .border:hover .middle:hover .textwrap {
