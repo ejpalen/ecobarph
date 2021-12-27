@@ -386,6 +386,7 @@ p {
   margin: 0 auto;
   margin-top: -110px;
   background: #3c4043;
+  border-radius: 5px;
 }
 
 .textwrap {
@@ -394,6 +395,7 @@ p {
   height: 100%;
   position: absolute;
   transition: all 0.1s ease-in-out;
+  border-radius: 5px;
 }
 
 .carewrapper .middle {
@@ -840,8 +842,8 @@ h2 {
 
 @media (max-width: 900px) {
   .banner img {
-    width: 160%;
-    margin-left: -50px;
+    width: 120%;
+    margin-left: -88px;
   }
   .banner {
     overflow: hidden;
@@ -858,6 +860,12 @@ h2 {
   }
 }
 
+@media (max-width: 900px) and (min-width: 721px) {
+  .banner img {
+    width: 120%;
+    margin-left: -65px;
+  }
+}
 @media (max-width: 801px) {
   .featuredp > div {
     grid-template-columns: repeat(2, 50%);
@@ -930,6 +938,18 @@ h2 {
 
   .browse {
     justify-content: center;
+  }
+
+  .browseallresph4 p {
+    padding: 20px 35px;
+    background-color: #3c4043;
+    color: white;
+    border-radius: 10px;
+  }
+
+  .browseallresp {
+    margin-top: 10px;
+    cursor: pointer;
   }
 }
 
