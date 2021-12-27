@@ -1,0 +1,275 @@
+* {
+  padding: 0;
+  margin: 0;
+  color: #3c4043;
+
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  background-color: #f6f9fe;
+  width: 100%;
+  min-width: 400px;
+}
+
+.accountitle {
+  margin: 0 auto;
+  width: 70%;
+  margin-top: 60px;
+  margin-bottom: 5px;
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  padding: 0 10px;
+}
+
+#edit {
+  padding: 5px 10px;
+  border-radius: 10px;
+}
+
+#edit:hover {
+  background-color: #ede3d9;
+  cursor: pointer;
+}
+
+.accountheader {
+  background-color: white;
+  width: 70%;
+  margin: 0 auto;
+  border-radius: 10px;
+  display: flex;
+  padding: 40px;
+}
+
+.orderheader {
+  background-color: white;
+  width: 70%;
+  margin: 0 auto;
+  border-radius: 10px;
+  display: flex;
+  padding: 40px;
+}
+
+.accountheader img {
+  width: 100px;
+  margin: 0 auto;
+  display: flex;
+}
+
+.account_details div {
+  margin-bottom: 20px;
+}
+
+.label {
+  font-size: 12px;
+}
+
+.account_btns_ctr {
+  width: 70%;
+  margin: 0 auto;
+  margin-bottom: 60px;
+  margin-top: 40px;
+  display: flex;
+  justify-content: end;
+}
+
+.account_btns {
+  display: flex;
+  flex-direction: column;
+  width: 200px;
+}
+
+.account_btns button {
+  border: none;
+  margin: 5px 0;
+  color: white;
+  padding: 15px;
+  border-radius: 10px;
+  font-size: 18px;
+  cursor: pointer;
+}
+
+.deleteacc {
+  background-color: #d90003;
+  border: none;
+  margin: 5px 0;
+  color: white;
+  padding: 15px;
+  border-radius: 10px;
+  font-size: 18px;
+  transition: all 0.1s ease-in-out;
+}
+
+button.logout {
+  border: 3px solid #3c4043;
+  box-sizing: border-box;
+  background-color: #f6f9fe;
+  color: #3c4043;
+  transition: all 0.1s ease-in-out;
+}
+
+.deleteacc:hover {
+  background-color: #a1080a;
+  transition: all 0.1s ease-in-out;
+}
+
+button.logout:hover {
+  background-color: #327559;
+  color: white;
+  border: 3px solid #327559;
+  transition: all 0.1s ease-in-out;
+}
+
+.account_details input {
+  padding: 10px;
+  margin-top: 5px;
+  border-radius: 5px;
+  border-color: #3c4043;
+  width: 280px;
+}
+
+.changes {
+  display: flex;
+}
+
+.changes button {
+  margin: 5px 0;
+  color: white;
+  padding: 10px;
+  border-radius: 10px;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+#cancelchanges {
+  border: none;
+  margin: 5px 0;
+  color: #3c4043;
+  border-radius: 10px;
+  transition: all 0.1s ease-in-out;
+  background-color: #f6f9fe;
+}
+
+#save {
+  border: 1px solid #d90003;
+  background-color: #d90003;
+  color: white;
+  transition: all 0.1s ease-in-out;
+}
+
+#save:hover {
+  background-color: #a1080a;
+}
+
+.modal {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(0);
+  transition: 200ms ease-in-out;
+  border: 1px solid black;
+  border-radius: 10px;
+  z-index: 10;
+  background-color: white;
+  width: 500px;
+  max-width: 80%;
+}
+
+.modal.active1 {
+  transform: translate(-50%, -50%) scale(1);
+}
+
+.modal-header {
+  padding: 10px 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-bottom: 1px solid black;
+  margin-bottom: 10px;
+}
+
+.modal-header .title {
+  font-size: 32px;
+  font-weight: bold;
+}
+
+.modal-header .close-button {
+  cursor: pointer;
+  border: none;
+  outline: none;
+  background: none;
+  font-size: 1.25rem;
+  font-weight: bold;
+}
+
+.modal-body {
+  padding: 10px 15px;
+  font-size: 18px;
+  text-align: center;
+  color: #8d8d8d;
+}
+
+#overlay {
+  position: fixed;
+  opacity: 0;
+  transition: 200ms ease-in-out;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  pointer-events: none;
+}
+
+#overlay.active1 {
+  opacity: 1;
+  pointer-events: all;
+}
+
+.modal-body-btns button {
+  padding: 8px 12px;
+  margin-top: 15px;
+  border-radius: 10px;
+  margin-bottom: 10px;
+  box-sizing: border-box;
+  font-size: 18px;
+  cursor: pointer;
+  margin-right: 5px;
+}
+
+#nocancel {
+  border: none;
+  background-color: white;
+}
+
+#yesdelete {
+  background-color: #d90003;
+  border: 1px solid #d90003;
+  color: white;
+}
+
+#nocancel:hover {
+  background-color: #327559;
+  color: white;
+  transition: all 0.1s ease-in-out;
+}
+
+#yesdelete:hover {
+  background-color: #a1080a;
+  border-color: #a1080a;
+  transition: all 0.1s ease-in-out;
+}
+
+@media screen and (max-width: 650px) {
+  .accountitle,
+  .accountheader,
+  .orderheader,
+  .account_btns_ctr {
+    width: 90%;
+  }
+
+  .accountitle {
+    margin-top: 30px;
+  }
+}

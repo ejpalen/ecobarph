@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en" id="top">
+  <head>
+    <meta charset="utf-8" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="icon" href="Pictures/favicon.png" type="image/x-icon" />
+    <title>Ecobar | My Account</title>
+
+    <!--Style-->
+    <link rel="stylesheet" href="myaccount.css" />
+    <link rel="stylesheet" href="navnoborder,footer.css" />
+    <!--Poppins font-->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins&display=swap"
+      rel="stylesheet"
+    />
+    <!--Slick Slider-->
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdn.jsdelivr.net/jquery.slick/1.6.0/slick.css"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdn.jsdelivr.net/jquery.slick/1.6.0/slick-theme.css"
+    />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"
+    ></script>
+    <link rel="stylesheet" href="navstyle.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.14.0/css/all.css"
+    />
+    <script src="navscript.js" defer></script>
+    <meta content="width=device-width, initial-scale=1" name="viewport" />
+    <style>
+      .menuwrapper {
+        margin-bottom: 0px;
+        background-color: white;
+      }
+
+      .footer {
+        border-top: 2px solid #eaeaeb;
+        border-bottom: 2px solid #eaeaeb;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="menuwrapper">
+      <div class="navleft">
+        <a href="index.html"><h1>ecobar™</h1></a>
+
+        <div class="menu">
+          <ul>
+            <li>
+              <a href="#">Products</a>
+              <!--This part is for the dropdown menu/ Submenu for "Products" in the navbar-->
+              <div class="submenu">
+                <ul>
+                  <li class="menu-category">
+                    <b>Browse by category</b>
+                  </li>
+                  <li><a href="Category_Hair.html">Hair Care</a></li>
+                  <li><a href="Category_Skin.html">Skin Care</a></li>
+                  <li><a href="Category_B&B.html">Bath and Body</a></li>
+                  <li><a href="Category_Intimate.html">Intimate Care</a></li>
+                  <li><a href="Category_Oral.html">Oral Care</a></li>
+                  <li><a href="#0"> </a></li>
+                  <li class="menu-category">
+                    <a href="Category_All.html"><b>Browse all Products</b></a>
+                  </li>
+                </ul>
+              </div>
+            </li>
+            <a href="resellers.html"><li>Resellers</li></a>
+            <a href="about.html"><li>About</li></a>
+          </ul>
+        </div>
+      </div>
+      <div class="navfeatures">
+        <a href="1Cart.html" class="navicon" title="Add to cart"
+          ><i class="fa fa-fw fa-shopping-cart"></i
+        ></a>
+        <a href="myaccount.html" class="navicon active" title="My Account"
+          ><i class="fa fa-fw fa-user"></i
+        ></a>
+      </div>
+    </div>
+
+    <nav class="navbar">
+      <div class="hello">
+        <div class="navrespleft">
+          <a href="#" class="toggle-button">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+          </a>
+        </div>
+        <a href="index.html"><h1>ecobar™</h1></a>
+        <div class="navfeatures">
+          <a href="1Cart.html" class="navicon" title="Add to cart"
+            ><i class="fa fa-fw fa-shopping-cart"></i
+          ></a>
+          <a href="#" class="navicon active" title="My Account"
+            ><i class="fa fa-fw fa-user"></i
+          ></a>
+        </div>
+      </div>
+      <div class="navbar-links">
+        <ul>
+          <li>
+            <a href="#" class="toggle1">Products</a>
+
+            <div class="navbar-links1">
+              <ul>
+                <li><a href="Category_Hair.html">Hair Care</a></li>
+                <li><a href="Category_Skin.html">Skin Care</a></li>
+                <li><a href="Category_B&B.html">Bath and Body Care</a></li>
+                <li><a href="Category_Intimate.html">Intimate Care</a></li>
+                <li><a href="Category_Oral.html">Oral Care</a></li>
+                <li><a href="Category_All.html">All Products</a></li>
+              </ul>
+            </div>
+          </li>
+          <li><a href="resellers.html">Resellers</a></li>
+          <li><a href="about.html">About</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <div class="accountitle">
+      <h1>Account Details</h1>
+      <div class="changes">
+        <button id="cancelchanges" onclick="document.location='myaccount.html'">
+          Cancel
+        </button>
+        <button id="save" onclick="document.location='myaccount.html'">
+          Save Changes
+        </button>
+      </div>
+    </div>
+
+    <div class="accountheader">
+      <div class="account_details">
+        <div>
+          <p class="label">Full Name</p>
+          <input type="text" value="Ej Palen" />
+        </div>
+
+        <div>
+          <p class="label">Password</p>
+          <input type="text" value="hello" />
+        </div>
+
+        <div>
+          <p class="label">Email Address</p>
+          <input type="text" value="johnejpalen13@gmail.com" />
+        </div>
+
+        <div>
+          <p class="label">Mobile Number</p>
+          <input type="text" value="+639178336265" />
+        </div>
+
+        <div>
+          <p class="label">Address</p>
+          <input
+            type="text"
+            value="J.P. Rizal Ext, Makati, 1215 Metro Manila"
+          />
+        </div>
+      </div>
+    </div>
+
+    <div class="accountitle">
+      <h1>Order History</h1>
+    </div>
+
+    <div class="orderheader">
+      <div class="order_details">
+        <div>
+          <p>You haven't placed any orders yet.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="account_btns_ctr">
+      <div class="account_btns">
+        <button class="logout" onclick="document.location='index.html'">
+          Logout
+        </button>
+
+        <button data-modal-target="#modal" class="deleteacc">
+          Delete Account
+        </button>
+      </div>
+    </div>
+
+    <div class="modal" id="modal">
+      <div class="modal-header">
+        <div class="title">Delete Account?</div>
+      </div>
+      <div class="modal-body">
+        You'll permanently lose your saved information.
+        <div class="modal-body-btns">
+          <button data-close-button class="close-button" id="nocancel">
+            Cancel
+          </button>
+          <button id="yesdelete" onclick="document.location='1login.html'">
+            Delete Account
+          </button>
+        </div>
+      </div>
+    </div>
+    <div id="overlay"></div>
+
+    <div class="footer">
+      <!--"Container section"-->
+      <div class="container">
+        <div class="row">
+          <div class="footer-col logoftr">
+            <h4>
+              <div class="txtlogo">
+                <a href="index.html"
+                  ><h1>ecobar</h1>
+                  <p>™</p></a
+                >
+              </div>
+            </h4>
+          </div>
+          <div class="footer-col">
+            <h4>MENU</h4>
+            <ul>
+              <li><a class="ftrlnk" href="#top">Home</a></li>
+              <li><a class="ftrlnk" href="#ftrcategory">Products</a></li>
+              <li><a class="ftrlnk" href="resellers.html">Resellers</a></li>
+              <li><a class="ftrlnk" href="about.html">About</a></li>
+            </ul>
+          </div>
+          <div class="footer-col">
+            <h4>CONTACT</h4>
+            <ul>
+              <li>
+                <a class="ftrlnk" href="mailto: ecobarph@gmail.com"
+                  >E-MAIL: ecobarph@gmail.com</a
+                >
+              </li>
+              <li><a>ON SOCIAL MEDIA:</a></li>
+            </ul>
+            <div class="social-links">
+              <a
+                target="_blank"
+                href="https://www.facebook.com/ecobarph/"
+                class="fblogo"
+                ><i class="fab fa-facebook-square"></i
+              ></a>
+              <a
+                target="_blank"
+                href="https://www.instagram.com/ecobarph/"
+                class="instalogo"
+                ><i class="fab fa-instagram-square"></i
+              ></a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!--container-btm section-->
+      <div class="container-btm">
+        <p>© 2021 Group 9</p>
+      </div>
+    </div>
+  </body>
+</html>
