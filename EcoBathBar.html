@@ -2,6 +2,14 @@
 <html>
   <head>
     <link rel="icon" href="Pictures/favicon.png" type="image/x-icon" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.14.0/css/all.css"
+    />
     <title>Ecobar | Gentle Bath Bar</title>
     <link rel="stylesheet" href="EcoBathBar.css" />
     <link rel="stylesheet" href="nav,footer.css" />
@@ -33,12 +41,22 @@
     <link rel="stylesheet" href="navstyle.css" />
     <script src="navscript.js" defer></script>
     <meta content="width=device-width, initial-scale=1" name="viewport" />
+    <style>
+      .menuwrapper {
+        margin-bottom: 0;
+      }
+    </style>
   </head>
   <body>
     <!--Menu-->
     <div class="menuwrapper">
       <div class="navleft">
-        <a href="index.html"><h1>ecobar™</h1></a>
+        <div class="txtlogo">
+          <a href="index.html"
+            ><h1>ecobar</h1>
+            <p>™</p></a
+          >
+        </div>
 
         <div class="menu">
           <ul>
@@ -68,7 +86,7 @@
         </div>
       </div>
       <div class="navfeatures">
-        <a href="1Cart.html" class="navicon" title="Add to cart"
+        <a href="1Cart.html" class="navicon" title="My Cart"
           ><i class="fa fa-fw fa-shopping-cart"></i
         ></a>
         <a href="1login.html" class="navicon" title="My Account"
@@ -77,7 +95,6 @@
       </div>
     </div>
 
-    <!--Responsive Menu-->
     <nav class="navbar">
       <div class="hello">
         <div class="navrespleft">
@@ -89,17 +106,16 @@
         </div>
         <a href="index.html"><h1>ecobar™</h1></a>
         <div class="navfeatures">
-          <a href="#" class="navicon" title="Add to cart"
+          <a href="1Cart.html" class="navicon" title="Add to cart"
             ><i class="fa fa-fw fa-shopping-cart"></i
           ></a>
-          <a href="#" class="navicon" title="My Account"
+          <a href="1login.html" class="navicon" title="My Account"
             ><i class="fa fa-fw fa-user"></i
           ></a>
         </div>
       </div>
       <div class="navbar-links">
         <ul>
-          <li><a href="index.html">Home</a></li>
           <li>
             <a href="#" class="toggle1">Products</a>
 
@@ -120,22 +136,36 @@
       </div>
     </nav>
 
+    <div class="addeditemctr" id="gfg_down">
+      <div class="addeditem">
+        <p id="nothing">x</p>
+        <div class="addeditemtxt">
+          <p>Item added to cart.</p>
+          <a href="1Cart.html"><p>View cart and checkout.</p></a>
+        </div>
+        <button onclick="GFG_click()">
+          <img src="Pictures/close.png" alt="" />
+        </button>
+      </div>
+    </div>
+
     <!--Parent Class of "Product" -->
     <div class="product2">
       <div class="prodimage2 contw">
-        <img src="Pictures/Products/image 50.png" alt="Ecobar Gentle Bar" />
+        <img src="Pictures/Products/BathBar.png" alt="Ecobar Gentle Bar" />
       </div>
       <div class="prodd2 contw">
         <div class="details2">
           <h1>Ecobar Gentle Bath Bar</h1>
-          <h3 class="price">₱115.00</h3>
+          <h3 class="price">₱180.00</h3>
           <!-- Order now button"-->
           <div class="order_buttons">
-            <a target="_blank" href="#0"
-              ><button class="butt cart">Add to cart</button></a>
-            <a target="_blank"
-              href="https://docs.google.com/forms/d/e/1FAIpQLSfvve2VbukTr4owZdarJhctWvv83z7KhJ5yNsTQHNUtSqPYnw/viewform"
-              ><button class="butt">Buy Now</button></a>
+            <button class="butt cart" onclick="hideOrShow()">
+              Add to cart
+            </button>
+            <a target="_blank" href="Payment.html"
+              ><button class="butt">Buy Now</button></a
+            >
           </div>
         </div>
       </div>
@@ -159,11 +189,11 @@
             Ecobar PH’s line of functional bars does not have strong and
             irritating ingredients that can strip natural oils and moisture from
             the scalp and hair. Ecobar PH omitted sulfates, silicones, and
-            synthetic dyes, which can cause irritation and build-up then,
-            replaced with milder and safer ingredients suitable for sensitive
-            scalp and hair. This solid bar can outlast liquid products, does not
-            require plastic packaging, and is convenient to use for traveling
-            and outdoor activities.
+            synthetic dyes, which can cause irritation and build-up, replaced
+            with milder and safer ingredients suitable for sensitive scalp and
+            hair. This solid bar can outlast liquid products, does not require
+            plastic packaging, and is convenient to use for traveling and
+            outdoor activities.
           </p>
         </div>
 
@@ -229,7 +259,11 @@
               <span class="fa fa-star checked"></span>
 
               <p>
-                It was my first time trying this red clay and I was curious about it since I’m pregnant and I needed a product that has no chemicals and not too strong scent. It’s a little bit strong for me but I love the effect on my skin it’s really soft and smooth. I will buy this again next time. 
+                It was my first time trying this red clay and I was curious
+                about it since I’m pregnant and I needed a product that has no
+                chemicals and not too strong scent. It’s a little bit strong for
+                me but I love the effect on my skin it’s really soft and smooth.
+                I will buy this again next time.
               </p>
             </div>
           </div>
@@ -252,7 +286,9 @@
               <span class="fa fa-star checked"></span>
 
               <p>
-                Received it just now. I have yet to try it. Will post a more substantive review on its quality next time I purchase one, that is if it's really worth it. 😁
+                Received it just now. I have yet to try it. Will post a more
+                substantive review on its quality next time I purchase one, that
+                is if it's really worth it. 😁
               </p>
             </div>
           </div>
@@ -275,8 +311,11 @@
               <span class="fa fa-star checked"></span>
 
               <p>
-                Had great customer service. I had problems with shipping options and she was able to fix it. Very quick reply. :). Favorite ko talaga ung red clay pero isang piraso na lang so pwede na rin ung yellow. 
-                The best pa rin talaga ang plastic-free packaging. Salamat, seller!
+                Had great customer service. I had problems with shipping options
+                and she was able to fix it. Very quick reply. :). Favorite ko
+                talaga ung red clay pero isang piraso na lang so pwede na rin
+                ung yellow. The best pa rin talaga ang plastic-free packaging.
+                Salamat, seller!
               </p>
             </div>
           </div>
@@ -328,23 +367,39 @@
 
     <!-- Parent Class of "Suggestion"-->
     <div class="suggestions2">
-      <div class="p1" onclick="document.location='PreBioticPowder.html'" alt="Ecobar eco+biome Prebiotic Powder Cleanser 35g">
-        <img src="Pictures/Products/image 21.png" />
+      <div
+        class="p1"
+        onclick="document.location='PreBioticPowder.html'"
+        alt="Ecobar eco+biome Prebiotic Powder Cleanser 35g"
+      >
+        <img src="Pictures/Products/PowderCleanserDisplay.png" />
         <p>Ecobar eco+biome Prebiotic Powder Cleanser 35g</p>
-        <p class="price">₱140.00</p>
+        <p class="price">₱130.00</p>
       </div>
-      <div class="p2" onclick="document.location='SkinCareAcne.html'" alt="Ecobar eco+biome Acne Control Prebiotic Face Bar">
-        <img src="Pictures/Products/image 22.png" />
+      <div
+        class="p2"
+        onclick="document.location='SkinCareAcne.html'"
+        alt="Ecobar eco+biome Acne Control Prebiotic Face Bar"
+      >
+        <img src="Pictures/Products/AcneDisplay.png" />
         <p>Ecobar eco+biome Acne Control Prebiotic Face Bar</p>
+        <p class="price">₱200.00</p>
+      </div>
+      <div
+        class="p3"
+        onclick="document.location='EcoRepair.html'"
+        alt="Ecobar Repair and Nourish Conditioner Bar"
+      >
+        <img src="Pictures/Products/RepairDisplay.png" />
+        <p>Ecobar Repair and Nourish Conditioner Bar</p>
         <p class="price">₱210.00</p>
       </div>
-      <div class="p3" onclick="document.location='EcoRepair.html'" alt="Ecobar Repair and Nourish Conditioner Bar">
-        <img src="Pictures/Products/image 16.png" />
-        <p>Ecobar Repair and Nourish Conditioner Bar</p>
-        <p class="price">₱220.00</p>
-      </div>
-      <div class="p4" onclick="document.location='EcoPreserve.html'" alt="Ecobar Color Preserve Shampoo Bar">
-        <img src="Pictures/Products/image 18.png" />
+      <div
+        class="p4"
+        onclick="document.location='EcoPreserve.html'"
+        alt="Ecobar Color Preserve Shampoo Bar"
+      >
+        <img src="Pictures/Products/ColorPreserveDisplay.png" />
         <p>Ecobar Color Preserve Shampoo Bar</p>
         <p class="price">₱180.00</p>
       </div>
@@ -355,16 +410,21 @@
     <!--"Container section"-->
     <div class="container">
       <div class="row">
-        <div class="footer-col">
+        <div class="footer-col logoftr">
           <h4>
-            <img id="logo" src="Pictures\ecobarlogo.png" alt="Ecobar Logo" />
+            <div class="txtlogo">
+              <a href="index.html"
+                ><h1>ecobar</h1>
+                <p>™</p></a
+              >
+            </div>
           </h4>
         </div>
         <div class="footer-col">
           <h4>MENU</h4>
           <ul>
-            <li><a class="ftrlnk" href="index.html">Home</a></li>
-            <li><a class="ftrlnk" href="Category_All.html">Products</a></li>
+            <li><a class="ftrlnk" href="#top">Home</a></li>
+            <li><a class="ftrlnk" href="#ftrcategory">Products</a></li>
             <li><a class="ftrlnk" href="resellers.html">Resellers</a></li>
             <li><a class="ftrlnk" href="about.html">About</a></li>
           </ul>
@@ -384,17 +444,20 @@
               target="_blank"
               href="https://www.facebook.com/ecobarph/"
               class="fblogo"
+              ><i class="fab fa-facebook-square"></i
             ></a>
             <a
               target="_blank"
               href="https://www.instagram.com/ecobarph/"
               class="instalogo"
+              ><i class="fab fa-instagram-square"></i
             ></a>
           </div>
         </div>
       </div>
     </div>
 
+    <!--container-btm section-->
     <div class="container-btm">
       <p>© 2021 Group 9</p>
     </div>
