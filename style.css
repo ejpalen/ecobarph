@@ -39,20 +39,51 @@ p {
 }
 
 /*For banner*/
-
-.banner {
+.bannerwrapper {
   width: 100%;
-  text-align: center;
-  padding: 0px;
-  margin: 0px auto;
-  margin-bottom: 30px;
   background-color: #e7f1ec;
 }
 
-.banner img {
+.banner {
   width: 90%;
+  text-align: center;
+  padding: 10px 0;
+  margin: 0px auto;
+  margin-bottom: 30px;
+  background-color: #e7f1ec;
+  position: relative;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.banner img {
+  width: 38%;
   margin: 0 auto;
+  margin-left: 40px;
   display: block;
+  height: auto;
+}
+
+.banner h1 {
+  text-align: left;
+}
+
+.herotext {
+  display: flex;
+  width: 410px;
+  flex-direction: column;
+  margin: 0 auto;
+  margin-right: 40px;
+  justify-content: center;
+}
+.banner button {
+  background-color: #3c4043;
+  color: white;
+  width: 150px;
+  padding: 15px 20px;
+  border-radius: 5px;
+  margin-top: 30px;
+  font-size: 18px;
 }
 
 /*For  welcome section for home.html*/
@@ -713,6 +744,10 @@ h2 {
   #reviews {
     width: 90%;
   }
+
+  .banner h1 {
+    font-size: 28px;
+  }
 }
 
 @media (max-width: 1260px) {
@@ -772,6 +807,25 @@ h2 {
   .icare,
   .ocare {
     border-radius: 0px;
+    width: 100%;
+  }
+
+  .banner img {
+    width: 400px;
+    margin-left: 0;
+  }
+
+  .banner .herotext {
+    margin-right: 0px;
+  }
+
+  .banner {
+    width: 80%;
+  }
+}
+
+@media (max-width: 1000px) {
+  .banner {
     width: 100%;
   }
 }
@@ -842,8 +896,7 @@ h2 {
 
 @media (max-width: 900px) {
   .banner img {
-    width: 120%;
-    margin-left: -88px;
+    width: 40%;
   }
   .banner {
     overflow: hidden;
@@ -858,14 +911,16 @@ h2 {
     width: 95%;
     box-sizing: border-box;
   }
-}
 
-@media (max-width: 900px) and (min-width: 721px) {
-  .banner img {
-    width: 120%;
-    margin-left: -65px;
+  .herotext {
+    max-width: 350px;
+  }
+
+  .banner h1 {
+    font-size: 24px;
   }
 }
+
 @media (max-width: 801px) {
   .featuredp > div {
     grid-template-columns: repeat(2, 50%);
@@ -973,8 +1028,12 @@ h2 {
   }
 
   .banner img {
-    width: 160%;
-    margin-left: -50px;
+    margin-right: -130px;
+    width: 60%;
+  }
+
+  .herotext {
+    padding-left: 20px;
   }
 
   .banner {
@@ -1114,6 +1173,23 @@ h2 {
   .featuredp p {
     width: 100%;
   }
+
+  .herotext {
+    padding-left: 40px;
+  }
+
+  .banner h1 {
+    font-size: 20px;
+  }
+
+  .banner img {
+    width: 66%;
+  }
+
+  .banner button {
+    padding: 10px 15px;
+    margin-top: 10px;
+  }
 }
 
 @media screen and (max-width: 500px) {
@@ -1147,6 +1223,10 @@ h2 {
   .browse {
     border-bottom: none;
   }
+
+  .herotext {
+    padding-left: 20px;
+  }
 }
 
 @media screen and (max-width: 440px) {
@@ -1165,6 +1245,10 @@ h2 {
 
   .carewrapper {
     height: 215px;
+  }
+
+  .banner h1 {
+    font-size: 18px;
   }
 }
 
