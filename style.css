@@ -76,6 +76,7 @@ p {
   margin-right: 40px;
   justify-content: center;
 }
+
 .banner button {
   background-color: #3c4043;
   color: white;
@@ -84,6 +85,11 @@ p {
   border-radius: 5px;
   margin-top: 30px;
   font-size: 18px;
+  float: left;
+}
+
+.banner button:hover {
+  background-color: #464b4f;
 }
 
 /*For  welcome section for home.html*/
