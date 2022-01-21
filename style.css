@@ -52,7 +52,6 @@ p {
   margin: 0px auto;
   margin-bottom: 30px;
   background-color: #e7f1ec;
-  position: relative;
   display: flex;
   justify-content: space-evenly;
 }
