@@ -1044,10 +1044,7 @@ h2 {
     width: 55%;
     margin: 0 auto;
     margin-top: 10px;
-    transform: rotate(-5deg);
-    padding-left: 20px;
   }
-
   .banner {
     overflow: hidden;
     flex-direction: column-reverse;
