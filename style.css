@@ -1043,8 +1043,9 @@ h2 {
   .banner img {
     width: 55%;
     margin: 0 auto;
+    margin-top: 10px;
     transform: rotate(-5deg);
-    padding: 20px;
+    padding-left: 20px;
   }
 
   .banner {
