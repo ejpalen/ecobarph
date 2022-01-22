@@ -39,6 +39,15 @@ p {
   margin-bottom: 0;
 }
 
+#logores {
+  display: flex;
+}
+
+#logores p {
+  font-size: 16px;
+  padding-left: 3px;
+}
+
 /*For banner*/
 .bannerwrapper {
   width: 100%;
@@ -803,7 +812,6 @@ h2 {
   }
 
   .carewrapper {
-    border-radius: 0px;
     overflow: hidden;
   }
 
@@ -812,7 +820,6 @@ h2 {
   .bcare,
   .icare,
   .ocare {
-    border-radius: 0px;
     width: 100%;
   }
 
@@ -1005,7 +1012,7 @@ h2 {
     padding: 20px 35px;
     background-color: #3c4043;
     color: white;
-    border-radius: 10px;
+    border-radius: 0px 25px;
   }
 
   .browseallresp {
@@ -1034,16 +1041,32 @@ h2 {
   }
 
   .banner img {
-    margin-right: -130px;
-    width: 60%;
-  }
-
-  .herotext {
-    padding-left: 20px;
+    width: 55%;
+    margin: 0 auto;
+    margin-top: 20px;
   }
 
   .banner {
     overflow: hidden;
+    flex-direction: column-reverse;
+    padding-bottom: 40px;
+  }
+
+  .banner .herotext {
+    margin: 0 auto;
+  }
+
+  .banner h1 {
+    text-align: center;
+  }
+
+  .banner a {
+    display: flex;
+    justify-content: center;
+  }
+
+  .banner button {
+    margin-top: 10px;
   }
 
   .category p {
@@ -1110,8 +1133,9 @@ h2 {
   }
 
   #tipsbtn {
-    font-size: 10px;
-    padding: 5px;
+    font-size: 16px;
+    padding: 10px;
+    font-weight: 100;
   }
 
   .fastfact {
@@ -1178,10 +1202,6 @@ h2 {
 @media screen and (max-width: 550px) {
   .featuredp p {
     width: 100%;
-  }
-
-  .herotext {
-    padding-left: 40px;
   }
 
   .banner h1 {
